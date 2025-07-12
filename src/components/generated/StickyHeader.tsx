@@ -11,6 +11,12 @@ const StickyHeader: React.FC = () => {
     label: 'Showcase',
     href: '#showcase'
   }, {
+    label: 'Projects',
+    href: '#projects'
+  }, {
+    label: 'Leadership',
+    href: '#leadership'
+  }, {
     label: 'About',
     href: '#about'
   }, {
@@ -70,9 +76,9 @@ const StickyHeader: React.FC = () => {
             </div>
           </div>
 
-          <nav className="hidden md:flex space-x-8" data-magicpath-id="8" data-magicpath-path="StickyHeader.tsx" style={{
+          <nav className="hidden md:flex space-x-8" style={{
           display: "none"
-        }}>
+        }} data-magicpath-id="8" data-magicpath-path="StickyHeader.tsx">
             <a href="#home" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
               Home
             </a>
