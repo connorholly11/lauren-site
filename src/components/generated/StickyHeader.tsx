@@ -36,7 +36,8 @@ const StickyHeader: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({
@@ -58,7 +59,7 @@ const StickyHeader: React.FC = () => {
           <motion.div whileHover={{
           scale: 1.05
         }} className="flex-shrink-0" data-magicpath-id="3" data-magicpath-path="StickyHeader.tsx">
-            <button onClick={() => scrollToSection('#home')} className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" data-magicpath-id="4" data-magicpath-path="StickyHeader.tsx">
+            <button onClick={e => scrollToSection(e, '#home')} className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" data-magicpath-id="4" data-magicpath-path="StickyHeader.tsx">
               Sarah Johnson
             </button>
           </motion.div>
@@ -66,7 +67,7 @@ const StickyHeader: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block" data-magicpath-id="5" data-magicpath-path="StickyHeader.tsx">
             <div className="ml-10 flex items-baseline space-x-8" data-magicpath-id="6" data-magicpath-path="StickyHeader.tsx">
-              {navItems.map(item => <motion.button key={item.label} onClick={() => scrollToSection(item.href)} whileHover={{
+              {navItems.map(item => <motion.button key={item.label} onClick={e => scrollToSection(e, item.href)} whileHover={{
               scale: 1.05
             }} whileTap={{
               scale: 0.95
@@ -76,28 +77,26 @@ const StickyHeader: React.FC = () => {
             </div>
           </div>
 
-          <nav className="hidden md:flex space-x-8" style={{
-          display: "none"
-        }} data-magicpath-id="8" data-magicpath-path="StickyHeader.tsx">
-            <a href="#home" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
+          <nav className="hidden md:flex space-x-8" data-magicpath-id="8" data-magicpath-path="StickyHeader.tsx">
+            <a href="#home" onClick={e => scrollToSection(e, 'home')} className="text-slate-600 hover:text-blue-600 transition-colors">
               Home
             </a>
-            <a href="#showcase" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
-              Work
-            </a>
-            <a href="#projects" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
-              Case Studies
-            </a>
-            <a href="#about" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#about" onClick={e => scrollToSection(e, 'about')} className="text-slate-600 hover:text-blue-600 transition-colors">
               About
             </a>
-            <a href="#skills" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#showcase" onClick={e => scrollToSection(e, 'showcase')} className="text-slate-600 hover:text-blue-600 transition-colors">
+              Showcase
+            </a>
+            <a href="#projects" onClick={e => scrollToSection(e, 'projects')} className="text-slate-600 hover:text-blue-600 transition-colors">
+              Projects
+            </a>
+            <a href="#leadership" onClick={e => scrollToSection(e, 'leadership')} className="text-slate-600 hover:text-blue-600 transition-colors">
+              Leadership
+            </a>
+            <a href="#skills" onClick={e => scrollToSection(e, 'skills')} className="text-slate-600 hover:text-blue-600 transition-colors">
               Skills
             </a>
-            <a href="#testimonials" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
-              Testimonials
-            </a>
-            <a href="#contact" className="text-slate-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#contact" onClick={e => scrollToSection(e, 'contact')} className="text-slate-600 hover:text-blue-600 transition-colors">
               Contact
             </a>
           </nav>
@@ -126,7 +125,7 @@ const StickyHeader: React.FC = () => {
         duration: 0.3
       }} className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg" data-magicpath-id="13" data-magicpath-path="StickyHeader.tsx">
             <div className="px-2 pt-2 pb-3 space-y-1" data-magicpath-id="14" data-magicpath-path="StickyHeader.tsx">
-              {navItems.map(item => <motion.button key={item.label} onClick={() => scrollToSection(item.href)} whileTap={{
+              {navItems.map(item => <motion.button key={item.label} onClick={e => scrollToSection(e, item.href)} whileTap={{
             scale: 0.95
           }} className="block w-full text-left px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 transition-colors" data-magicpath-id="15" data-magicpath-path="StickyHeader.tsx">
                   {item.label}
