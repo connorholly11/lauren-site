@@ -458,9 +458,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="97" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Canva
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="98" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Sketch
-                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="98" data-magicpath-path="PersonalBrandLandingPage.tsx">Visme</span>
                 </div>
               </div>
 
@@ -474,9 +472,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="103" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Mailchimp
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="104" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    ConvertKit
-                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="104" data-magicpath-path="PersonalBrandLandingPage.tsx">Lasso</span>
                   <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="105" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Klaviyo
                   </span>
@@ -509,15 +505,13 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="116" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Google Tag Manager
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="117" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Adobe Analytics
-                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="117" data-magicpath-path="PersonalBrandLandingPage.tsx">Microsoft Clarity</span>
                 </div>
               </div>
 
               {/* CMS Category */}
               <div className="space-y-4" data-magicpath-id="118" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2" data-magicpath-id="119" data-magicpath-path="PersonalBrandLandingPage.tsx">CMS</h4>
+                <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2" data-magicpath-id="119" data-magicpath-path="PersonalBrandLandingPage.tsx">Content Management System</h4>
                 <div className="flex flex-wrap gap-3" data-magicpath-id="120" data-magicpath-path="PersonalBrandLandingPage.tsx">
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="121" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     WordPress
@@ -525,15 +519,9 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-slate-50 to-gray-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700 hover:shadow-md transition-shadow" data-magicpath-id="122" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Wix
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-full text-sm font-medium text-amber-700 hover:shadow-md transition-shadow" data-magicpath-id="123" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Craft CMS
-                  </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="124" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Webflow
-                  </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="125" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Squarespace
-                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-full text-sm font-medium text-amber-700 hover:shadow-md transition-shadow" data-magicpath-id="123" data-magicpath-path="PersonalBrandLandingPage.tsx">Craft</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="124" data-magicpath-path="PersonalBrandLandingPage.tsx">Shopify</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="125" data-magicpath-path="PersonalBrandLandingPage.tsx">Hubspot</span>
                 </div>
               </div>
             </motion.div>
