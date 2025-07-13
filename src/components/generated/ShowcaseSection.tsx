@@ -237,7 +237,9 @@ const ShowcaseSection: React.FC = () => {
                     <button onClick={e => {
                 e.stopPropagation();
                 setShowGallery(!showGallery);
-              }} className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2" data-magicpath-id="23" data-magicpath-path="ShowcaseSection.tsx">
+              }} className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2" data-magicpath-id="23" data-magicpath-path="ShowcaseSection.tsx" style={{
+                display: "none"
+              }}>
                       <Image className="w-4 h-4" />
                       View Gallery
                     </button>
