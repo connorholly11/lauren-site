@@ -233,9 +233,9 @@ const PersonalBrandLandingPage: React.FC = () => {
               </p>
             </motion.div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-start" data-magicpath-id="24" data-magicpath-path="PersonalBrandLandingPage.tsx">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch" data-magicpath-id="24" data-magicpath-path="PersonalBrandLandingPage.tsx">
               {/* Programs Grid */}
-              <div className="space-y-6" data-magicpath-id="25" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <div className="space-y-6 flex flex-col" data-magicpath-id="25" data-magicpath-path="PersonalBrandLandingPage.tsx">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-6" data-magicpath-id="26" data-magicpath-path="PersonalBrandLandingPage.tsx">Technical Proficiency</h3>
                 
                 {/* Design Category */}
@@ -347,7 +347,7 @@ const PersonalBrandLandingPage: React.FC = () => {
               </div>
 
               {/* Rotating Gallery */}
-              <div className="space-y-6" data-magicpath-id="66" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <div className="space-y-6 flex flex-col" data-magicpath-id="66" data-magicpath-path="PersonalBrandLandingPage.tsx">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-6" data-magicpath-id="67" data-magicpath-path="PersonalBrandLandingPage.tsx">Behind the Scenes</h3>
                 <motion.div initial={{
                 opacity: 0,
