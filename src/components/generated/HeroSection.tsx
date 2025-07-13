@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
             repeat: Infinity,
             ease: "easeInOut"
           }} className="absolute -top-4 -right-4" data-magicpath-id="7" data-magicpath-path="HeroSection.tsx">
-              <Sparkles className="w-6 h-6 text-amber-500" />
+              <Sparkles className="w-6 h-6 text-emerald-500" />
             </motion.div>
             
             <motion.div animate={{
