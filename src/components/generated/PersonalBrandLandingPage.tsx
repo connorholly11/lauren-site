@@ -252,7 +252,9 @@ const PersonalBrandLandingPage: React.FC = () => {
                           </p>
                         </div>
                         
-                        <div className="space-y-3 mb-4" data-magicpath-id="19" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                        <div className="space-y-3 mb-4" data-magicpath-id="19" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                      display: "none"
+                    }}>
                           <div className="flex justify-between items-center" data-magicpath-id="20" data-magicpath-path="PersonalBrandLandingPage.tsx">
                             <span className="text-xs font-medium text-emerald-600" data-magicpath-id="21" data-magicpath-path="PersonalBrandLandingPage.tsx">Duration</span>
                             <span className="text-xs font-semibold text-emerald-800" data-magicpath-id="22" data-magicpath-path="PersonalBrandLandingPage.tsx">{item.stats.duration}</span>
