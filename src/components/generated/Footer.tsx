@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
       });
     }
   };
-  return <footer className="bg-slate-900 text-white" data-magicpath-id="0" data-magicpath-path="Footer.tsx">
+  return <footer className="bg-gradient-to-br from-orange-900 to-amber-900 text-white" data-magicpath-id="0" data-magicpath-path="Footer.tsx">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-magicpath-id="1" data-magicpath-path="Footer.tsx">
         <div className="grid md:grid-cols-4 gap-8" data-magicpath-id="2" data-magicpath-path="Footer.tsx">
           {/* Brand Section */}
@@ -72,10 +72,10 @@ const Footer: React.FC = () => {
           }} viewport={{
             once: true
           }} data-magicpath-id="4" data-magicpath-path="Footer.tsx">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4" data-magicpath-id="5" data-magicpath-path="Footer.tsx">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-300 to-coral-300 bg-clip-text text-transparent mb-4" data-magicpath-id="5" data-magicpath-path="Footer.tsx">
                 Sarah Johnson
               </h3>
-              <p className="text-slate-300 mb-6 max-w-md" data-magicpath-id="6" data-magicpath-path="Footer.tsx">
+              <p className="text-orange-100 mb-6 max-w-md" data-magicpath-id="6" data-magicpath-path="Footer.tsx">
                 Strategic Marketing Manager specializing in data-driven campaigns 
                 that deliver measurable results and drive business growth.
               </p>
@@ -84,8 +84,8 @@ const Footer: React.FC = () => {
               <div className="space-y-3" data-magicpath-id="7" data-magicpath-path="Footer.tsx">
                 {contactInfo.map((contact, index) => <motion.a key={index} href={contact.href} whileHover={{
                 x: 5
-              }} className="flex items-center text-slate-300 hover:text-white transition-colors group" data-magicpath-id="8" data-magicpath-path="Footer.tsx">
-                    <contact.icon className="w-4 h-4 mr-3 text-blue-400 group-hover:text-blue-300" data-magicpath-id="9" data-magicpath-path="Footer.tsx" />
+              }} className="flex items-center text-orange-200 hover:text-white transition-colors group" data-magicpath-id="8" data-magicpath-path="Footer.tsx">
+                    <contact.icon className="w-4 h-4 mr-3 text-orange-400 group-hover:text-orange-300" data-magicpath-id="9" data-magicpath-path="Footer.tsx" />
                     <span className="text-sm" data-magicpath-id="10" data-magicpath-path="Footer.tsx">{contact.text}</span>
                   </motion.a>)}
               </div>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
                 {quickLinks.map((link, index) => <li key={index} data-magicpath-id="15" data-magicpath-path="Footer.tsx">
                     <motion.button onClick={() => scrollToSection(link.href)} whileHover={{
                   x: 5
-                }} className="text-slate-300 hover:text-white transition-colors text-sm" data-magicpath-id="16" data-magicpath-path="Footer.tsx">
+                }} className="text-orange-200 hover:text-white transition-colors text-sm" data-magicpath-id="16" data-magicpath-path="Footer.tsx">
                       {link.label}
                     </motion.button>
                   </li>)}
@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
                 y: -2
               }} whileTap={{
                 scale: 0.95
-              }} className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-300 hover:text-white hover:bg-blue-600 transition-colors" aria-label={social.label} data-magicpath-id="21" data-magicpath-path="Footer.tsx">
+              }} className="w-10 h-10 bg-amber-800 rounded-lg flex items-center justify-center text-orange-200 hover:text-white hover:bg-orange-600 transition-colors" aria-label={social.label} data-magicpath-id="21" data-magicpath-path="Footer.tsx">
                     <social.icon className="w-5 h-5" data-magicpath-id="22" data-magicpath-path="Footer.tsx" />
                   </motion.a>)}
               </div>
@@ -149,8 +149,8 @@ const Footer: React.FC = () => {
               <div className="mt-6" data-magicpath-id="23" data-magicpath-path="Footer.tsx">
                 <h5 className="text-sm font-medium mb-2" data-magicpath-id="24" data-magicpath-path="Footer.tsx">Stay Updated</h5>
                 <div className="flex" data-magicpath-id="25" data-magicpath-path="Footer.tsx">
-                  <input type="email" placeholder="Your email" className="flex-1 px-3 py-2 bg-slate-800 border border-slate-700 rounded-l-lg text-sm focus:outline-none focus:border-blue-500" data-magicpath-id="26" data-magicpath-path="Footer.tsx" />
-                  <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-r-lg text-sm font-medium transition-colors" data-magicpath-id="27" data-magicpath-path="Footer.tsx">
+                  <input type="email" placeholder="Your email" className="flex-1 px-3 py-2 bg-amber-800 border border-amber-700 rounded-l-lg text-sm focus:outline-none focus:border-orange-500 placeholder-orange-300" data-magicpath-id="26" data-magicpath-path="Footer.tsx" />
+                  <button className="px-4 py-2 bg-orange-600 hover:bg-orange-700 rounded-r-lg text-sm font-medium transition-colors" data-magicpath-id="27" data-magicpath-path="Footer.tsx">
                     Subscribe
                   </button>
                 </div>
@@ -169,15 +169,15 @@ const Footer: React.FC = () => {
         delay: 0.3
       }} viewport={{
         once: true
-      }} className="border-t border-slate-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center" data-magicpath-id="28" data-magicpath-path="Footer.tsx">
-          <p className="text-slate-400 text-sm" data-magicpath-id="29" data-magicpath-path="Footer.tsx">
+      }} className="border-t border-amber-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center" data-magicpath-id="28" data-magicpath-path="Footer.tsx">
+          <p className="text-orange-300 text-sm" data-magicpath-id="29" data-magicpath-path="Footer.tsx">
             © {new Date().getFullYear()} Sarah Johnson. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0" data-magicpath-id="30" data-magicpath-path="Footer.tsx">
-            <button className="text-slate-400 hover:text-white text-sm transition-colors" data-magicpath-id="31" data-magicpath-path="Footer.tsx">
+            <button className="text-orange-300 hover:text-white text-sm transition-colors" data-magicpath-id="31" data-magicpath-path="Footer.tsx">
               Privacy Policy
             </button>
-            <button className="text-slate-400 hover:text-white text-sm transition-colors" data-magicpath-id="32" data-magicpath-path="Footer.tsx">
+            <button className="text-orange-300 hover:text-white text-sm transition-colors" data-magicpath-id="32" data-magicpath-path="Footer.tsx">
               Terms of Service
             </button>
           </div>
