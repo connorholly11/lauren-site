@@ -19,7 +19,7 @@ const LeadershipSection: React.FC = () => {
       }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="LeadershipSection.tsx">
           <h2 className="text-4xl sm:text-5xl font-bold text-emerald-900 mb-6" style={{
           fontSize: "2.25rem"
-        }} data-magicpath-id="3" data-magicpath-path="LeadershipSection.tsx">Lead By Going The Extra 1%</h2>
+        }} data-magicpath-id="3" data-magicpath-path="LeadershipSection.tsx">Leading by Going the Extra 1%</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto" data-magicpath-id="4" data-magicpath-path="LeadershipSection.tsx"></div>
         </motion.div>
         

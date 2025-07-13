@@ -572,7 +572,9 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                                     </li>)}
                                 </ul>
                               </div>
-                              {idx < project.timeline.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-0.5 bg-amber-300" data-magicpath-id="91" data-magicpath-path="ProjectsCaseStudiesSection.tsx"></div>}
+                              {idx < project.timeline.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-0.5 bg-amber-300" data-magicpath-id="91" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                        display: "none"
+                      }}></div>}
                             </div>)}
                         </div>
                       </div>
