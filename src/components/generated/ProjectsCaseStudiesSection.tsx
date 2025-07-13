@@ -405,26 +405,26 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       </p>
                       <div className="flex items-center space-x-4 text-sm text-emerald-600" data-magicpath-id="17" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                         <div className="flex items-center space-x-1" data-magicpath-id="18" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <Clock className="w-4 h-4" data-magicpath-id="19" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                          <Clock className="w-4 h-4" style={{
                         display: "none"
-                      }} />
-                          <span data-magicpath-id="20" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                      }} data-magicpath-id="19" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                          <span style={{
                         display: "none"
-                      }}>{project.duration}</span>
+                      }} data-magicpath-id="20" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.duration}</span>
                         </div>
-                        <div className="flex items-center space-x-1" data-magicpath-id="21" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                        <div className="flex items-center space-x-1" style={{
                       display: "none"
-                    }}>
+                    }} data-magicpath-id="21" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                           <DollarSign className="w-4 h-4" data-magicpath-id="22" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
                           <span data-magicpath-id="23" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.budget}</span>
                         </div>
                         <div className="flex items-center space-x-1" data-magicpath-id="24" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <Target className="w-4 h-4" data-magicpath-id="25" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                          <Target className="w-4 h-4" style={{
                         display: "none"
-                      }} />
-                          <span data-magicpath-id="26" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                      }} data-magicpath-id="25" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                          <span style={{
                         display: "none"
-                      }}>{project.clientType}</span>
+                      }} data-magicpath-id="26" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.clientType}</span>
                         </div>
                       </div>
                     </div>
@@ -548,17 +548,17 @@ const ProjectsCaseStudiesSection: React.FC = () => {
 
                       {/* Timeline */}
                       <div data-magicpath-id="79" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" data-magicpath-id="80" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" style={{
                     display: "none"
-                  }}>
+                  }} data-magicpath-id="80" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                           <Calendar className="w-5 h-5 mr-2 text-amber-500" data-magicpath-id="81" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
                           Project Timeline
                         </h4>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4" data-magicpath-id="82" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                           {project.timeline.map((phase, idx) => <div key={idx} className="relative" data-magicpath-id="83" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                              <div className="bg-amber-50 rounded-xl p-4 border border-amber-100" data-magicpath-id="84" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                              <div className="bg-amber-50 rounded-xl p-4 border border-amber-100" style={{
                         display: "none"
-                      }}>
+                      }} data-magicpath-id="84" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                                 <div className="flex items-center justify-between mb-3" data-magicpath-id="85" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                                   <h5 className="font-semibold text-amber-900 text-sm" data-magicpath-id="86" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{phase.phase}</h5>
                                   <span className="text-xs bg-amber-200 text-amber-800 px-2 py-1 rounded-full" data-magicpath-id="87" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
@@ -572,18 +572,18 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                                     </li>)}
                                 </ul>
                               </div>
-                              {idx < project.timeline.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-0.5 bg-amber-300" data-magicpath-id="91" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                              {idx < project.timeline.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-0.5 bg-amber-300" style={{
                         display: "none"
-                      }}></div>}
+                      }} data-magicpath-id="91" data-magicpath-path="ProjectsCaseStudiesSection.tsx"></div>}
                             </div>)}
                         </div>
                       </div>
 
                       {/* Client Testimonial */}
-                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white" data-magicpath-id="92" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white" style={{
                   background: "linear-gradient(90deg, oklch(0.696 0.17 162.48) 0%, oklch(0.704 0.14 182.503) 100%)",
                   display: "none"
-                }}>
+                }} data-magicpath-id="92" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                           <blockquote className="text-lg italic leading-relaxed mb-4" data-magicpath-id="93" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                             "{project.testimonial.quote}"
                           </blockquote>

@@ -23,9 +23,6 @@ const StickyHeader: React.FC = () => {
     label: 'Skills',
     href: '#skills'
   }, {
-    label: 'Testimonials',
-    href: '#testimonials'
-  }, {
     label: 'Contact',
     href: '#contact'
   }];
@@ -59,7 +56,7 @@ const StickyHeader: React.FC = () => {
           <motion.div whileHover={{
           scale: 1.05
         }} className="flex-shrink-0" data-magicpath-id="3" data-magicpath-path="StickyHeader.tsx">
-            <button onClick={e => scrollToSection(e, '#home')} className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent" data-magicpath-id="4" data-magicpath-path="StickyHeader.tsx">
+            <button onClick={e => scrollToSection(e, '#home')} className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" data-magicpath-id="4" data-magicpath-path="StickyHeader.tsx">
               Lauren Hall
             </button>
           </motion.div>
@@ -71,9 +68,7 @@ const StickyHeader: React.FC = () => {
               scale: 1.05
             }} whileTap={{
               scale: 0.95
-            }} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? 'text-emerald-700 hover:text-teal-600 hover:bg-emerald-50' : 'text-emerald-800 hover:text-teal-600 hover:bg-white/20'}`} style={{
-              display: "none"
-            }} data-magicpath-id="7" data-magicpath-path="StickyHeader.tsx">
+            }} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? 'text-slate-700 hover:text-blue-600 hover:bg-blue-50' : 'text-slate-800 hover:text-blue-600 hover:bg-white/20'}`} data-magicpath-id="7" data-magicpath-path="StickyHeader.tsx">
                   {item.label}
                 </motion.button>)}
             </div>
@@ -83,7 +78,7 @@ const StickyHeader: React.FC = () => {
           <div className="md:hidden" data-magicpath-id="8" data-magicpath-path="StickyHeader.tsx">
             <motion.button whileTap={{
             scale: 0.95
-          }} onClick={() => setIsMenuOpen(!isMenuOpen)} className={`p-2 rounded-lg ${isScrolled ? 'text-emerald-700 hover:bg-emerald-100' : 'text-emerald-800 hover:bg-white/20'}`} data-magicpath-id="9" data-magicpath-path="StickyHeader.tsx">
+          }} onClick={() => setIsMenuOpen(!isMenuOpen)} className={`p-2 rounded-lg ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-slate-800 hover:bg-white/20'}`} data-magicpath-id="9" data-magicpath-path="StickyHeader.tsx">
               {isMenuOpen ? <X className="h-6 w-6" data-magicpath-id="10" data-magicpath-path="StickyHeader.tsx" /> : <Menu className="h-6 w-6" data-magicpath-id="11" data-magicpath-path="StickyHeader.tsx" />}
             </motion.button>
           </div>
@@ -105,7 +100,7 @@ const StickyHeader: React.FC = () => {
             <div className="px-2 pt-2 pb-3 space-y-1" data-magicpath-id="13" data-magicpath-path="StickyHeader.tsx">
               {navItems.map(item => <motion.button key={item.label} onClick={e => scrollToSection(e, item.href)} whileTap={{
             scale: 0.95
-          }} className="block w-full text-left px-3 py-2 rounded-lg text-base font-medium text-emerald-700 hover:text-teal-600 hover:bg-emerald-50 transition-colors" data-magicpath-id="14" data-magicpath-path="StickyHeader.tsx">
+          }} className="block w-full text-left px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 transition-colors" data-magicpath-id="14" data-magicpath-path="StickyHeader.tsx">
                   {item.label}
                 </motion.button>)}
             </div>
