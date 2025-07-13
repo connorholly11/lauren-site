@@ -60,7 +60,7 @@ const StickyHeader: React.FC = () => {
           scale: 1.05
         }} className="flex-shrink-0" data-magicpath-id="3" data-magicpath-path="StickyHeader.tsx">
             <button onClick={e => scrollToSection(e, '#home')} className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent" data-magicpath-id="4" data-magicpath-path="StickyHeader.tsx">
-              Lauren Hallo
+              Lauren Hall
             </button>
           </motion.div>
 
