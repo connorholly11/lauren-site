@@ -685,7 +685,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                     <span className="text-sm" data-magicpath-id="188" data-magicpath-path="PersonalBrandLandingPage.tsx">{formStatus.message}</span>
                   </div>}
 
-                <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-md font-medium transition-colors ${isSubmitting ? 'bg-emerald-400 cursor-not-allowed text-white' : 'bg-emerald-900 hover:bg-emerald-800 text-white'}`} data-magicpath-id="189" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-md font-medium transition-colors ${isSubmitting ? 'bg-emerald-400 cursor-not-allowed text-white' : 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl'}`} data-magicpath-id="189" data-magicpath-path="PersonalBrandLandingPage.tsx">
                   {isSubmitting ? <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" data-magicpath-id="190" data-magicpath-path="PersonalBrandLandingPage.tsx"></div>
                       <span data-magicpath-id="191" data-magicpath-path="PersonalBrandLandingPage.tsx">Sending...</span>
