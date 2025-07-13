@@ -578,7 +578,10 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       </div>
 
                       {/* Client Testimonial */}
-                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white" data-magicpath-id="92" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white" data-magicpath-id="92" data-magicpath-path="ProjectsCaseStudiesSection.tsx" style={{
+                  background: "linear-gradient(90deg, oklch(0.696 0.17 162.48) 0%, oklch(0.704 0.14 182.503) 100%)",
+                  display: "none"
+                }}>
                           <blockquote className="text-lg italic leading-relaxed mb-4" data-magicpath-id="93" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                             "{project.testimonial.quote}"
                           </blockquote>
