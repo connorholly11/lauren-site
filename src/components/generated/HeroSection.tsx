@@ -127,16 +127,16 @@ const HeroSection: React.FC = () => {
           delay: 0.8
         }} className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto" data-magicpath-id="15" data-magicpath-path="HeroSection.tsx">
             <div className="text-center" data-magicpath-id="16" data-magicpath-path="HeroSection.tsx">
-              <div className="text-3xl font-bold text-emerald-600 mb-2" data-magicpath-id="17" data-magicpath-path="HeroSection.tsx">8+</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2" data-magicpath-id="17" data-magicpath-path="HeroSection.tsx">5</div>
               <div className="text-emerald-700" data-magicpath-id="18" data-magicpath-path="HeroSection.tsx">Years Experience</div>
             </div>
             <div className="text-center" data-magicpath-id="19" data-magicpath-path="HeroSection.tsx">
-              <div className="text-3xl font-bold text-teal-600 mb-2" data-magicpath-id="20" data-magicpath-path="HeroSection.tsx">150+</div>
-              <div className="text-emerald-700" data-magicpath-id="21" data-magicpath-path="HeroSection.tsx">Campaigns Launched</div>
+              <div className="text-3xl font-bold text-teal-600 mb-2" data-magicpath-id="20" data-magicpath-path="HeroSection.tsx">1,500+</div>
+              <div className="text-emerald-700" data-magicpath-id="21" data-magicpath-path="HeroSection.tsx">Homes Marketed</div>
             </div>
             <div className="text-center" data-magicpath-id="22" data-magicpath-path="HeroSection.tsx">
-              <div className="text-3xl font-bold text-cyan-600 mb-2" data-magicpath-id="23" data-magicpath-path="HeroSection.tsx">300%</div>
-              <div className="text-emerald-700" data-magicpath-id="24" data-magicpath-path="HeroSection.tsx">Average ROI Increase</div>
+              <div className="text-3xl font-bold text-cyan-600 mb-2" data-magicpath-id="23" data-magicpath-path="HeroSection.tsx">$20M+</div>
+              <div className="text-emerald-700" data-magicpath-id="24" data-magicpath-path="HeroSection.tsx">Total Budgets Managed</div>
             </div>
           </motion.div>
 
