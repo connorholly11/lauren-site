@@ -358,7 +358,9 @@ const PersonalBrandLandingPage: React.FC = () => {
               
               {/* Upload Area */}
               <div className="max-w-md mx-auto mb-12" data-magicpath-id="64" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <div className="border-2 border-dashed border-slate-300 rounded-xl p-8 bg-white/50 hover:border-blue-400 hover:bg-blue-50/50 transition-all duration-300 cursor-pointer group" data-magicpath-id="65" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div className="border-2 border-dashed border-slate-300 rounded-xl p-8 bg-white/50 hover:border-blue-400 hover:bg-blue-50/50 transition-all duration-300 cursor-pointer group" data-magicpath-id="65" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                display: "none"
+              }}>
                   <Upload className="w-12 h-12 text-slate-400 group-hover:text-blue-500 mx-auto mb-4 transition-colors" data-magicpath-id="66" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                   <p className="text-slate-600 group-hover:text-blue-600 font-medium mb-2 transition-colors" data-magicpath-id="67" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Upload Content
