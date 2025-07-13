@@ -100,9 +100,7 @@ const HeroSection: React.FC = () => {
         }} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-900 mb-6 leading-tight" data-magicpath-id="11" data-magicpath-path="HeroSection.tsx">
             Strategic Marketing
             <br data-magicpath-id="12" data-magicpath-path="HeroSection.tsx" />
-            <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent" data-magicpath-id="13" data-magicpath-path="HeroSection.tsx">
-              That Delivers Results
-            </span>
+            <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent" data-magicpath-id="13" data-magicpath-path="HeroSection.tsx">That Opens Doors</span>
           </motion.h1>
 
           {/* Tagline */}
