@@ -32,13 +32,13 @@ const HeroSection: React.FC = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.2
-          }} className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 rounded-full p-2" data-magicpath-id="4" data-magicpath-path="HeroSection.tsx">
-              <div className="w-full h-full bg-slate-200 rounded-full flex items-center justify-center" data-magicpath-id="5" data-magicpath-path="HeroSection.tsx">
+          }} className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 rounded-2xl p-2" data-magicpath-id="4" data-magicpath-path="HeroSection.tsx">
+              <div className="w-full h-full bg-slate-200 rounded-2xl flex items-center justify-center overflow-hidden" data-magicpath-id="5" data-magicpath-path="HeroSection.tsx">
                 <span className="text-slate-500 text-sm" data-magicpath-id="6" data-magicpath-path="HeroSection.tsx">Professional Headshot</span>
               </div>
             </motion.div>
             
-            {/* Floating elements */}
+            {/* Floating sparkles */}
             <motion.div animate={{
             y: [0, -10, 0],
             rotate: [0, 5, 0]
@@ -46,8 +46,44 @@ const HeroSection: React.FC = () => {
             duration: 3,
             repeat: Infinity,
             ease: "easeInOut"
-          }} className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-2" data-magicpath-id="7" data-magicpath-path="HeroSection.tsx">
-              <Sparkles className="w-6 h-6 text-yellow-800" />
+          }} className="absolute -top-4 -right-4" data-magicpath-id="7" data-magicpath-path="HeroSection.tsx">
+              <Sparkles className="w-6 h-6 text-yellow-500" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -8, 0],
+            rotate: [0, -3, 0]
+          }} transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.5
+          }} className="absolute -top-2 -left-6" data-magicpath-id="8" data-magicpath-path="HeroSection.tsx">
+              <Sparkles className="w-4 h-4 text-purple-500" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -12, 0],
+            rotate: [0, 8, 0]
+          }} transition={{
+            duration: 3.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }} className="absolute -bottom-6 -right-8" data-magicpath-id="9" data-magicpath-path="HeroSection.tsx">
+              <Sparkles className="w-8 h-8 text-pink-500" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -6, 0],
+            rotate: [0, -5, 0]
+          }} transition={{
+            duration: 2.8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.5
+          }} className="absolute -bottom-2 -left-4" data-magicpath-id="10" data-magicpath-path="HeroSection.tsx">
+              <Sparkles className="w-5 h-5 text-blue-500" />
             </motion.div>
           </div>
 
@@ -61,10 +97,10 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.4
-        }} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight" data-magicpath-id="8" data-magicpath-path="HeroSection.tsx">
+        }} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight" data-magicpath-id="11" data-magicpath-path="HeroSection.tsx">
             Strategic Marketing
-            <br data-magicpath-id="9" data-magicpath-path="HeroSection.tsx" />
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent" data-magicpath-id="10" data-magicpath-path="HeroSection.tsx">
+            <br data-magicpath-id="12" data-magicpath-path="HeroSection.tsx" />
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent" data-magicpath-id="13" data-magicpath-path="HeroSection.tsx">
               That Delivers Results
             </span>
           </motion.h1>
@@ -79,7 +115,7 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.6
-        }} className="text-xl sm:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed" data-magicpath-id="11" data-magicpath-path="HeroSection.tsx">
+        }} className="text-xl sm:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed" data-magicpath-id="14" data-magicpath-path="HeroSection.tsx">
             I'm Sarah Johnson, a Marketing Manager who transforms brands through 
             data-driven strategies and creative campaigns that drive growth and engagement.
           </motion.p>
@@ -94,18 +130,18 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.8
-        }} className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto" data-magicpath-id="12" data-magicpath-path="HeroSection.tsx">
-            <div className="text-center" data-magicpath-id="13" data-magicpath-path="HeroSection.tsx">
-              <div className="text-3xl font-bold text-blue-600 mb-2" data-magicpath-id="14" data-magicpath-path="HeroSection.tsx">8+</div>
-              <div className="text-slate-600" data-magicpath-id="15" data-magicpath-path="HeroSection.tsx">Years Experience</div>
-            </div>
+        }} className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto" data-magicpath-id="15" data-magicpath-path="HeroSection.tsx">
             <div className="text-center" data-magicpath-id="16" data-magicpath-path="HeroSection.tsx">
-              <div className="text-3xl font-bold text-purple-600 mb-2" data-magicpath-id="17" data-magicpath-path="HeroSection.tsx">150+</div>
-              <div className="text-slate-600" data-magicpath-id="18" data-magicpath-path="HeroSection.tsx">Campaigns Launched</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2" data-magicpath-id="17" data-magicpath-path="HeroSection.tsx">8+</div>
+              <div className="text-slate-600" data-magicpath-id="18" data-magicpath-path="HeroSection.tsx">Years Experience</div>
             </div>
             <div className="text-center" data-magicpath-id="19" data-magicpath-path="HeroSection.tsx">
-              <div className="text-3xl font-bold text-pink-600 mb-2" data-magicpath-id="20" data-magicpath-path="HeroSection.tsx">300%</div>
-              <div className="text-slate-600" data-magicpath-id="21" data-magicpath-path="HeroSection.tsx">Average ROI Increase</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2" data-magicpath-id="20" data-magicpath-path="HeroSection.tsx">150+</div>
+              <div className="text-slate-600" data-magicpath-id="21" data-magicpath-path="HeroSection.tsx">Campaigns Launched</div>
+            </div>
+            <div className="text-center" data-magicpath-id="22" data-magicpath-path="HeroSection.tsx">
+              <div className="text-3xl font-bold text-pink-600 mb-2" data-magicpath-id="23" data-magicpath-path="HeroSection.tsx">300%</div>
+              <div className="text-slate-600" data-magicpath-id="24" data-magicpath-path="HeroSection.tsx">Average ROI Increase</div>
             </div>
           </motion.div>
 
@@ -119,19 +155,19 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 1
-        }} className="flex flex-col sm:flex-row gap-4 justify-center mb-16" data-magicpath-id="22" data-magicpath-path="HeroSection.tsx">
+        }} className="flex flex-col sm:flex-row gap-4 justify-center mb-16" data-magicpath-id="25" data-magicpath-path="HeroSection.tsx">
             <motion.button whileHover={{
             scale: 1.05
           }} whileTap={{
             scale: 0.95
-          }} onClick={scrollToShowcase} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-shadow" data-magicpath-id="23" data-magicpath-path="HeroSection.tsx">
+          }} onClick={scrollToShowcase} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-shadow" data-magicpath-id="26" data-magicpath-path="HeroSection.tsx">
               View My Work
             </motion.button>
             <motion.button whileHover={{
             scale: 1.05
           }} whileTap={{
             scale: 0.95
-          }} className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors" data-magicpath-id="24" data-magicpath-path="HeroSection.tsx">
+          }} className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx">
               Download Resume
             </motion.button>
           </motion.div>
@@ -145,15 +181,15 @@ const HeroSection: React.FC = () => {
       }} transition={{
         duration: 0.8,
         delay: 1.2
-      }} className="flex flex-col items-center" data-magicpath-id="25" data-magicpath-path="HeroSection.tsx">
-          <span className="text-slate-500 text-sm mb-2" data-magicpath-id="26" data-magicpath-path="HeroSection.tsx">Scroll to explore</span>
+      }} className="flex flex-col items-center" data-magicpath-id="28" data-magicpath-path="HeroSection.tsx">
+          <span className="text-slate-500 text-sm mb-2" data-magicpath-id="29" data-magicpath-path="HeroSection.tsx">Scroll to explore</span>
           <motion.button onClick={scrollToShowcase} animate={{
           y: [0, 8, 0]
         }} transition={{
           duration: 2,
           repeat: Infinity
-        }} className="text-slate-400 hover:text-blue-600 transition-colors" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx">
-            <ArrowDown className="w-6 h-6" data-magicpath-id="28" data-magicpath-path="HeroSection.tsx" />
+        }} className="text-slate-400 hover:text-blue-600 transition-colors" data-magicpath-id="30" data-magicpath-path="HeroSection.tsx">
+            <ArrowDown className="w-6 h-6" data-magicpath-id="31" data-magicpath-path="HeroSection.tsx" />
           </motion.button>
         </motion.div>
       </div>
