@@ -285,7 +285,9 @@ const ShowcaseSection: React.FC = () => {
               }} className="text-slate-500 hover:text-slate-700 font-medium text-sm" data-magicpath-id="40" data-magicpath-path="ShowcaseSection.tsx">
                       ← Close Details
                     </button>
-                    <button className="text-blue-600 hover:text-blue-700 font-medium text-sm" data-magicpath-id="41" data-magicpath-path="ShowcaseSection.tsx">
+                    <button className="text-blue-600 hover:text-blue-700 font-medium text-sm" data-magicpath-id="41" data-magicpath-path="ShowcaseSection.tsx" style={{
+                display: "none"
+              }}>
                       View Full Case Study →
                     </button>
                   </div>
