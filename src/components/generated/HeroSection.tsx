@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Sparkles } from 'lucide-react';
 const HeroSection: React.FC = () => {
   const scrollToShowcase = () => {
-    const element = document.querySelector('#showcase');
+    const element = document.querySelector('#featured-work');
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth'
