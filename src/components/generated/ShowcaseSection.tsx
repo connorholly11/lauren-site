@@ -237,9 +237,9 @@ const ShowcaseSection: React.FC = () => {
                     <button onClick={e => {
                 e.stopPropagation();
                 setShowGallery(!showGallery);
-              }} className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2" data-magicpath-id="23" data-magicpath-path="ShowcaseSection.tsx" style={{
+              }} className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2" style={{
                 display: "none"
-              }}>
+              }} data-magicpath-id="23" data-magicpath-path="ShowcaseSection.tsx">
                       <Image className="w-4 h-4" />
                       View Gallery
                     </button>
@@ -287,9 +287,9 @@ const ShowcaseSection: React.FC = () => {
               }} className="text-slate-500 hover:text-slate-700 font-medium text-sm" data-magicpath-id="40" data-magicpath-path="ShowcaseSection.tsx">
                       ← Close Details
                     </button>
-                    <button className="text-blue-600 hover:text-blue-700 font-medium text-sm" data-magicpath-id="41" data-magicpath-path="ShowcaseSection.tsx" style={{
+                    <button className="text-blue-600 hover:text-blue-700 font-medium text-sm" style={{
                 display: "none"
-              }}>
+              }} data-magicpath-id="41" data-magicpath-path="ShowcaseSection.tsx">
                       View Full Case Study →
                     </button>
                   </div>
