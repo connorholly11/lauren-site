@@ -383,9 +383,7 @@ const PersonalBrandLandingPage: React.FC = () => {
             once: true
           }} className="grid lg:grid-cols-2 gap-12 items-center" data-magicpath-id="73" data-magicpath-path="PersonalBrandLandingPage.tsx">
               <div data-magicpath-id="74" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-6" data-magicpath-id="75" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  About Me
-                </h2>
+                <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-6" data-magicpath-id="75" data-magicpath-path="PersonalBrandLandingPage.tsx">Who I Am & How I Work</h2>
                 <div className="space-y-4 text-lg text-emerald-700 leading-relaxed" data-magicpath-id="76" data-magicpath-path="PersonalBrandLandingPage.tsx">
                   <p data-magicpath-id="77" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     With over 8 years of experience in digital marketing, I specialize in creating 
@@ -431,9 +429,7 @@ const PersonalBrandLandingPage: React.FC = () => {
           }} viewport={{
             once: true
           }} className="text-center mb-16" data-magicpath-id="88" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="89" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                Technical Proficiency
-              </h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="89" data-magicpath-path="PersonalBrandLandingPage.tsx">What's in My Toolbox</h2>
               <p className="text-xl text-emerald-700 max-w-2xl mx-auto" data-magicpath-id="90" data-magicpath-path="PersonalBrandLandingPage.tsx">
                 A comprehensive overview of the tools and technologies I use to deliver exceptional results
               </p>
@@ -550,12 +546,8 @@ const PersonalBrandLandingPage: React.FC = () => {
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="126" data-magicpath-path="PersonalBrandLandingPage.tsx">
           <div className="max-w-2xl mx-auto" data-magicpath-id="127" data-magicpath-path="PersonalBrandLandingPage.tsx">
             <div className="text-center mb-12" data-magicpath-id="128" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <h2 className="text-3xl font-bold text-emerald-900 mb-4" data-magicpath-id="129" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                Get in Touch
-              </h2>
-              <p className="text-lg text-emerald-700 leading-relaxed" data-magicpath-id="130" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                Ready to discuss your project? Send me a message and I'll get back to you promptly.
-              </p>
+              <h2 className="text-3xl font-bold text-emerald-900 mb-4" data-magicpath-id="129" data-magicpath-path="PersonalBrandLandingPage.tsx">Let's Connect</h2>
+              <p className="text-lg text-emerald-700 leading-relaxed" data-magicpath-id="130" data-magicpath-path="PersonalBrandLandingPage.tsx">If something here sparked your interest, let’s talk. I’d love to hear your goals and share how I can support them.</p>
             </div>
 
             <div className="bg-white border border-emerald-200 rounded-lg p-8" data-magicpath-id="131" data-magicpath-path="PersonalBrandLandingPage.tsx">

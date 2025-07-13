@@ -366,9 +366,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
       }} viewport={{
         once: true
       }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="3" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-            Case Studies & Success Stories
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="3" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Marketing That Moves the Needle</h2>
           <p className="text-xl text-emerald-700 max-w-3xl mx-auto leading-relaxed mb-6" data-magicpath-id="4" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
             Deep dive into real campaigns that delivered exceptional results. 
             Each case study reveals the strategic thinking, creative execution, and measurable outcomes 

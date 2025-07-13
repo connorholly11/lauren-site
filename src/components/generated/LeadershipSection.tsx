@@ -17,7 +17,9 @@ const LeadershipSection: React.FC = () => {
       }} viewport={{
         once: true
       }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="LeadershipSection.tsx">
-          <h2 className="text-4xl sm:text-5xl font-bold text-emerald-900 mb-6" data-magicpath-id="3" data-magicpath-path="LeadershipSection.tsx">Always Learning & Leading</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-emerald-900 mb-6" data-magicpath-id="3" data-magicpath-path="LeadershipSection.tsx" style={{
+          fontSize: "2.25rem"
+        }}>Lead By Going The Extra 1%</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto" data-magicpath-id="4" data-magicpath-path="LeadershipSection.tsx"></div>
         </motion.div>
         
@@ -79,9 +81,13 @@ const LeadershipSection: React.FC = () => {
         }} viewport={{
           once: true
         }} data-magicpath-id="27" data-magicpath-path="LeadershipSection.tsx">
-            <div className="w-full h-96 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-3xl flex items-center justify-center border border-emerald-200" data-magicpath-id="28" data-magicpath-path="LeadershipSection.tsx">
+            <div className="w-full h-96 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-3xl flex items-center justify-center border border-emerald-200" data-magicpath-id="28" data-magicpath-path="LeadershipSection.tsx" style={{
+            background: "linear-gradient(90deg, oklch(0.95 0.052 163.051) 0%, oklch(0.953 0.051 180.801) 100%)"
+          }}>
               <div className="text-center space-y-4" data-magicpath-id="29" data-magicpath-path="LeadershipSection.tsx">
-                <div className="w-24 h-24 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-full mx-auto flex items-center justify-center" data-magicpath-id="30" data-magicpath-path="LeadershipSection.tsx">
+                <div className="w-24 h-24 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-full mx-auto flex items-center justify-center" data-magicpath-id="30" data-magicpath-path="LeadershipSection.tsx" style={{
+                background: "linear-gradient(90deg, oklch(0.596 0.145 163.225) 0%, oklch(0.6 0.118 184.704) 100%)"
+              }}>
                   <span className="text-3xl text-white" data-magicpath-id="31" data-magicpath-path="LeadershipSection.tsx">👥</span>
                 </div>
                 <p className="text-emerald-700 font-medium" data-magicpath-id="32" data-magicpath-path="LeadershipSection.tsx">Leadership in Action Photo</p>
