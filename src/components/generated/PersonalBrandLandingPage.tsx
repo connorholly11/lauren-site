@@ -502,26 +502,41 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="115" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Google Analytics
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="116" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="116" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Google Tag Manager
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="117" data-magicpath-path="PersonalBrandLandingPage.tsx">Microsoft Clarity</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="117" data-magicpath-path="PersonalBrandLandingPage.tsx">Microsoft Clarity</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="118" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    UTM
+                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="119" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    Callrail
+                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="120" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    Hubspot
+                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="121" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    Birdeye
+                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="122" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    Lasso
+                  </span>
                 </div>
               </div>
 
               {/* CMS Category */}
-              <div className="space-y-4" data-magicpath-id="118" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2" data-magicpath-id="119" data-magicpath-path="PersonalBrandLandingPage.tsx">Content Management System</h4>
-                <div className="flex flex-wrap gap-3" data-magicpath-id="120" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="121" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <div className="space-y-4" data-magicpath-id="123" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2" data-magicpath-id="124" data-magicpath-path="PersonalBrandLandingPage.tsx">Content Management System</h4>
+                <div className="flex flex-wrap gap-3" data-magicpath-id="125" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="126" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     WordPress
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-slate-50 to-gray-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700 hover:shadow-md transition-shadow" data-magicpath-id="122" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <span className="px-4 py-2 bg-gradient-to-r from-slate-50 to-gray-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700 hover:shadow-md transition-shadow" data-magicpath-id="127" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Wix
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-full text-sm font-medium text-amber-700 hover:shadow-md transition-shadow" data-magicpath-id="123" data-magicpath-path="PersonalBrandLandingPage.tsx">Craft</span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="124" data-magicpath-path="PersonalBrandLandingPage.tsx">Shopify</span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="125" data-magicpath-path="PersonalBrandLandingPage.tsx">Hubspot</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-full text-sm font-medium text-amber-700 hover:shadow-md transition-shadow" data-magicpath-id="128" data-magicpath-path="PersonalBrandLandingPage.tsx">Craft</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="129" data-magicpath-path="PersonalBrandLandingPage.tsx">Shopify</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-700 hover:shadow-md transition-shadow" data-magicpath-id="130" data-magicpath-path="PersonalBrandLandingPage.tsx">Hubspot</span>
                 </div>
               </div>
             </motion.div>
@@ -529,48 +544,48 @@ const PersonalBrandLandingPage: React.FC = () => {
         </section>
 
         {/* Contact Section with Form */}
-        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="126" data-magicpath-path="PersonalBrandLandingPage.tsx">
-          <div className="max-w-2xl mx-auto" data-magicpath-id="127" data-magicpath-path="PersonalBrandLandingPage.tsx">
-            <div className="text-center mb-12" data-magicpath-id="128" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <h2 className="text-3xl font-bold text-emerald-900 mb-4" data-magicpath-id="129" data-magicpath-path="PersonalBrandLandingPage.tsx">Let's Connect</h2>
-              <p className="text-lg text-emerald-700 leading-relaxed" data-magicpath-id="130" data-magicpath-path="PersonalBrandLandingPage.tsx">If something here sparked your interest, let’s talk. I’d love to hear your goals and share how I can support them.</p>
+        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="131" data-magicpath-path="PersonalBrandLandingPage.tsx">
+          <div className="max-w-2xl mx-auto" data-magicpath-id="132" data-magicpath-path="PersonalBrandLandingPage.tsx">
+            <div className="text-center mb-12" data-magicpath-id="133" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <h2 className="text-3xl font-bold text-emerald-900 mb-4" data-magicpath-id="134" data-magicpath-path="PersonalBrandLandingPage.tsx">Let's Connect</h2>
+              <p className="text-lg text-emerald-700 leading-relaxed" data-magicpath-id="135" data-magicpath-path="PersonalBrandLandingPage.tsx">If something here sparked your interest, let’s talk. I’d love to hear your goals and share how I can support them.</p>
             </div>
 
-            <div className="bg-white border border-emerald-200 rounded-lg p-8" data-magicpath-id="131" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <form onSubmit={handleSubmit} className="space-y-6" data-magicpath-id="132" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <div data-magicpath-id="133" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <label htmlFor="name" className="block text-sm font-medium text-emerald-900 mb-2" data-magicpath-id="134" data-magicpath-path="PersonalBrandLandingPage.tsx">
+            <div className="bg-white border border-emerald-200 rounded-lg p-8" data-magicpath-id="136" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <form onSubmit={handleSubmit} className="space-y-6" data-magicpath-id="137" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div data-magicpath-id="138" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <label htmlFor="name" className="block text-sm font-medium text-emerald-900 mb-2" data-magicpath-id="139" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Name
                   </label>
-                  <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-3 border border-emerald-300 rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="Your full name" required data-magicpath-id="135" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-3 border border-emerald-300 rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="Your full name" required data-magicpath-id="140" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                 </div>
 
-                <div data-magicpath-id="136" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <label htmlFor="email" className="block text-sm font-medium text-emerald-900 mb-2" data-magicpath-id="137" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div data-magicpath-id="141" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <label htmlFor="email" className="block text-sm font-medium text-emerald-900 mb-2" data-magicpath-id="142" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Email
                   </label>
-                  <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 border border-emerald-300 rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="your.email@example.com" required data-magicpath-id="138" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 border border-emerald-300 rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="your.email@example.com" required data-magicpath-id="143" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                 </div>
 
-                <div data-magicpath-id="139" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <label htmlFor="message" className="block text-sm font-medium text-emerald-900 mb-2" data-magicpath-id="140" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div data-magicpath-id="144" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <label htmlFor="message" className="block text-sm font-medium text-emerald-900 mb-2" data-magicpath-id="145" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Message
                   </label>
-                  <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={5} className="w-full px-4 py-3 border border-emerald-300 rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none" placeholder="Tell me about your project..." required data-magicpath-id="141" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={5} className="w-full px-4 py-3 border border-emerald-300 rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none" placeholder="Tell me about your project..." required data-magicpath-id="146" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                 </div>
 
-                {formStatus.type && <div className={`flex items-center space-x-2 p-4 rounded-md border ${formStatus.type === 'success' ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-red-50 text-red-800 border-red-200'}`} data-magicpath-id="142" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    {formStatus.type === 'success' ? <CheckCircle className="w-5 h-5" data-magicpath-id="143" data-magicpath-path="PersonalBrandLandingPage.tsx" /> : <AlertCircle className="w-5 h-5" data-magicpath-id="144" data-magicpath-path="PersonalBrandLandingPage.tsx" />}
-                    <span className="text-sm" data-magicpath-id="145" data-magicpath-path="PersonalBrandLandingPage.tsx">{formStatus.message}</span>
+                {formStatus.type && <div className={`flex items-center space-x-2 p-4 rounded-md border ${formStatus.type === 'success' ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-red-50 text-red-800 border-red-200'}`} data-magicpath-id="147" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    {formStatus.type === 'success' ? <CheckCircle className="w-5 h-5" data-magicpath-id="148" data-magicpath-path="PersonalBrandLandingPage.tsx" /> : <AlertCircle className="w-5 h-5" data-magicpath-id="149" data-magicpath-path="PersonalBrandLandingPage.tsx" />}
+                    <span className="text-sm" data-magicpath-id="150" data-magicpath-path="PersonalBrandLandingPage.tsx">{formStatus.message}</span>
                   </div>}
 
-                <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-md font-medium transition-colors ${isSubmitting ? 'bg-emerald-400 cursor-not-allowed text-white' : 'bg-emerald-900 hover:bg-emerald-800 text-white'}`} data-magicpath-id="146" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-md font-medium transition-colors ${isSubmitting ? 'bg-emerald-400 cursor-not-allowed text-white' : 'bg-emerald-900 hover:bg-emerald-800 text-white'}`} data-magicpath-id="151" data-magicpath-path="PersonalBrandLandingPage.tsx">
                   {isSubmitting ? <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" data-magicpath-id="147" data-magicpath-path="PersonalBrandLandingPage.tsx"></div>
-                      <span data-magicpath-id="148" data-magicpath-path="PersonalBrandLandingPage.tsx">Sending...</span>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" data-magicpath-id="152" data-magicpath-path="PersonalBrandLandingPage.tsx"></div>
+                      <span data-magicpath-id="153" data-magicpath-path="PersonalBrandLandingPage.tsx">Sending...</span>
                     </> : <>
-                      <Send className="w-5 h-5" data-magicpath-id="149" data-magicpath-path="PersonalBrandLandingPage.tsx" />
-                      <span data-magicpath-id="150" data-magicpath-path="PersonalBrandLandingPage.tsx">Send Message</span>
+                      <Send className="w-5 h-5" data-magicpath-id="154" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                      <span data-magicpath-id="155" data-magicpath-path="PersonalBrandLandingPage.tsx">Send Message</span>
                     </>}
                 </button>
               </form>
@@ -579,7 +594,7 @@ const PersonalBrandLandingPage: React.FC = () => {
         </section>
       </main>
       
-      <Footer data-magicpath-id="151" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+      <Footer data-magicpath-id="156" data-magicpath-path="PersonalBrandLandingPage.tsx" />
     </div>;
 };
 export default PersonalBrandLandingPage;
