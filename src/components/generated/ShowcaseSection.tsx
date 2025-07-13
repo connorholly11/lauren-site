@@ -125,6 +125,27 @@ const ShowcaseSection: React.FC = () => {
     image: "CMS Dashboard",
     tags: ["WordPress", "Performance", "Security"],
     gallery: ["Admin Interface", "Performance Metrics", "Security Reports", "Content Workflow"]
+  }, {
+    id: 6,
+    title: "Brand Strategy",
+    category: "Creative Direction",
+    description: "Comprehensive brand strategy development including visual identity, messaging framework, and brand positioning to create cohesive and impactful brand experiences.",
+    metrics: [{
+      label: "Brand Recognition",
+      value: "73%",
+      icon: Target
+    }, {
+      label: "Engagement Rate",
+      value: "34.5%",
+      icon: Users
+    }, {
+      label: "Market Share",
+      value: "18%",
+      icon: TrendingUp
+    }],
+    image: "Brand Guidelines",
+    tags: ["Identity", "Positioning", "Guidelines"],
+    gallery: ["Logo Design", "Color Palette", "Typography", "Brand Applications"]
   }];
   return <section id="showcase" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="0" data-magicpath-path="ShowcaseSection.tsx">
       <div className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ShowcaseSection.tsx">
