@@ -430,9 +430,7 @@ const PersonalBrandLandingPage: React.FC = () => {
             once: true
           }} className="text-center mb-16" data-magicpath-id="88" data-magicpath-path="PersonalBrandLandingPage.tsx">
               <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="89" data-magicpath-path="PersonalBrandLandingPage.tsx">What's in My Toolbox</h2>
-              <p className="text-xl text-emerald-700 max-w-2xl mx-auto" data-magicpath-id="90" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                A comprehensive overview of the tools and technologies I use to deliver exceptional results
-              </p>
+              <p className="text-xl text-emerald-700 max-w-2xl mx-auto" data-magicpath-id="90" data-magicpath-path="PersonalBrandLandingPage.tsx">The tools and technologies that support my work, from strategy to execution.</p>
             </motion.div>
             
             <motion.div initial={{
