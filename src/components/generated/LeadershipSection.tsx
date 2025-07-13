@@ -41,8 +41,8 @@ const LeadershipSection: React.FC = () => {
                   <Award className="w-6 h-6 text-white" data-magicpath-id="10" data-magicpath-path="LeadershipSection.tsx" />
                 </div>
                 <div data-magicpath-id="11" data-magicpath-path="LeadershipSection.tsx">
-                  <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="12" data-magicpath-path="LeadershipSection.tsx">Team Transformation Leadership</h3>
-                  <p className="text-emerald-700" data-magicpath-id="13" data-magicpath-path="LeadershipSection.tsx">Led 12-person marketing team restructure, achieving 85% productivity increase</p>
+                  <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="12" data-magicpath-path="LeadershipSection.tsx">Voted "Cream of the Crop" in Culture</h3>
+                  <p className="text-emerald-700" data-magicpath-id="13" data-magicpath-path="LeadershipSection.tsx">Recognized across the company for consistently going above and beyond, with standout contributions to team culture and cross-department collaboration.</p>
                 </div>
               </div>
               
@@ -51,8 +51,8 @@ const LeadershipSection: React.FC = () => {
                   <TrendingUp className="w-6 h-6 text-white" data-magicpath-id="16" data-magicpath-path="LeadershipSection.tsx" />
                 </div>
                 <div data-magicpath-id="17" data-magicpath-path="LeadershipSection.tsx">
-                  <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="18" data-magicpath-path="LeadershipSection.tsx">Crisis Communication Excellence</h3>
-                  <p className="text-emerald-700" data-magicpath-id="19" data-magicpath-path="LeadershipSection.tsx">Navigated major product recall while maintaining 94% customer retention</p>
+                  <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="18" data-magicpath-path="LeadershipSection.tsx">AI Integration Leader</h3>
+                  <p className="text-emerald-700" data-magicpath-id="19" data-magicpath-path="LeadershipSection.tsx">Launched company-wide tools that streamlined execution and deliver $20,000 in annual savings.</p>
                 </div>
               </div>
               
@@ -67,10 +67,7 @@ const LeadershipSection: React.FC = () => {
               </div>
             </div>
             
-            <blockquote className="border-l-4 border-emerald-600 pl-6 italic text-lg text-emerald-700" data-magicpath-id="26" data-magicpath-path="LeadershipSection.tsx">
-              "True leadership isn't about having all the answers—it's about empowering your team 
-              to find solutions and creating an environment where innovation thrives."
-            </blockquote>
+            <blockquote className="border-l-4 border-emerald-600 pl-6 italic text-lg text-emerald-700" data-magicpath-id="26" data-magicpath-path="LeadershipSection.tsx">"I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She ask's the right questions and always gets things done quickly with a purpose!" - J.P VP Leadership</blockquote>
           </motion.div>
           
           <motion.div initial={{
