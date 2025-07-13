@@ -17,9 +17,7 @@ const LeadershipSection: React.FC = () => {
       }} viewport={{
         once: true
       }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="LeadershipSection.tsx">
-          <h2 className="text-4xl sm:text-5xl font-bold text-emerald-900 mb-6" data-magicpath-id="3" data-magicpath-path="LeadershipSection.tsx">
-            Leadership That Delivers
-          </h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-emerald-900 mb-6" data-magicpath-id="3" data-magicpath-path="LeadershipSection.tsx">Always Learning & Leading</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto" data-magicpath-id="4" data-magicpath-path="LeadershipSection.tsx"></div>
         </motion.div>
         
@@ -52,7 +50,7 @@ const LeadershipSection: React.FC = () => {
                 </div>
                 <div data-magicpath-id="17" data-magicpath-path="LeadershipSection.tsx">
                   <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="18" data-magicpath-path="LeadershipSection.tsx">AI Integration Leader</h3>
-                  <p className="text-emerald-700" data-magicpath-id="19" data-magicpath-path="LeadershipSection.tsx">Launched company-wide tools that streamlined execution and deliver $20,000 in annual savings.</p>
+                  <p className="text-emerald-700" data-magicpath-id="19" data-magicpath-path="LeadershipSection.tsx">Rolled out company-wide tools that saved $20,000 annually, leading workshops and meetings to guide adoption.</p>
                 </div>
               </div>
               
@@ -61,8 +59,8 @@ const LeadershipSection: React.FC = () => {
                   <Users className="w-6 h-6 text-white" data-magicpath-id="22" data-magicpath-path="LeadershipSection.tsx" />
                 </div>
                 <div data-magicpath-id="23" data-magicpath-path="LeadershipSection.tsx">
-                  <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="24" data-magicpath-path="LeadershipSection.tsx">Innovation Lab Initiative</h3>
-                  <p className="text-emerald-700" data-magicpath-id="25" data-magicpath-path="LeadershipSection.tsx">Created internal innovation lab generating $2.3M in new revenue</p>
+                  <h3 className="text-xl font-bold text-emerald-900" data-magicpath-id="24" data-magicpath-path="LeadershipSection.tsx">Driven by Curiosity</h3>
+                  <p className="text-emerald-700" data-magicpath-id="25" data-magicpath-path="LeadershipSection.tsx">Focused on growth through hands-on learning. Built this entire site using AI, customizing every piece without writing a single line of code.</p>
                 </div>
               </div>
             </div>
