@@ -58,9 +58,13 @@ const Footer: React.FC = () => {
   };
   return <footer className="bg-gradient-to-br from-slate-900 to-emerald-900 text-white" data-magicpath-id="0" data-magicpath-path="Footer.tsx">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-magicpath-id="1" data-magicpath-path="Footer.tsx">
-        <div className="grid md:grid-cols-4 gap-8" data-magicpath-id="2" data-magicpath-path="Footer.tsx">
+        <div className="grid md:grid-cols-4 gap-8" data-magicpath-id="2" data-magicpath-path="Footer.tsx" style={{
+        display: "none"
+      }}>
           {/* Brand Section */}
-          <div className="md:col-span-2" data-magicpath-id="3" data-magicpath-path="Footer.tsx">
+          <div className="md:col-span-2" data-magicpath-id="3" data-magicpath-path="Footer.tsx" style={{
+          display: "none"
+        }}>
             <motion.div initial={{
             opacity: 0,
             y: 20
@@ -71,7 +75,9 @@ const Footer: React.FC = () => {
             duration: 0.6
           }} viewport={{
             once: true
-          }} data-magicpath-id="4" data-magicpath-path="Footer.tsx">
+          }} data-magicpath-id="4" data-magicpath-path="Footer.tsx" style={{
+            display: "none"
+          }}>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent mb-4" data-magicpath-id="5" data-magicpath-path="Footer.tsx">
                 Sarah Johnson
               </h3>
@@ -106,7 +112,9 @@ const Footer: React.FC = () => {
           }} viewport={{
             once: true
           }} data-magicpath-id="12" data-magicpath-path="Footer.tsx">
-              <h4 className="text-lg font-semibold mb-4" data-magicpath-id="13" data-magicpath-path="Footer.tsx">Quick Links</h4>
+              <h4 className="text-lg font-semibold mb-4" data-magicpath-id="13" data-magicpath-path="Footer.tsx" style={{
+              display: "none"
+            }}>Quick Links</h4>
               <ul className="space-y-2" data-magicpath-id="14" data-magicpath-path="Footer.tsx">
                 {quickLinks.map((link, index) => <li key={index} data-magicpath-id="15" data-magicpath-path="Footer.tsx">
                     <motion.button onClick={() => scrollToSection(link.href)} whileHover={{
@@ -132,7 +140,9 @@ const Footer: React.FC = () => {
             delay: 0.2
           }} viewport={{
             once: true
-          }} data-magicpath-id="18" data-magicpath-path="Footer.tsx">
+          }} data-magicpath-id="18" data-magicpath-path="Footer.tsx" style={{
+            display: "none"
+          }}>
               <h4 className="text-lg font-semibold mb-4" data-magicpath-id="19" data-magicpath-path="Footer.tsx">Connect</h4>
               <div className="flex space-x-4" data-magicpath-id="20" data-magicpath-path="Footer.tsx">
                 {socialLinks.map((social, index) => <motion.a key={index} href={social.href} whileHover={{
@@ -170,10 +180,10 @@ const Footer: React.FC = () => {
       }} viewport={{
         once: true
       }} className="border-t border-emerald-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center" data-magicpath-id="28" data-magicpath-path="Footer.tsx">
-          <p className="text-emerald-300 text-sm" data-magicpath-id="29" data-magicpath-path="Footer.tsx">
-            © {new Date().getFullYear()} Sarah Johnson. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 sm:mt-0" data-magicpath-id="30" data-magicpath-path="Footer.tsx">
+          <p className="text-emerald-300 text-sm" data-magicpath-id="29" data-magicpath-path="Footer.tsx">© 2025 Lauren Hall. All rights reserved.© 2025 Lauren Hall. All rights reserved.© 2025 Lauren Hall. All rights reserved.</p>
+          <div className="flex space-x-6 mt-4 sm:mt-0" data-magicpath-id="30" data-magicpath-path="Footer.tsx" style={{
+          display: "none"
+        }}>
             <button className="text-emerald-300 hover:text-white text-sm transition-colors" data-magicpath-id="31" data-magicpath-path="Footer.tsx">
               Privacy Policy
             </button>
