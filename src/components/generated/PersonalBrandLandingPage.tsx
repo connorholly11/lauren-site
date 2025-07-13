@@ -289,10 +289,14 @@ const PersonalBrandLandingPage: React.FC = () => {
                     <span className="px-4 py-2 bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700 hover:shadow-md transition-shadow" data-magicpath-id="46" data-magicpath-path="PersonalBrandLandingPage.tsx">
                       LinkedIn Campaign Manager
                     </span>
-                    <span className="px-4 py-2 bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-full text-sm font-medium text-yellow-700 hover:shadow-md transition-shadow" data-magicpath-id="47" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <span className="px-4 py-2 bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-full text-sm font-medium text-yellow-700 hover:shadow-md transition-shadow" data-magicpath-id="47" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                    display: "none"
+                  }}>
                       TikTok Ads Manager
                     </span>
-                    <span className="px-4 py-2 bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-full text-sm font-medium text-orange-700 hover:shadow-md transition-shadow" data-magicpath-id="48" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <span className="px-4 py-2 bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-full text-sm font-medium text-orange-700 hover:shadow-md transition-shadow" data-magicpath-id="48" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                    display: "none"
+                  }}>
                       Pinterest Ads
                     </span>
                   </div>
@@ -311,13 +315,19 @@ const PersonalBrandLandingPage: React.FC = () => {
                     <span className="px-4 py-2 bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700 hover:shadow-md transition-shadow" data-magicpath-id="54" data-magicpath-path="PersonalBrandLandingPage.tsx">
                       Adobe Analytics
                     </span>
-                    <span className="px-4 py-2 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-full text-sm font-medium text-orange-700 hover:shadow-md transition-shadow" data-magicpath-id="55" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <span className="px-4 py-2 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-full text-sm font-medium text-orange-700 hover:shadow-md transition-shadow" data-magicpath-id="55" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                    display: "none"
+                  }}>
                       Mixpanel
                     </span>
-                    <span className="px-4 py-2 bg-gradient-to-r from-slate-50 to-gray-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700 hover:shadow-md transition-shadow" data-magicpath-id="56" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <span className="px-4 py-2 bg-gradient-to-r from-slate-50 to-gray-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700 hover:shadow-md transition-shadow" data-magicpath-id="56" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                    display: "none"
+                  }}>
                       Hotjar
                     </span>
-                    <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="57" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <span className="px-4 py-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-200 rounded-full text-sm font-medium text-teal-700 hover:shadow-md transition-shadow" data-magicpath-id="57" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                    display: "none"
+                  }}>
                       Segment
                     </span>
                   </div>
