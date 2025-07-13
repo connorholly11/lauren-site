@@ -71,7 +71,9 @@ const StickyHeader: React.FC = () => {
               scale: 1.05
             }} whileTap={{
               scale: 0.95
-            }} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? 'text-emerald-700 hover:text-teal-600 hover:bg-emerald-50' : 'text-emerald-800 hover:text-teal-600 hover:bg-white/20'}`} data-magicpath-id="7" data-magicpath-path="StickyHeader.tsx">
+            }} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? 'text-emerald-700 hover:text-teal-600 hover:bg-emerald-50' : 'text-emerald-800 hover:text-teal-600 hover:bg-white/20'}`} data-magicpath-id="7" data-magicpath-path="StickyHeader.tsx" style={{
+              display: "none"
+            }}>
                   {item.label}
                 </motion.button>)}
             </div>

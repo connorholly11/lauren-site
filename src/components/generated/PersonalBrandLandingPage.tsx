@@ -172,12 +172,8 @@ const PersonalBrandLandingPage: React.FC = () => {
           }} viewport={{
             once: true
           }} className="text-center mb-16" data-magicpath-id="6" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="7" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                Featured Work
-              </h2>
-              <p className="text-xl text-emerald-700 max-w-2xl mx-auto mb-8" data-magicpath-id="8" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                Explore my latest work and creative projects across different marketing disciplines
-              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="7" data-magicpath-path="PersonalBrandLandingPage.tsx">How I Make an Impact</h2>
+              <p className="text-xl text-emerald-700 max-w-2xl mx-auto mb-8" data-magicpath-id="8" data-magicpath-path="PersonalBrandLandingPage.tsx">Marketing is always moving, and so is my skill set. These highlights show how I turn ambitious goals into clear, measurable outcomes.</p>
             </motion.div>
 
             {/* Auto-scrolling Gallery */}
