@@ -489,9 +489,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="110" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Facebook Ads Manager
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="111" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    LinkedIn Campaign Manager
-                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="111" data-magicpath-path="PersonalBrandLandingPage.tsx">Zillow Boost</span>
                 </div>
               </div>
 
@@ -512,13 +510,19 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="119" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Callrail
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="120" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="120" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                  display: "none"
+                }}>
                     Hubspot
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="121" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="121" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                  display: "none"
+                }}>
                     Birdeye
                   </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="122" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="122" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                  display: "none"
+                }}>
                     Lasso
                   </span>
                 </div>
@@ -528,15 +532,9 @@ const PersonalBrandLandingPage: React.FC = () => {
               <div className="space-y-4" data-magicpath-id="123" data-magicpath-path="PersonalBrandLandingPage.tsx">
                 <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2" data-magicpath-id="124" data-magicpath-path="PersonalBrandLandingPage.tsx">Lead Management</h4>
                 <div className="flex flex-wrap gap-3" data-magicpath-id="125" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="126" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Salesforce
-                  </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="127" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Pipedrive
-                  </span>
-                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="128" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    Leadfeeder
-                  </span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="126" data-magicpath-path="PersonalBrandLandingPage.tsx">Lasso</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="127" data-magicpath-path="PersonalBrandLandingPage.tsx">Hubspot</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow" data-magicpath-id="128" data-magicpath-path="PersonalBrandLandingPage.tsx">Birdeye</span>
                 </div>
               </div>
 
