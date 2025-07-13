@@ -262,30 +262,20 @@ const PersonalBrandLandingPage: React.FC = () => {
                             <span className="text-sm text-blue-600 font-medium" data-magicpath-id="35" data-magicpath-path="PersonalBrandLandingPage.tsx">{program.category}</span>
                           </div>
                         </div>
-                        <span className="text-sm font-medium text-slate-600 bg-white px-3 py-1 rounded-full" data-magicpath-id="36" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                          {program.proficiency}%
-                        </span>
+                        <div className="flex items-center space-x-2" data-magicpath-id="36" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                          <span className={`px-3 py-1 rounded-full text-xs font-medium ${program.proficiency >= 90 ? 'bg-emerald-100 text-emerald-700' : program.proficiency >= 85 ? 'bg-blue-100 text-blue-700' : 'bg-amber-100 text-amber-700'}`} data-magicpath-id="37" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                            {program.proficiency >= 90 ? 'Expert' : program.proficiency >= 85 ? 'Advanced' : 'Proficient'}
+                          </span>
+                        </div>
                       </div>
-                      <p className="text-slate-600 text-sm mb-3" data-magicpath-id="37" data-magicpath-path="PersonalBrandLandingPage.tsx">{program.description}</p>
-                      <div className="w-full bg-slate-200 rounded-full h-2" data-magicpath-id="38" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                        <motion.div initial={{
-                      width: 0
-                    }} whileInView={{
-                      width: `${program.proficiency}%`
-                    }} transition={{
-                      duration: 1.2,
-                      delay: 0.3 + index * 0.1
-                    }} viewport={{
-                      once: true
-                    }} className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full" data-magicpath-id="39" data-magicpath-path="PersonalBrandLandingPage.tsx" />
-                      </div>
+                      <p className="text-slate-600 text-sm" data-magicpath-id="38" data-magicpath-path="PersonalBrandLandingPage.tsx">{program.description}</p>
                     </motion.div>)}
                 </div>
               </div>
 
               {/* Rotating Gallery */}
-              <div className="space-y-6" data-magicpath-id="40" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <h3 className="text-2xl font-semibold text-slate-900 mb-6" data-magicpath-id="41" data-magicpath-path="PersonalBrandLandingPage.tsx">Behind the Scenes</h3>
+              <div className="space-y-6" data-magicpath-id="39" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-6" data-magicpath-id="40" data-magicpath-path="PersonalBrandLandingPage.tsx">Behind the Scenes</h3>
                 <motion.div initial={{
                 opacity: 0,
                 scale: 0.95
@@ -296,8 +286,8 @@ const PersonalBrandLandingPage: React.FC = () => {
                 duration: 0.6
               }} viewport={{
                 once: true
-              }} className="relative bg-gradient-to-br from-slate-100 to-blue-100/50 rounded-2xl p-6 overflow-hidden" data-magicpath-id="42" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-white shadow-lg" data-magicpath-id="43" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              }} className="relative bg-gradient-to-br from-slate-100 to-blue-100/50 rounded-2xl p-6 overflow-hidden" data-magicpath-id="41" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-white shadow-lg" data-magicpath-id="42" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     <motion.img key={currentImageIndex} src={galleryImages[currentImageIndex].src} alt={galleryImages[currentImageIndex].alt} initial={{
                     opacity: 0,
                     scale: 1.1
@@ -306,32 +296,32 @@ const PersonalBrandLandingPage: React.FC = () => {
                     scale: 1
                   }} transition={{
                     duration: 0.5
-                  }} className="w-full h-full object-cover" data-magicpath-id="44" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  }} className="w-full h-full object-cover" data-magicpath-id="43" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                     
                     {/* Navigation Buttons */}
-                    <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-200 hover:scale-110" aria-label="Previous image" data-magicpath-id="45" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                      <ChevronLeft className="w-5 h-5 text-slate-700" data-magicpath-id="46" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                    <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-200 hover:scale-110" aria-label="Previous image" data-magicpath-id="44" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                      <ChevronLeft className="w-5 h-5 text-slate-700" data-magicpath-id="45" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                     </button>
-                    <button onClick={nextImage} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-200 hover:scale-110" aria-label="Next image" data-magicpath-id="47" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                      <ChevronRight className="w-5 h-5 text-slate-700" data-magicpath-id="48" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                    <button onClick={nextImage} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-200 hover:scale-110" aria-label="Next image" data-magicpath-id="46" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                      <ChevronRight className="w-5 h-5 text-slate-700" data-magicpath-id="47" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                     </button>
 
                     {/* Image Caption */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4" data-magicpath-id="49" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                      <p className="text-white text-sm font-medium" data-magicpath-id="50" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4" data-magicpath-id="48" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                      <p className="text-white text-sm font-medium" data-magicpath-id="49" data-magicpath-path="PersonalBrandLandingPage.tsx">
                         {galleryImages[currentImageIndex].caption}
                       </p>
                     </div>
                   </div>
 
                   {/* Dots Indicator */}
-                  <div className="flex justify-center space-x-2 mt-4" data-magicpath-id="51" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    {galleryImages.map((_, index) => <button key={index} onClick={() => setCurrentImageIndex(index)} className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentImageIndex ? 'bg-blue-600 w-6' : 'bg-slate-300 hover:bg-slate-400'}`} aria-label={`Go to image ${index + 1}`} data-magicpath-id="52" data-magicpath-path="PersonalBrandLandingPage.tsx" />)}
+                  <div className="flex justify-center space-x-2 mt-4" data-magicpath-id="50" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    {galleryImages.map((_, index) => <button key={index} onClick={() => setCurrentImageIndex(index)} className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentImageIndex ? 'bg-blue-600 w-6' : 'bg-slate-300 hover:bg-slate-400'}`} aria-label={`Go to image ${index + 1}`} data-magicpath-id="51" data-magicpath-path="PersonalBrandLandingPage.tsx" />)}
                   </div>
 
                   {/* Auto-rotation indicator */}
-                  <div className="mt-3 text-center" data-magicpath-id="53" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    <span className="text-xs text-slate-500 bg-white/70 px-3 py-1 rounded-full" data-magicpath-id="54" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <div className="mt-3 text-center" data-magicpath-id="52" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    <span className="text-xs text-slate-500 bg-white/70 px-3 py-1 rounded-full" data-magicpath-id="53" data-magicpath-path="PersonalBrandLandingPage.tsx">
                       Auto-rotating gallery • {currentImageIndex + 1} of {galleryImages.length}
                     </span>
                   </div>
@@ -342,52 +332,52 @@ const PersonalBrandLandingPage: React.FC = () => {
         </section>
 
         {/* Contact Section with Form */}
-        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="55" data-magicpath-path="PersonalBrandLandingPage.tsx">
-          <div className="max-w-2xl mx-auto" data-magicpath-id="56" data-magicpath-path="PersonalBrandLandingPage.tsx">
-            <div className="text-center mb-12" data-magicpath-id="57" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4" data-magicpath-id="58" data-magicpath-path="PersonalBrandLandingPage.tsx">
+        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="54" data-magicpath-path="PersonalBrandLandingPage.tsx">
+          <div className="max-w-2xl mx-auto" data-magicpath-id="55" data-magicpath-path="PersonalBrandLandingPage.tsx">
+            <div className="text-center mb-12" data-magicpath-id="56" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <h2 className="text-3xl font-bold text-slate-900 mb-4" data-magicpath-id="57" data-magicpath-path="PersonalBrandLandingPage.tsx">
                 Get in Touch
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed" data-magicpath-id="59" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <p className="text-lg text-slate-600 leading-relaxed" data-magicpath-id="58" data-magicpath-path="PersonalBrandLandingPage.tsx">
                 Ready to discuss your project? Send me a message and I'll get back to you promptly.
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 rounded-lg p-8" data-magicpath-id="60" data-magicpath-path="PersonalBrandLandingPage.tsx">
-              <form onSubmit={handleSubmit} className="space-y-6" data-magicpath-id="61" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <div data-magicpath-id="62" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-900 mb-2" data-magicpath-id="63" data-magicpath-path="PersonalBrandLandingPage.tsx">
+            <div className="bg-white border border-slate-200 rounded-lg p-8" data-magicpath-id="59" data-magicpath-path="PersonalBrandLandingPage.tsx">
+              <form onSubmit={handleSubmit} className="space-y-6" data-magicpath-id="60" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div data-magicpath-id="61" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-900 mb-2" data-magicpath-id="62" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Name
                   </label>
-                  <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="Your full name" required data-magicpath-id="64" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="Your full name" required data-magicpath-id="63" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                 </div>
 
-                <div data-magicpath-id="65" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-900 mb-2" data-magicpath-id="66" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div data-magicpath-id="64" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-900 mb-2" data-magicpath-id="65" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Email
                   </label>
-                  <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="your.email@example.com" required data-magicpath-id="67" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="your.email@example.com" required data-magicpath-id="66" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                 </div>
 
-                <div data-magicpath-id="68" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-900 mb-2" data-magicpath-id="69" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <div data-magicpath-id="67" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-900 mb-2" data-magicpath-id="68" data-magicpath-path="PersonalBrandLandingPage.tsx">
                     Message
                   </label>
-                  <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={5} className="w-full px-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 transition-colors resize-none" placeholder="Tell me about your project..." required data-magicpath-id="70" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                  <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={5} className="w-full px-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 transition-colors resize-none" placeholder="Tell me about your project..." required data-magicpath-id="69" data-magicpath-path="PersonalBrandLandingPage.tsx" />
                 </div>
 
-                {formStatus.type && <div className={`flex items-center space-x-2 p-4 rounded-md border ${formStatus.type === 'success' ? 'bg-green-50 text-green-800 border-green-200' : 'bg-red-50 text-red-800 border-red-200'}`} data-magicpath-id="71" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                    {formStatus.type === 'success' ? <CheckCircle className="w-5 h-5" data-magicpath-id="72" data-magicpath-path="PersonalBrandLandingPage.tsx" /> : <AlertCircle className="w-5 h-5" data-magicpath-id="73" data-magicpath-path="PersonalBrandLandingPage.tsx" />}
-                    <span className="text-sm" data-magicpath-id="74" data-magicpath-path="PersonalBrandLandingPage.tsx">{formStatus.message}</span>
+                {formStatus.type && <div className={`flex items-center space-x-2 p-4 rounded-md border ${formStatus.type === 'success' ? 'bg-green-50 text-green-800 border-green-200' : 'bg-red-50 text-red-800 border-red-200'}`} data-magicpath-id="70" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                    {formStatus.type === 'success' ? <CheckCircle className="w-5 h-5" data-magicpath-id="71" data-magicpath-path="PersonalBrandLandingPage.tsx" /> : <AlertCircle className="w-5 h-5" data-magicpath-id="72" data-magicpath-path="PersonalBrandLandingPage.tsx" />}
+                    <span className="text-sm" data-magicpath-id="73" data-magicpath-path="PersonalBrandLandingPage.tsx">{formStatus.message}</span>
                   </div>}
 
-                <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-md font-medium transition-colors ${isSubmitting ? 'bg-slate-400 cursor-not-allowed text-white' : 'bg-slate-900 hover:bg-slate-800 text-white'}`} data-magicpath-id="75" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-md font-medium transition-colors ${isSubmitting ? 'bg-slate-400 cursor-not-allowed text-white' : 'bg-slate-900 hover:bg-slate-800 text-white'}`} data-magicpath-id="74" data-magicpath-path="PersonalBrandLandingPage.tsx">
                   {isSubmitting ? <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" data-magicpath-id="76" data-magicpath-path="PersonalBrandLandingPage.tsx"></div>
-                      <span data-magicpath-id="77" data-magicpath-path="PersonalBrandLandingPage.tsx">Sending...</span>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" data-magicpath-id="75" data-magicpath-path="PersonalBrandLandingPage.tsx"></div>
+                      <span data-magicpath-id="76" data-magicpath-path="PersonalBrandLandingPage.tsx">Sending...</span>
                     </> : <>
-                      <Send className="w-5 h-5" data-magicpath-id="78" data-magicpath-path="PersonalBrandLandingPage.tsx" />
-                      <span data-magicpath-id="79" data-magicpath-path="PersonalBrandLandingPage.tsx">Send Message</span>
+                      <Send className="w-5 h-5" data-magicpath-id="77" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+                      <span data-magicpath-id="78" data-magicpath-path="PersonalBrandLandingPage.tsx">Send Message</span>
                     </>}
                 </button>
               </form>
@@ -396,7 +386,7 @@ const PersonalBrandLandingPage: React.FC = () => {
         </section>
       </main>
       
-      <Footer data-magicpath-id="80" data-magicpath-path="PersonalBrandLandingPage.tsx" />
+      <Footer data-magicpath-id="79" data-magicpath-path="PersonalBrandLandingPage.tsx" />
     </div>;
 };
 export default PersonalBrandLandingPage;
