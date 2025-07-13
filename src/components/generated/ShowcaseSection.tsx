@@ -147,7 +147,9 @@ const ShowcaseSection: React.FC = () => {
     tags: ["Identity", "Positioning", "Guidelines"],
     gallery: ["Logo Design", "Color Palette", "Typography", "Brand Applications"]
   }];
-  return <section id="showcase" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="0" data-magicpath-path="ShowcaseSection.tsx">
+  return <section id="showcase" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-magicpath-id="0" data-magicpath-path="ShowcaseSection.tsx" style={{
+    display: "none"
+  }}>
       <div className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ShowcaseSection.tsx">
         <motion.div initial={{
         opacity: 0,
