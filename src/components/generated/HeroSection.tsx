@@ -113,10 +113,7 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.6
-        }} className="text-xl sm:text-2xl text-emerald-700 mb-8 max-w-3xl mx-auto leading-relaxed" data-magicpath-id="14" data-magicpath-path="HeroSection.tsx">
-            I'm Sarah Johnson, a Marketing Manager who transforms brands through 
-            data-driven strategies and creative campaigns that drive growth and engagement.
-          </motion.p>
+        }} className="text-xl sm:text-2xl text-emerald-700 mb-8 max-w-3xl mx-auto leading-relaxed" data-magicpath-id="14" data-magicpath-path="HeroSection.tsx">I’m Lauren Hall, a real estate marketing manager who blends data and creativity to help people find their next place to call home. I’m passionate about marketing that builds connection and brings communities to life.</motion.p>
 
           {/* Stats */}
           <motion.div initial={{
