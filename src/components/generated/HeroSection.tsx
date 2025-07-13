@@ -162,7 +162,9 @@ const HeroSection: React.FC = () => {
             scale: 1.05
           }} whileTap={{
             scale: 0.95
-          }} className="border-2 border-emerald-300 text-emerald-700 px-8 py-4 rounded-xl font-semibold hover:border-emerald-600 hover:text-emerald-600 transition-colors" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx">
+          }} className="border-2 border-emerald-300 text-emerald-700 px-8 py-4 rounded-xl font-semibold hover:border-emerald-600 hover:text-emerald-600 transition-colors" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx" style={{
+            display: "none"
+          }}>
               Download Resume
             </motion.button>
           </motion.div>
