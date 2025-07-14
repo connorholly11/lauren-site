@@ -20,7 +20,9 @@ const HeroSection: React.FC = () => {
         y: 0
       }} transition={{
         duration: 0.8
-      }} className="mb-8" data-magicpath-id="2" data-magicpath-path="HeroSection.tsx">
+      }} className="mb-8" data-magicpath-id="2" data-magicpath-path="HeroSection.tsx" style={{
+        paddingTop: "10px"
+      }}>
           {/* Headshot */}
           <div className="relative inline-block mb-8" data-magicpath-id="3" data-magicpath-path="HeroSection.tsx">
             <motion.div initial={{
