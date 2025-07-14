@@ -290,7 +290,9 @@ const PersonalBrandLandingPage: React.FC = () => {
                 {isScrollPaused ? 'Gallery paused • Hover to pause scrolling' : 'Auto-scrolling gallery • Hover to pause'}
               </p>
               <div className="flex justify-center space-x-4" data-magicpath-id="35" data-magicpath-path="PersonalBrandLandingPage.tsx">
-                <button onClick={() => setIsScrollPaused(!isScrollPaused)} className="px-4 py-2 bg-white border border-emerald-200 rounded-lg text-sm font-medium text-emerald-700 hover:bg-emerald-50 transition-colors" data-magicpath-id="36" data-magicpath-path="PersonalBrandLandingPage.tsx">
+                <button onClick={() => setIsScrollPaused(!isScrollPaused)} className="px-4 py-2 bg-white border border-emerald-200 rounded-lg text-sm font-medium text-emerald-700 hover:bg-emerald-50 transition-colors" data-magicpath-id="36" data-magicpath-path="PersonalBrandLandingPage.tsx" style={{
+                display: "none"
+              }}>
                   {isScrollPaused ? 'Resume' : 'Pause'}
                 </button>
               </div>
