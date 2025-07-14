@@ -353,8 +353,8 @@ const ProjectsCaseStudiesSection: React.FC = () => {
   const toggleProject = (projectId: string) => {
     setExpandedProject(expandedProject === projectId ? null : projectId);
   };
-  return <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-white to-teal-50" data-magicpath-id="0" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-      <div className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+  return <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-white to-teal-50">
+      <div className="max-w-7xl mx-auto">
         <motion.div initial={{
         opacity: 0,
         y: 30
@@ -365,17 +365,17 @@ const ProjectsCaseStudiesSection: React.FC = () => {
         duration: 0.6
       }} viewport={{
         once: true
-      }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4" data-magicpath-id="3" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Marketing That Moves the Needle</h2>
-          <p className="text-xl text-emerald-700 max-w-3xl mx-auto leading-relaxed mb-6" data-magicpath-id="4" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+      }} className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4">Marketing That Moves the Needle</h2>
+          <p className="text-xl text-emerald-700 max-w-3xl mx-auto leading-relaxed mb-6">
             Deep dive into real campaigns that delivered exceptional results. 
             Each case study reveals the strategic thinking, creative execution, and measurable outcomes 
             that drive success in marketing.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto" data-magicpath-id="5" data-magicpath-path="ProjectsCaseStudiesSection.tsx"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto"></div>
         </motion.div>
 
-        <div className="space-y-8" data-magicpath-id="6" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+        <div className="space-y-8">
           {projects.map((project, index) => <motion.div key={project.id} initial={{
           opacity: 0,
           y: 40
@@ -387,44 +387,44 @@ const ProjectsCaseStudiesSection: React.FC = () => {
           delay: index * 0.1
         }} viewport={{
           once: true
-        }} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-emerald-200" data-magicpath-id="7" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+        }} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-emerald-200">
               {/* Project Header */}
-              <div className="p-8 cursor-pointer hover:bg-emerald-50 transition-colors duration-300" onClick={() => toggleProject(project.id)} data-magicpath-id="8" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                <div className="flex items-center justify-between" data-magicpath-id="9" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                  <div className="flex items-center space-x-6" data-magicpath-id="10" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                    <div className="text-4xl" data-magicpath-id="11" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.image}</div>
-                    <div data-magicpath-id="12" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                      <div className="flex items-center space-x-3 mb-2" data-magicpath-id="13" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h3 className="text-2xl font-bold text-emerald-900" data-magicpath-id="14" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Customer Experience Revamp</h3>
-                        <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full border border-emerald-200" data-magicpath-id="15" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+              <div className="p-8 cursor-pointer hover:bg-emerald-50 transition-colors duration-300" onClick={() => toggleProject(project.id)}>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-6">
+                    <div className="text-4xl">{project.image}</div>
+                    <div>
+                      <div className="flex items-center space-x-3 mb-2">
+                        <h3 className="text-2xl font-bold text-emerald-900">Customer Experience Revamp</h3>
+                        <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full border border-emerald-200">
                           {project.category}
                         </span>
                       </div>
-                      <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl mb-3" data-magicpath-id="16" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                      <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl mb-3">
                         {project.summary}
                       </p>
-                      <div className="flex items-center space-x-4 text-sm text-emerald-600" data-magicpath-id="17" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <div className="flex items-center space-x-1" data-magicpath-id="18" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                      <div className="flex items-center space-x-4 text-sm text-emerald-600">
+                        <div className="flex items-center space-x-1">
                           <Clock className="w-4 h-4" style={{
                         display: "none"
-                      }} data-magicpath-id="19" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      }} />
                           <span style={{
                         display: "none"
-                      }} data-magicpath-id="20" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.duration}</span>
+                      }}>{project.duration}</span>
                         </div>
                         <div className="flex items-center space-x-1" style={{
                       display: "none"
-                    }} data-magicpath-id="21" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <DollarSign className="w-4 h-4" data-magicpath-id="22" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
-                          <span data-magicpath-id="23" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.budget}</span>
+                    }}>
+                          <DollarSign className="w-4 h-4" />
+                          <span>{project.budget}</span>
                         </div>
-                        <div className="flex items-center space-x-1" data-magicpath-id="24" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                        <div className="flex items-center space-x-1">
                           <Target className="w-4 h-4" style={{
                         display: "none"
-                      }} data-magicpath-id="25" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      }} />
                           <span style={{
                         display: "none"
-                      }} data-magicpath-id="26" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.clientType}</span>
+                      }}>{project.clientType}</span>
                         </div>
                       </div>
                     </div>
@@ -433,16 +433,16 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                 rotate: expandedProject === project.id ? 180 : 0
               }} transition={{
                 duration: 0.3
-              }} className="flex-shrink-0" data-magicpath-id="27" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                    <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center" data-magicpath-id="28" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                      {expandedProject === project.id ? <ChevronUp className="w-5 h-5 text-emerald-600" data-magicpath-id="29" data-magicpath-path="ProjectsCaseStudiesSection.tsx" /> : <ChevronDown className="w-5 h-5 text-emerald-600" data-magicpath-id="30" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />}
+              }} className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                      {expandedProject === project.id ? <ChevronUp className="w-5 h-5 text-emerald-600" /> : <ChevronDown className="w-5 h-5 text-emerald-600" />}
                     </div>
                   </motion.div>
                 </div>
               </div>
 
               {/* Expanded Content */}
-              <AnimatePresence data-magicpath-id="31" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+              <AnimatePresence>
                 {expandedProject === project.id && <motion.div initial={{
               opacity: 0,
               height: 0
@@ -454,66 +454,66 @@ const ProjectsCaseStudiesSection: React.FC = () => {
               height: 0
             }} transition={{
               duration: 0.5
-            }} className="border-t border-emerald-200" data-magicpath-id="32" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                    <div className="p-8 bg-emerald-50 space-y-10" data-magicpath-id="33" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+            }} className="border-t border-emerald-200">
+                    <div className="p-8 bg-emerald-50 space-y-10">
                       
                       {/* Challenges Section */}
-                      <div data-magicpath-id="34" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" data-magicpath-id="35" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <Zap className="w-5 h-5 mr-2 text-red-500" data-magicpath-id="36" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      <div>
+                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center">
+                          <Zap className="w-5 h-5 mr-2 text-red-500" />
                           Key Challenges
                         </h4>
-                        <div className="grid md:grid-cols-3 gap-4" data-magicpath-id="37" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          {project.challenges.map((challenge, idx) => <div key={idx} className="bg-red-50 rounded-xl p-4 border border-red-100" data-magicpath-id="38" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                        <div className="grid md:grid-cols-3 gap-4">
+                          {project.challenges.map((challenge, idx) => <div key={idx} className="bg-red-50 rounded-xl p-4 border border-red-100">
                               <input type="text" value={challenge.title} onChange={e => {
                         const updatedProjects = [...projects];
                         const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                         updatedProjects[projectIndex].challenges[idx].title = e.target.value;
                         // Note: In a real app, you'd update state here
-                      }} className="font-semibold text-red-900 mb-2 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-red-300 focus:rounded px-2 py-1" data-magicpath-id="39" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      }} className="font-semibold text-red-900 mb-2 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-red-300 focus:rounded px-2 py-1" />
                               <textarea value={challenge.description} onChange={e => {
                         const updatedProjects = [...projects];
                         const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                         updatedProjects[projectIndex].challenges[idx].description = e.target.value;
                         // Note: In a real app, you'd update state here
-                      }} className="text-red-700 text-sm leading-relaxed w-full bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-red-300 focus:rounded px-2 py-1" rows={3} data-magicpath-id="40" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      }} className="text-red-700 text-sm leading-relaxed w-full bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-red-300 focus:rounded px-2 py-1" rows={3} />
                             </div>)}
                         </div>
                       </div>
 
                       {/* Solutions Process */}
-                      <div data-magicpath-id="41" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" data-magicpath-id="42" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <CheckCircle className="w-5 h-5 mr-2 text-emerald-500" data-magicpath-id="43" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      <div>
+                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center">
+                          <CheckCircle className="w-5 h-5 mr-2 text-emerald-500" />
                           Step-by-Step Solution Process
                         </h4>
-                        <div className="space-y-4" data-magicpath-id="44" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          {project.solutions.map((solution, idx) => <div key={idx} className="flex items-start space-x-4" data-magicpath-id="45" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                              <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-sm" data-magicpath-id="46" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                        <div className="space-y-4">
+                          {project.solutions.map((solution, idx) => <div key={idx} className="flex items-start space-x-4">
+                              <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
                                 {solution.step}
                               </div>
-                              <div className="flex-1" data-magicpath-id="47" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                              <div className="flex-1">
                                 <input type="text" value={solution.title} onChange={e => {
                           const updatedProjects = [...projects];
                           const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                           updatedProjects[projectIndex].solutions[idx].title = e.target.value;
                           // Note: In a real app, you'd update state here
-                        }} className="text-lg font-semibold text-emerald-900 mb-2 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" data-magicpath-id="48" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                        }} className="text-lg font-semibold text-emerald-900 mb-2 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" />
                                 <textarea value={solution.description} onChange={e => {
                           const updatedProjects = [...projects];
                           const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                           updatedProjects[projectIndex].solutions[idx].description = e.target.value;
                           // Note: In a real app, you'd update state here
-                        }} className="text-emerald-700 mb-2 leading-relaxed w-full bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" rows={2} data-magicpath-id="49" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
-                                <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-100" data-magicpath-id="50" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  <p className="text-emerald-800 text-sm" data-magicpath-id="51" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                    <strong data-magicpath-id="52" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Outcome:</strong> 
+                        }} className="text-emerald-700 mb-2 leading-relaxed w-full bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" rows={2} />
+                                <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-100">
+                                  <p className="text-emerald-800 text-sm">
+                                    <strong>Outcome:</strong> 
                                     <textarea value={solution.outcome} onChange={e => {
                               const updatedProjects = [...projects];
                               const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                               updatedProjects[projectIndex].solutions[idx].outcome = e.target.value;
                               // Note: In a real app, you'd update state here
-                            }} className="ml-1 bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-1" rows={2} data-magicpath-id="53" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                            }} className="ml-1 bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-1" rows={2} />
                                   </p>
                                 </div>
                               </div>
@@ -522,46 +522,46 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       </div>
 
                       {/* Before/After Comparison */}
-                      <div data-magicpath-id="54" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" data-magicpath-id="55" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <ArrowRight className="w-5 h-5 mr-2 text-emerald-500" data-magicpath-id="56" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      <div>
+                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center">
+                          <ArrowRight className="w-5 h-5 mr-2 text-emerald-500" />
                           Before vs After Results
                         </h4>
-                        <div className="grid md:grid-cols-3 gap-4" data-magicpath-id="57" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          {project.beforeAfter.map((comparison, idx) => <div key={idx} className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200" data-magicpath-id="58" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                        <div className="grid md:grid-cols-3 gap-4">
+                          {project.beforeAfter.map((comparison, idx) => <div key={idx} className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200">
                               <input type="text" value={comparison.metric} onChange={e => {
                         const updatedProjects = [...projects];
                         const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                         updatedProjects[projectIndex].beforeAfter[idx].metric = e.target.value;
                         // Note: In a real app, you'd update state here
-                      }} className="font-semibold text-emerald-900 mb-3 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" data-magicpath-id="59" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
-                              <div className="space-y-2" data-magicpath-id="60" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                <div className="flex justify-between items-center" data-magicpath-id="61" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  <span className="text-red-600 font-medium text-sm" data-magicpath-id="62" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Before:</span>
+                      }} className="font-semibold text-emerald-900 mb-3 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" />
+                              <div className="space-y-2">
+                                <div className="flex justify-between items-center">
+                                  <span className="text-red-600 font-medium text-sm">Before:</span>
                                   <input type="text" value={comparison.before} onChange={e => {
                             const updatedProjects = [...projects];
                             const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                             updatedProjects[projectIndex].beforeAfter[idx].before = e.target.value;
                             // Note: In a real app, you'd update state here
-                          }} className="text-red-800 font-bold bg-transparent border-none outline-none text-right focus:bg-white focus:border focus:border-red-300 focus:rounded px-1" data-magicpath-id="63" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                          }} className="text-red-800 font-bold bg-transparent border-none outline-none text-right focus:bg-white focus:border focus:border-red-300 focus:rounded px-1" />
                                 </div>
-                                <div className="flex justify-between items-center" data-magicpath-id="64" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  <span className="text-emerald-600 font-medium text-sm" data-magicpath-id="65" data-magicpath-path="ProjectsCaseStudiesSection.tsx">After:</span>
+                                <div className="flex justify-between items-center">
+                                  <span className="text-emerald-600 font-medium text-sm">After:</span>
                                   <input type="text" value={comparison.after} onChange={e => {
                             const updatedProjects = [...projects];
                             const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                             updatedProjects[projectIndex].beforeAfter[idx].after = e.target.value;
                             // Note: In a real app, you'd update state here
-                          }} className="text-emerald-800 font-bold bg-transparent border-none outline-none text-right focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-1" data-magicpath-id="66" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                          }} className="text-emerald-800 font-bold bg-transparent border-none outline-none text-right focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-1" />
                                 </div>
-                                <div className="pt-2 border-t border-emerald-200" data-magicpath-id="67" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  <div className="text-center" data-magicpath-id="68" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                                <div className="pt-2 border-t border-emerald-200">
+                                  <div className="text-center">
                                     <input type="text" value={comparison.improvement} onChange={e => {
                               const updatedProjects = [...projects];
                               const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
                               updatedProjects[projectIndex].beforeAfter[idx].improvement = e.target.value;
                               // Note: In a real app, you'd update state here
-                            }} className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-2 py-1 rounded-full text-xs font-bold border-none outline-none text-center focus:bg-white focus:text-emerald-600" data-magicpath-id="69" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                            }} className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-2 py-1 rounded-full text-xs font-bold border-none outline-none text-center focus:bg-white focus:text-emerald-600" />
                                   </div>
                                 </div>
                               </div>
@@ -570,55 +570,55 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       </div>
 
                       {/* Results & Impact */}
-                      <div data-magicpath-id="70" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" data-magicpath-id="71" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <BarChart3 className="w-5 h-5 mr-2 text-teal-500" data-magicpath-id="72" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      <div>
+                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center">
+                          <BarChart3 className="w-5 h-5 mr-2 text-teal-500" />
                           Final Results & Impact
                         </h4>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6" data-magicpath-id="73" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                           {project.results.map((result, idx) => {
                       const IconComponent = result.icon;
-                      return <div key={idx} className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-4 text-center border border-emerald-200" data-magicpath-id="74" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center mx-auto mb-3" data-magicpath-id="75" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  <IconComponent className="w-6 h-6 text-white" data-magicpath-id="76" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                      return <div key={idx} className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-4 text-center border border-emerald-200">
+                                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                                  <IconComponent className="w-6 h-6 text-white" />
                                 </div>
-                                <div className="text-2xl font-bold text-emerald-900 mb-1" data-magicpath-id="77" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{result.value}</div>
-                                <div className="text-sm font-medium text-emerald-700 mb-1" data-magicpath-id="78" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{result.metric}</div>
-                                <div className="text-xs text-emerald-600 leading-relaxed" data-magicpath-id="79" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{result.description}</div>
+                                <div className="text-2xl font-bold text-emerald-900 mb-1">{result.value}</div>
+                                <div className="text-sm font-medium text-emerald-700 mb-1">{result.metric}</div>
+                                <div className="text-xs text-emerald-600 leading-relaxed">{result.description}</div>
                               </div>;
                     })}
                         </div>
                       </div>
 
                       {/* Timeline */}
-                      <div data-magicpath-id="80" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                      <div>
                         <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" style={{
                     display: "none"
-                  }} data-magicpath-id="81" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <Calendar className="w-5 h-5 mr-2 text-amber-500" data-magicpath-id="82" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+                  }}>
+                          <Calendar className="w-5 h-5 mr-2 text-amber-500" />
                           Project Timeline
                         </h4>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4" data-magicpath-id="83" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          {project.timeline.map((phase, idx) => <div key={idx} className="relative" data-magicpath-id="84" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                          {project.timeline.map((phase, idx) => <div key={idx} className="relative">
                               <div className="bg-amber-50 rounded-xl p-4 border border-amber-100" style={{
                         display: "none"
-                      }} data-magicpath-id="85" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                <div className="flex items-center justify-between mb-3" data-magicpath-id="86" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  <h5 className="font-semibold text-amber-900 text-sm" data-magicpath-id="87" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{phase.phase}</h5>
-                                  <span className="text-xs bg-amber-200 text-amber-800 px-2 py-1 rounded-full" data-magicpath-id="88" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                      }}>
+                                <div className="flex items-center justify-between mb-3">
+                                  <h5 className="font-semibold text-amber-900 text-sm">{phase.phase}</h5>
+                                  <span className="text-xs bg-amber-200 text-amber-800 px-2 py-1 rounded-full">
                                     {phase.duration}
                                   </span>
                                 </div>
-                                <ul className="space-y-1" data-magicpath-id="89" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                  {phase.activities.map((activity, actIdx) => <li key={actIdx} className="text-xs text-amber-700 flex items-start" data-magicpath-id="90" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-1.5 mr-2 flex-shrink-0" data-magicpath-id="91" data-magicpath-path="ProjectsCaseStudiesSection.tsx"></div>
+                                <ul className="space-y-1">
+                                  {phase.activities.map((activity, actIdx) => <li key={actIdx} className="text-xs text-amber-700 flex items-start">
+                                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
                                       {activity}
                                     </li>)}
                                 </ul>
                               </div>
                               {idx < project.timeline.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-0.5 bg-amber-300" style={{
                         display: "none"
-                      }} data-magicpath-id="92" data-magicpath-path="ProjectsCaseStudiesSection.tsx"></div>}
+                      }}></div>}
                             </div>)}
                         </div>
                       </div>
@@ -627,17 +627,17 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white" style={{
                   background: "linear-gradient(90deg, oklch(0.696 0.17 162.48) 0%, oklch(0.704 0.14 182.503) 100%)",
                   display: "none"
-                }} data-magicpath-id="93" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                          <blockquote className="text-lg italic leading-relaxed mb-4" data-magicpath-id="94" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+                }}>
+                          <blockquote className="text-lg italic leading-relaxed mb-4">
                             "{project.testimonial.quote}"
                           </blockquote>
-                          <div className="flex items-center space-x-3" data-magicpath-id="95" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                            <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center" data-magicpath-id="96" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                              <span className="text-lg" data-magicpath-id="97" data-magicpath-path="ProjectsCaseStudiesSection.tsx">👤</span>
+                          <div className="flex items-center space-x-3">
+                            <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                              <span className="text-lg">👤</span>
                             </div>
-                            <div data-magicpath-id="98" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                              <div className="font-semibold" data-magicpath-id="99" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.testimonial.author}</div>
-                              <div className="text-emerald-100 text-sm" data-magicpath-id="100" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.testimonial.role}</div>
+                            <div>
+                              <div className="font-semibold">{project.testimonial.author}</div>
+                              <div className="text-emerald-100 text-sm">{project.testimonial.role}</div>
                             </div>
                           </div>
                         </div>}
@@ -660,10 +660,10 @@ const ProjectsCaseStudiesSection: React.FC = () => {
         delay: 0.3
       }} viewport={{
         once: true
-      }} className="text-center mt-16" data-magicpath-id="101" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-          <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-8 text-white" data-magicpath-id="102" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-            <h3 className="text-2xl font-bold mb-4" data-magicpath-id="103" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Ready to Create Your Success Story?</h3>
-            <p className="text-lg mb-6 opacity-90 max-w-xl mx-auto" data-magicpath-id="104" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+      }} className="text-center mt-16">
+          <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4">Ready to Create Your Success Story?</h3>
+            <p className="text-lg mb-6 opacity-90 max-w-xl mx-auto">
               Let's discuss how these proven strategies can be adapted for your unique marketing challenges.
             </p>
             <motion.button whileHover={{
@@ -672,9 +672,9 @@ const ProjectsCaseStudiesSection: React.FC = () => {
             scale: 0.95
           }} onClick={() => document.getElementById('contact')?.scrollIntoView({
             behavior: 'smooth'
-          })} className="inline-flex items-center px-6 py-3 bg-white text-emerald-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-magicpath-id="105" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
+          })} className="inline-flex items-center px-6 py-3 bg-white text-emerald-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
               Start Your Campaign
-              <ArrowRight className="ml-2 w-4 h-4" data-magicpath-id="106" data-magicpath-path="ProjectsCaseStudiesSection.tsx" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </motion.button>
           </div>
         </motion.div>

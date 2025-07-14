@@ -49,37 +49,37 @@ const StickyHeader: React.FC = () => {
     y: 0
   }} transition={{
     duration: 0.6
-  }} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`} data-magicpath-id="0" data-magicpath-path="StickyHeader.tsx">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-magicpath-id="1" data-magicpath-path="StickyHeader.tsx">
-        <div className="flex justify-between items-center h-16" data-magicpath-id="2" data-magicpath-path="StickyHeader.tsx">
+  }} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div whileHover={{
           scale: 1.05
-        }} className="flex-shrink-0" data-magicpath-id="3" data-magicpath-path="StickyHeader.tsx">
-            <button onClick={e => scrollToSection(e, '#home')} className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent" data-magicpath-id="4" data-magicpath-path="StickyHeader.tsx">
+        }} className="flex-shrink-0">
+            <button onClick={e => scrollToSection(e, '#home')} className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
               Lauren Hall
             </button>
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block" data-magicpath-id="5" data-magicpath-path="StickyHeader.tsx">
-            <div className="ml-10 flex items-baseline space-x-8" data-magicpath-id="6" data-magicpath-path="StickyHeader.tsx">
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map(item => <motion.button key={item.label} onClick={e => scrollToSection(e, item.href)} whileHover={{
               scale: 1.05
             }} whileTap={{
               scale: 0.95
-            }} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? 'text-slate-700 hover:text-emerald-600 hover:bg-emerald-50' : 'text-slate-800 hover:text-emerald-600 hover:bg-white/20'}`} data-magicpath-id="7" data-magicpath-path="StickyHeader.tsx">
+            }} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? 'text-slate-700 hover:text-emerald-600 hover:bg-emerald-50' : 'text-slate-800 hover:text-emerald-600 hover:bg-white/20'}`}>
                   {item.label}
                 </motion.button>)}
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden" data-magicpath-id="8" data-magicpath-path="StickyHeader.tsx">
+          <div className="md:hidden">
             <motion.button whileTap={{
             scale: 0.95
-          }} onClick={() => setIsMenuOpen(!isMenuOpen)} className={`p-2 rounded-lg ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-slate-800 hover:bg-white/20'}`} data-magicpath-id="9" data-magicpath-path="StickyHeader.tsx">
-              {isMenuOpen ? <X className="h-6 w-6" data-magicpath-id="10" data-magicpath-path="StickyHeader.tsx" /> : <Menu className="h-6 w-6" data-magicpath-id="11" data-magicpath-path="StickyHeader.tsx" />}
+          }} onClick={() => setIsMenuOpen(!isMenuOpen)} className={`p-2 rounded-lg ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-slate-800 hover:bg-white/20'}`}>
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </motion.button>
           </div>
         </div>
@@ -96,11 +96,11 @@ const StickyHeader: React.FC = () => {
         height: 0
       }} transition={{
         duration: 0.3
-      }} className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg" data-magicpath-id="12" data-magicpath-path="StickyHeader.tsx">
-            <div className="px-2 pt-2 pb-3 space-y-1" data-magicpath-id="13" data-magicpath-path="StickyHeader.tsx">
+      }} className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
+            <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map(item => <motion.button key={item.label} onClick={e => scrollToSection(e, item.href)} whileTap={{
             scale: 0.95
-          }} className="block w-full text-left px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 transition-colors" data-magicpath-id="14" data-magicpath-path="StickyHeader.tsx">
+          }} className="block w-full text-left px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 transition-colors">
                   {item.label}
                 </motion.button>)}
             </div>

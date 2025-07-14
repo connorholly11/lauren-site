@@ -149,8 +149,8 @@ const ShowcaseSection: React.FC = () => {
   }];
   return <section id="showcase" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" style={{
     display: "none"
-  }} data-magicpath-id="0" data-magicpath-path="ShowcaseSection.tsx">
-      <div className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ShowcaseSection.tsx">
+  }}>
+      <div className="max-w-7xl mx-auto">
         <motion.div initial={{
         opacity: 0,
         y: 30
@@ -161,16 +161,16 @@ const ShowcaseSection: React.FC = () => {
         duration: 0.6
       }} viewport={{
         once: true
-      }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="ShowcaseSection.tsx">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4" data-magicpath-id="3" data-magicpath-path="ShowcaseSection.tsx">
+      }} className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
             Featured Work
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto" data-magicpath-id="4" data-magicpath-path="ShowcaseSection.tsx">
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Explore my comprehensive bodies of work across different marketing disciplines and operational areas
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8" data-magicpath-id="5" data-magicpath-path="ShowcaseSection.tsx">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {workSamples.map((work, index) => <motion.div key={work.id} initial={{
           opacity: 0,
           y: 30
@@ -182,37 +182,37 @@ const ShowcaseSection: React.FC = () => {
           delay: index * 0.1
         }} viewport={{
           once: true
-        }} className="group cursor-pointer" onClick={() => setSelectedWork(selectedWork === work.id ? null : work.id)} data-magicpath-id="6" data-magicpath-path="ShowcaseSection.tsx">
-              <div className="bg-slate-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2" data-magicpath-id="7" data-magicpath-path="ShowcaseSection.tsx">
+        }} className="group cursor-pointer" onClick={() => setSelectedWork(selectedWork === work.id ? null : work.id)}>
+              <div className="bg-slate-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
                 {/* Image placeholder */}
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center relative overflow-hidden" data-magicpath-id="8" data-magicpath-path="ShowcaseSection.tsx">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 to-purple-50/80 backdrop-blur-sm" data-magicpath-id="9" data-magicpath-path="ShowcaseSection.tsx"></div>
-                  <div className="relative z-10 text-center" data-magicpath-id="10" data-magicpath-path="ShowcaseSection.tsx">
+                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 to-purple-50/80 backdrop-blur-sm"></div>
+                  <div className="relative z-10 text-center">
                     <Image className="w-12 h-12 text-slate-400 mx-auto mb-2" />
-                    <span className="text-slate-600 font-medium text-sm" data-magicpath-id="11" data-magicpath-path="ShowcaseSection.tsx">Upload Image</span>
+                    <span className="text-slate-600 font-medium text-sm">Upload Image</span>
                   </div>
                 </div>
                 
                 {/* Content */}
-                <div className="p-6" data-magicpath-id="12" data-magicpath-path="ShowcaseSection.tsx">
-                  <div className="flex items-center justify-between mb-3" data-magicpath-id="13" data-magicpath-path="ShowcaseSection.tsx">
-                    <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full" data-magicpath-id="14" data-magicpath-path="ShowcaseSection.tsx">
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
                       {work.category}
                     </span>
-                    <ExternalLink className="w-5 h-5 text-slate-400 group-hover:text-blue-600 transition-colors" data-magicpath-id="15" data-magicpath-path="ShowcaseSection.tsx" />
+                    <ExternalLink className="w-5 h-5 text-slate-400 group-hover:text-blue-600 transition-colors" />
                   </div>
                   
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors" data-magicpath-id="16" data-magicpath-path="ShowcaseSection.tsx">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
                     {work.title}
                   </h3>
                   
-                  <p className="text-slate-600 mb-4 text-sm leading-relaxed" data-magicpath-id="17" data-magicpath-path="ShowcaseSection.tsx">
+                  <p className="text-slate-600 mb-4 text-sm leading-relaxed">
                     {work.description.substring(0, 120)}...
                   </p>
                   
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2" data-magicpath-id="18" data-magicpath-path="ShowcaseSection.tsx">
-                    {work.tags.map(tag => <span key={tag} className="text-xs text-slate-500 bg-slate-100 px-2 py-1 rounded" data-magicpath-id="19" data-magicpath-path="ShowcaseSection.tsx">
+                  <div className="flex flex-wrap gap-2">
+                    {work.tags.map(tag => <span key={tag} className="text-xs text-slate-500 bg-slate-100 px-2 py-1 rounded">
                         {tag}
                       </span>)}
                   </div>
@@ -231,9 +231,9 @@ const ShowcaseSection: React.FC = () => {
             height: 0
           }} transition={{
             duration: 0.3
-          }} className="mt-4 bg-white border border-slate-200 rounded-xl p-6 shadow-lg" data-magicpath-id="20" data-magicpath-path="ShowcaseSection.tsx">
-                  <div className="flex items-center justify-between mb-4" data-magicpath-id="21" data-magicpath-path="ShowcaseSection.tsx">
-                    <h4 className="text-lg font-semibold text-slate-900" data-magicpath-id="22" data-magicpath-path="ShowcaseSection.tsx">
+          }} className="mt-4 bg-white border border-slate-200 rounded-xl p-6 shadow-lg">
+                  <div className="flex items-center justify-between mb-4">
+                    <h4 className="text-lg font-semibold text-slate-900">
                       {work.title} Details
                     </h4>
                     <button onClick={e => {
@@ -241,57 +241,57 @@ const ShowcaseSection: React.FC = () => {
                 setShowGallery(!showGallery);
               }} className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2" style={{
                 display: "none"
-              }} data-magicpath-id="23" data-magicpath-path="ShowcaseSection.tsx">
+              }}>
                       <Image className="w-4 h-4" />
                       View Gallery
                     </button>
                   </div>
                   
-                  <p className="text-slate-600 mb-6" data-magicpath-id="24" data-magicpath-path="ShowcaseSection.tsx">
+                  <p className="text-slate-600 mb-6">
                     {work.description}
                   </p>
 
                   {/* Gallery Section */}
-                  {showGallery && work.gallery && <div className="mb-6 p-4 bg-slate-50 rounded-lg" data-magicpath-id="25" data-magicpath-path="ShowcaseSection.tsx">
-                      <h5 className="font-medium text-slate-900 mb-3" data-magicpath-id="26" data-magicpath-path="ShowcaseSection.tsx">Project Gallery</h5>
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3" data-magicpath-id="27" data-magicpath-path="ShowcaseSection.tsx">
-                        {work.gallery.map((item, idx) => <div key={idx} className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center" data-magicpath-id="28" data-magicpath-path="ShowcaseSection.tsx">
-                            <div className="text-center" data-magicpath-id="29" data-magicpath-path="ShowcaseSection.tsx">
+                  {showGallery && work.gallery && <div className="mb-6 p-4 bg-slate-50 rounded-lg">
+                      <h5 className="font-medium text-slate-900 mb-3">Project Gallery</h5>
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        {work.gallery.map((item, idx) => <div key={idx} className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center">
+                            <div className="text-center">
                               <Image className="w-6 h-6 text-slate-400 mx-auto mb-1" />
-                              <span className="text-xs text-slate-500" data-magicpath-id="30" data-magicpath-path="ShowcaseSection.tsx">{item}</span>
+                              <span className="text-xs text-slate-500">{item}</span>
                             </div>
                           </div>)}
                       </div>
                     </div>}
                   
                   {/* Analytics/Insights */}
-                  <div className="mb-4" data-magicpath-id="31" data-magicpath-path="ShowcaseSection.tsx">
-                    <h5 className="font-medium text-slate-900 mb-3" data-magicpath-id="32" data-magicpath-path="ShowcaseSection.tsx">Key Insights & Analytics</h5>
-                    <div className="grid sm:grid-cols-3 gap-4" data-magicpath-id="33" data-magicpath-path="ShowcaseSection.tsx">
-                      {work.metrics.map((metric, metricIndex) => <div key={metricIndex} className="bg-slate-50 rounded-lg p-4 text-center" data-magicpath-id="34" data-magicpath-path="ShowcaseSection.tsx">
-                          <div className="flex items-center justify-center mb-2" data-magicpath-id="35" data-magicpath-path="ShowcaseSection.tsx">
-                            <metric.icon className="w-6 h-6 text-blue-600" data-magicpath-id="36" data-magicpath-path="ShowcaseSection.tsx" />
+                  <div className="mb-4">
+                    <h5 className="font-medium text-slate-900 mb-3">Key Insights & Analytics</h5>
+                    <div className="grid sm:grid-cols-3 gap-4">
+                      {work.metrics.map((metric, metricIndex) => <div key={metricIndex} className="bg-slate-50 rounded-lg p-4 text-center">
+                          <div className="flex items-center justify-center mb-2">
+                            <metric.icon className="w-6 h-6 text-blue-600" />
                           </div>
-                          <div className="text-2xl font-bold text-slate-900 mb-1" data-magicpath-id="37" data-magicpath-path="ShowcaseSection.tsx">
+                          <div className="text-2xl font-bold text-slate-900 mb-1">
                             {metric.value}
                           </div>
-                          <div className="text-sm text-slate-600" data-magicpath-id="38" data-magicpath-path="ShowcaseSection.tsx">
+                          <div className="text-sm text-slate-600">
                             {metric.label}
                           </div>
                         </div>)}
                     </div>
                   </div>
                   
-                  <div className="flex justify-between items-center" data-magicpath-id="39" data-magicpath-path="ShowcaseSection.tsx">
+                  <div className="flex justify-between items-center">
                     <button onClick={e => {
                 e.stopPropagation();
                 setSelectedWork(null);
-              }} className="text-slate-500 hover:text-slate-700 font-medium text-sm" data-magicpath-id="40" data-magicpath-path="ShowcaseSection.tsx">
+              }} className="text-slate-500 hover:text-slate-700 font-medium text-sm">
                       ← Close Details
                     </button>
                     <button className="text-blue-600 hover:text-blue-700 font-medium text-sm" style={{
                 display: "none"
-              }} data-magicpath-id="41" data-magicpath-path="ShowcaseSection.tsx">
+              }}>
                       View Full Case Study →
                     </button>
                   </div>
