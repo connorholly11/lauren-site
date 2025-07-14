@@ -463,7 +463,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                     </div>
                     <div className="flex-1 pt-1" data-magicpath-id="102" data-magicpath-path="PersonalBrandLandingPage.tsx">
                       <h3 className="text-xl font-bold text-emerald-900 mb-2" data-magicpath-id="103" data-magicpath-path="PersonalBrandLandingPage.tsx">AI Integration Leader</h3>
-                      <p className="text-emerald-700 leading-relaxed" data-magicpath-id="104" data-magicpath-path="PersonalBrandLandingPage.tsx">Rolled out company-wide tools that saved $20,000 annually, leading workshops and meetings to guide adoption.</p>
+                      <p className="text-emerald-700 leading-relaxed" data-magicpath-id="104" data-magicpath-path="PersonalBrandLandingPage.tsx">Launched tools that saved ~$20,000 per year, supporting them with regular workshops and meetings to keep teams aligned and effective.</p>
                     </div>
                   </div>
                   
