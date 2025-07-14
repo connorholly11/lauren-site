@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useAnimationControls } from 'framer-motion';
 import StickyHeader from './StickyHeader';
 import HeroSection from './HeroSection';
 import ShowcaseSection from './ShowcaseSection';
@@ -186,6 +186,26 @@ const PersonalBrandLandingPage: React.FC = () => {
   }];
   const [isScrollPaused, setIsScrollPaused] = React.useState(false);
   const [selectedProject, setSelectedProject] = React.useState<ContentItem | null>(null);
+  const controls = useAnimationControls();
+  const [animationProgress, setAnimationProgress] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!isScrollPaused) {
+      controls.start({
+        x: [-animationProgress, -(contentItems.length * 352)],
+        transition: {
+          x: {
+            duration: 30 * (1 - animationProgress / (contentItems.length * 352)),
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "loop"
+          }
+        }
+      });
+    } else {
+      controls.stop();
+    }
+  }, [isScrollPaused, controls, contentItems.length, animationProgress]);
   const getContentIcon = (type: string) => {
     switch (type) {
       case 'image':
@@ -224,13 +244,17 @@ const PersonalBrandLandingPage: React.FC = () => {
 
             {/* Auto-scrolling Gallery */}
             <div className="relative overflow-hidden">
-              <motion.div className="flex space-x-6" animate={isScrollPaused ? {} : {
-              x: [0, -100 * contentItems.length]
-            }} transition={{
-              duration: 30,
-              repeat: Infinity,
-              ease: "linear"
-            }} onMouseEnter={() => setIsScrollPaused(true)} onMouseLeave={() => setIsScrollPaused(false)}>
+              <motion.div
+                className="flex space-x-6"
+                animate={controls}
+                onUpdate={(latest) => {
+                  if (latest.x && typeof latest.x === 'number') {
+                    setAnimationProgress(-latest.x);
+                  }
+                }}
+                onMouseEnter={() => setIsScrollPaused(true)}
+                onMouseLeave={() => setIsScrollPaused(false)}
+              >
                 {/* Duplicate items for seamless loop */}
                 {[...contentItems, ...contentItems].map((item, index) => {
                 return <motion.div key={`${item.id}-${index}`} className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer" whileHover={{

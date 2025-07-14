@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Container, Theme } from './settings/types';
-import PersonalBrandLandingPage from './components/generated/PersonalBrandLandingPage';
+import PersonalBrandLandingPage from './components/PersonalBrandLandingPage';
 
 let theme: Theme = 'light';
 let container: Container = 'none';

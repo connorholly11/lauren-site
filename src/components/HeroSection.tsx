@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
       }} transition={{
         duration: 0.8
       }} className="mb-8" style={{
-        paddingTop: "10px"
+        paddingTop: "40px"
       }}>
           {/* Headshot */}
           <div className="relative inline-block mb-8">
@@ -36,7 +36,11 @@ const HeroSection: React.FC = () => {
             delay: 0.2
           }} className="w-48 h-48 mx-auto bg-gradient-to-br from-emerald-100 via-teal-50 to-cyan-100 rounded-2xl p-2">
               <div className="w-full h-full bg-emerald-200 rounded-2xl flex items-center justify-center overflow-hidden">
-                <span className="text-emerald-600 text-sm">Professional Headshot</span>
+                <img 
+                  src="/Headshot from Connor Holly.png" 
+                  alt="Lauren Hall - Professional Headshot" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
             

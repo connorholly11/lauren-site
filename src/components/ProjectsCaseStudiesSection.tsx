@@ -648,36 +648,6 @@ const ProjectsCaseStudiesSection: React.FC = () => {
             </motion.div>)}
         </div>
 
-        {/* Call to Action */}
-        <motion.div initial={{
-        opacity: 0,
-        y: 30
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.6,
-        delay: 0.3
-      }} viewport={{
-        once: true
-      }} className="text-center mt-16">
-          <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Ready to Create Your Success Story?</h3>
-            <p className="text-lg mb-6 opacity-90 max-w-xl mx-auto">
-              Let's discuss how these proven strategies can be adapted for your unique marketing challenges.
-            </p>
-            <motion.button whileHover={{
-            scale: 1.05
-          }} whileTap={{
-            scale: 0.95
-          }} onClick={() => document.getElementById('contact')?.scrollIntoView({
-            behavior: 'smooth'
-          })} className="inline-flex items-center px-6 py-3 bg-white text-emerald-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-              Start Your Campaign
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </motion.button>
-          </div>
-        </motion.div>
       </div>
     </section>;
 };
