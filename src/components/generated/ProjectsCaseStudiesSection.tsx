@@ -395,7 +395,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                     <div className="text-4xl" data-magicpath-id="11" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.image}</div>
                     <div data-magicpath-id="12" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                       <div className="flex items-center space-x-3 mb-2" data-magicpath-id="13" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
-                        <h3 className="text-2xl font-bold text-emerald-900" data-magicpath-id="14" data-magicpath-path="ProjectsCaseStudiesSection.tsx">{project.title}</h3>
+                        <h3 className="text-2xl font-bold text-emerald-900" data-magicpath-id="14" data-magicpath-path="ProjectsCaseStudiesSection.tsx">Customer Experience Revamp</h3>
                         <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full border border-emerald-200" data-magicpath-id="15" data-magicpath-path="ProjectsCaseStudiesSection.tsx">
                           {project.category}
                         </span>
