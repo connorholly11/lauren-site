@@ -279,7 +279,7 @@ const PersonalBrandLandingPage: React.FC = () => {
           opacity: 0,
           scale: 0.9,
           y: 20
-        }} className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+        }} className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 my-8 max-h-[calc(100vh-4rem)] overflow-y-auto" onClick={e => e.stopPropagation()}>
               <div className="p-8">
                 <div className="flex justify-between items-start mb-6">
                   <div>

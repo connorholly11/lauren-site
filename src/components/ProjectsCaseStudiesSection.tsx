@@ -405,26 +405,12 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       </p>
                       <div className="flex items-center space-x-4 text-sm text-emerald-600">
                         <div className="flex items-center space-x-1">
-                          <Clock className="w-4 h-4" style={{
-                        display: "none"
-                      }} />
-                          <span style={{
-                        display: "none"
-                      }}>{project.duration}</span>
-                        </div>
-                        <div className="flex items-center space-x-1" style={{
-                      display: "none"
-                    }}>
-                          <DollarSign className="w-4 h-4" />
-                          <span>{project.budget}</span>
+                          <Clock className="w-4 h-4" />
+                          <span>{project.duration}</span>
                         </div>
                         <div className="flex items-center space-x-1">
-                          <Target className="w-4 h-4" style={{
-                        display: "none"
-                      }} />
-                          <span style={{
-                        display: "none"
-                      }}>{project.clientType}</span>
+                          <Target className="w-4 h-4" />
+                          <span>{project.clientType}</span>
                         </div>
                       </div>
                     </div>
@@ -463,20 +449,10 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                           <Zap className="w-5 h-5 mr-2 text-red-500" />
                           Key Challenges
                         </h4>
-                        <div className="grid md:grid-cols-3 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           {project.challenges.map((challenge, idx) => <div key={idx} className="bg-red-50 rounded-xl p-4 border border-red-100">
-                              <input type="text" value={challenge.title} onChange={e => {
-                        const updatedProjects = [...projects];
-                        const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                        updatedProjects[projectIndex].challenges[idx].title = e.target.value;
-                        // Note: In a real app, you'd update state here
-                      }} className="font-semibold text-red-900 mb-2 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-red-300 focus:rounded px-2 py-1" />
-                              <textarea value={challenge.description} onChange={e => {
-                        const updatedProjects = [...projects];
-                        const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                        updatedProjects[projectIndex].challenges[idx].description = e.target.value;
-                        // Note: In a real app, you'd update state here
-                      }} className="text-red-700 text-sm leading-relaxed w-full bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-red-300 focus:rounded px-2 py-1" rows={3} />
+                              <h5 className="font-semibold text-red-900 mb-2">{challenge.title}</h5>
+                              <p className="text-red-700 text-sm leading-relaxed">{challenge.description}</p>
                             </div>)}
                         </div>
                       </div>
@@ -493,27 +469,11 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                                 {solution.step}
                               </div>
                               <div className="flex-1">
-                                <input type="text" value={solution.title} onChange={e => {
-                          const updatedProjects = [...projects];
-                          const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                          updatedProjects[projectIndex].solutions[idx].title = e.target.value;
-                          // Note: In a real app, you'd update state here
-                        }} className="text-lg font-semibold text-emerald-900 mb-2 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" />
-                                <textarea value={solution.description} onChange={e => {
-                          const updatedProjects = [...projects];
-                          const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                          updatedProjects[projectIndex].solutions[idx].description = e.target.value;
-                          // Note: In a real app, you'd update state here
-                        }} className="text-emerald-700 mb-2 leading-relaxed w-full bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" rows={2} />
+                                <h5 className="text-lg font-semibold text-emerald-900 mb-2">{solution.title}</h5>
+                                <p className="text-emerald-700 mb-2 leading-relaxed">{solution.description}</p>
                                 <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-100">
                                   <p className="text-emerald-800 text-sm">
-                                    <strong>Outcome:</strong> 
-                                    <textarea value={solution.outcome} onChange={e => {
-                              const updatedProjects = [...projects];
-                              const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                              updatedProjects[projectIndex].solutions[idx].outcome = e.target.value;
-                              // Note: In a real app, you'd update state here
-                            }} className="ml-1 bg-transparent border-none outline-none resize-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-1" rows={2} />
+                                    <strong>Outcome:</strong> {solution.outcome}
                                   </p>
                                 </div>
                               </div>
@@ -527,41 +487,21 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                           <ArrowRight className="w-5 h-5 mr-2 text-emerald-500" />
                           Before vs After Results
                         </h4>
-                        <div className="grid md:grid-cols-3 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           {project.beforeAfter.map((comparison, idx) => <div key={idx} className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200">
-                              <input type="text" value={comparison.metric} onChange={e => {
-                        const updatedProjects = [...projects];
-                        const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                        updatedProjects[projectIndex].beforeAfter[idx].metric = e.target.value;
-                        // Note: In a real app, you'd update state here
-                      }} className="font-semibold text-emerald-900 mb-3 w-full bg-transparent border-none outline-none focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-2 py-1" />
+                              <h5 className="font-semibold text-emerald-900 mb-3">{comparison.metric}</h5>
                               <div className="space-y-2">
                                 <div className="flex justify-between items-center">
                                   <span className="text-red-600 font-medium text-sm">Before:</span>
-                                  <input type="text" value={comparison.before} onChange={e => {
-                            const updatedProjects = [...projects];
-                            const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                            updatedProjects[projectIndex].beforeAfter[idx].before = e.target.value;
-                            // Note: In a real app, you'd update state here
-                          }} className="text-red-800 font-bold bg-transparent border-none outline-none text-right focus:bg-white focus:border focus:border-red-300 focus:rounded px-1" />
+                                  <span className="text-red-800 font-bold">{comparison.before}</span>
                                 </div>
                                 <div className="flex justify-between items-center">
                                   <span className="text-emerald-600 font-medium text-sm">After:</span>
-                                  <input type="text" value={comparison.after} onChange={e => {
-                            const updatedProjects = [...projects];
-                            const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                            updatedProjects[projectIndex].beforeAfter[idx].after = e.target.value;
-                            // Note: In a real app, you'd update state here
-                          }} className="text-emerald-800 font-bold bg-transparent border-none outline-none text-right focus:bg-white focus:border focus:border-emerald-300 focus:rounded px-1" />
+                                  <span className="text-emerald-800 font-bold">{comparison.after}</span>
                                 </div>
                                 <div className="pt-2 border-t border-emerald-200">
                                   <div className="text-center">
-                                    <input type="text" value={comparison.improvement} onChange={e => {
-                              const updatedProjects = [...projects];
-                              const projectIndex = updatedProjects.findIndex(p => p.id === project.id);
-                              updatedProjects[projectIndex].beforeAfter[idx].improvement = e.target.value;
-                              // Note: In a real app, you'd update state here
-                            }} className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-2 py-1 rounded-full text-xs font-bold border-none outline-none text-center focus:bg-white focus:text-emerald-600" />
+                                    <span className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-2 py-1 rounded-full text-xs font-bold">{comparison.improvement}</span>
                                   </div>
                                 </div>
                               </div>
@@ -592,42 +532,10 @@ const ProjectsCaseStudiesSection: React.FC = () => {
 
                       {/* Timeline */}
                       <div>
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center" style={{
-                    display: "none"
-                  }}>
-                          <Calendar className="w-5 h-5 mr-2 text-amber-500" />
-                          Project Timeline
-                        </h4>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                          {project.timeline.map((phase, idx) => <div key={idx} className="relative">
-                              <div className="bg-amber-50 rounded-xl p-4 border border-amber-100" style={{
-                        display: "none"
-                      }}>
-                                <div className="flex items-center justify-between mb-3">
-                                  <h5 className="font-semibold text-amber-900 text-sm">{phase.phase}</h5>
-                                  <span className="text-xs bg-amber-200 text-amber-800 px-2 py-1 rounded-full">
-                                    {phase.duration}
-                                  </span>
-                                </div>
-                                <ul className="space-y-1">
-                                  {phase.activities.map((activity, actIdx) => <li key={actIdx} className="text-xs text-amber-700 flex items-start">
-                                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
-                                      {activity}
-                                    </li>)}
-                                </ul>
-                              </div>
-                              {idx < project.timeline.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-0.5 bg-amber-300" style={{
-                        display: "none"
-                      }}></div>}
-                            </div>)}
-                        </div>
                       </div>
 
                       {/* Client Testimonial */}
-                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white" style={{
-                  background: "linear-gradient(90deg, oklch(0.696 0.17 162.48) 0%, oklch(0.704 0.14 182.503) 100%)",
-                  display: "none"
-                }}>
+                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white">
                           <blockquote className="text-lg italic leading-relaxed mb-4">
                             "{project.testimonial.quote}"
                           </blockquote>
