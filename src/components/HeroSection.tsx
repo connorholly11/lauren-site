@@ -34,8 +34,8 @@ const HeroSection: React.FC = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.2
-          }} className="w-48 h-48 mx-auto bg-gradient-to-br from-emerald-100 via-teal-50 to-cyan-100 rounded-2xl p-2">
-              <div className="w-full h-full bg-emerald-200 rounded-2xl flex items-center justify-center overflow-hidden">
+          }} className="w-48 h-48 mx-auto rounded-2xl p-2">
+              <div className="w-full h-full rounded-2xl flex items-center justify-center overflow-hidden">
                 <img 
                   src="/Headshot from Connor Holly.png" 
                   alt="Lauren Hall - Professional Headshot" 

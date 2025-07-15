@@ -98,9 +98,9 @@ const PersonalBrandLandingPage: React.FC = () => {
   const contentItems: ContentItem[] = [{
     id: 1,
     type: 'image',
-    title: 'Brand Identity Design',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Complete brand identity package for tech startup',
+    title: 'Digital Marketing',
+    thumbnail: '/Digital Marketing from Connor Holly.png',
+    description: 'Comprehensive digital marketing strategy and execution',
     stats: {
       duration: '3 months',
       impact: '+150% brand recognition',
@@ -108,10 +108,10 @@ const PersonalBrandLandingPage: React.FC = () => {
     }
   }, {
     id: 2,
-    type: 'video',
-    title: 'Campaign Video',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Social media campaign video content',
+    type: 'image',
+    title: 'Email Marketing Campaign',
+    thumbnail: '/Email Marketing Slider.png',
+    description: 'Strategic email marketing campaigns driving engagement',
     stats: {
       duration: '2 weeks',
       impact: '+300% engagement',
@@ -119,93 +119,54 @@ const PersonalBrandLandingPage: React.FC = () => {
     }
   }, {
     id: 3,
-    type: 'document',
-    title: 'Strategy Document',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Comprehensive marketing strategy overview',
+    type: 'image',
+    title: 'Event Marketing',
+    thumbnail: '/Event Card from Connor Holly.png',
+    description: 'Event planning and marketing materials',
     stats: {
       duration: '1 month',
-      impact: '+200% conversion rate',
+      impact: '+200% attendance',
       satisfaction: '100%'
     }
   }, {
     id: 4,
     type: 'image',
-    title: 'Website Mockup',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Responsive website design mockup',
+    title: 'Professional Portrait',
+    thumbnail: '/Photo from Connor Holly.png',
+    description: 'Professional branding and photography',
     stats: {
       duration: '6 weeks',
-      impact: '+180% user retention',
+      impact: '+180% brand presence',
       satisfaction: '97%'
     }
   }, {
     id: 5,
-    type: 'video',
-    title: 'Product Demo',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Interactive product demonstration',
+    type: 'image',
+    title: 'Vendor Management',
+    thumbnail: '/Vendor Management from Connor Holly.png',
+    description: 'Strategic vendor relationship management',
     stats: {
       duration: '3 weeks',
-      impact: '+250% demo requests',
+      impact: '+250% efficiency',
       satisfaction: '96%'
     }
-  }, {
-    id: 6,
-    type: 'document',
-    title: 'Analytics Report',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Monthly performance analytics report',
-    stats: {
-      duration: '2 weeks',
-      impact: '+120% data insights',
-      satisfaction: '99%'
-    }
-  }, {
-    id: 7,
-    type: 'image',
-    title: 'Print Materials',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Business cards and brochure designs',
-    stats: {
-      duration: '4 weeks',
-      impact: '+90% print effectiveness',
-      satisfaction: '94%'
-    }
-  }, {
-    id: 8,
-    type: 'video',
-    title: 'Behind the Scenes',
-    thumbnail: '/api/placeholder/300/200',
-    description: 'Creative process documentation',
-    stats: {
-      duration: '1 week',
-      impact: '+400% transparency',
-      satisfaction: '100%'
-    }
   }];
-  const [isScrollPaused, setIsScrollPaused] = React.useState(false);
   const [selectedProject, setSelectedProject] = React.useState<ContentItem | null>(null);
   const controls = useAnimationControls();
-  const [animationProgress, setAnimationProgress] = React.useState(0);
 
   React.useEffect(() => {
-    if (!isScrollPaused) {
-      controls.start({
-        x: [-animationProgress, -(contentItems.length * 352)],
-        transition: {
-          x: {
-            duration: 30 * (1 - animationProgress / (contentItems.length * 352)),
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "loop"
-          }
+    controls.start({
+      x: [0, -(contentItems.length * 352)],
+      transition: {
+        x: {
+          duration: 30,
+          ease: "linear",
+          repeat: Infinity,
+          repeatType: "loop"
         }
-      });
-    } else {
-      controls.stop();
-    }
-  }, [isScrollPaused, controls, contentItems.length, animationProgress]);
+      }
+    });
+  }, [controls, contentItems.length]);
   const getContentIcon = (type: string) => {
     switch (type) {
       case 'image':
@@ -247,13 +208,6 @@ const PersonalBrandLandingPage: React.FC = () => {
               <motion.div
                 className="flex space-x-6"
                 animate={controls}
-                onUpdate={(latest) => {
-                  if (latest.x && typeof latest.x === 'number') {
-                    setAnimationProgress(-latest.x);
-                  }
-                }}
-                onMouseEnter={() => setIsScrollPaused(true)}
-                onMouseLeave={() => setIsScrollPaused(false)}
               >
                 {/* Duplicate items for seamless loop */}
                 {[...contentItems, ...contentItems].map((item, index) => {
@@ -308,19 +262,6 @@ const PersonalBrandLandingPage: React.FC = () => {
               <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-teal-50/30 to-transparent pointer-events-none" />
             </div>
 
-            {/* Gallery Controls */}
-            <div className="text-center mt-8">
-              <p className="text-sm text-emerald-600 mb-4">
-                {isScrollPaused ? 'Gallery paused • Hover to pause scrolling' : 'Auto-scrolling gallery • Hover to pause'}
-              </p>
-              <div className="flex justify-center space-x-4">
-                <button onClick={() => setIsScrollPaused(!isScrollPaused)} className="px-4 py-2 bg-white border border-emerald-200 rounded-lg text-sm font-medium text-emerald-700 hover:bg-emerald-50 transition-colors" style={{
-                display: "none"
-              }}>
-                  {isScrollPaused ? 'Resume' : 'Pause'}
-                </button>
-              </div>
-            </div>
           </div>
         </section>
         
@@ -425,10 +366,12 @@ const PersonalBrandLandingPage: React.FC = () => {
                 </div>
               </div>
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center">
-                  <div className="w-64 h-64 bg-emerald-200 rounded-xl flex items-center justify-center">
-                    <span className="text-emerald-600 text-sm">Professional Photo</span>
-                  </div>
+                <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden">
+                  <img 
+                    src="/Bio Section Doll Image.png" 
+                    alt="Lauren Hall - Professional Photo" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </motion.div>
@@ -503,31 +446,6 @@ const PersonalBrandLandingPage: React.FC = () => {
                 </div>
                 
                 <blockquote className="border-l-4 border-emerald-600 pl-6 italic text-lg text-emerald-700">"I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She ask's the right questions and always gets things done quickly with a purpose!" - J.P VP Leadership</blockquote>
-              </motion.div>
-              
-              <motion.div initial={{
-              opacity: 0,
-              x: 30
-            }} whileInView={{
-              opacity: 1,
-              x: 0
-            }} transition={{
-              duration: 0.6
-            }} viewport={{
-              once: true
-            }}>
-                <div className="w-full h-96 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-3xl flex items-center justify-center border border-emerald-200" style={{
-                background: "linear-gradient(90deg, oklch(0.95 0.052 163.051) 0%, oklch(0.953 0.051 180.801) 100%)"
-              }}>
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-full mx-auto flex items-center justify-center" style={{
-                    background: "linear-gradient(90deg, oklch(0.596 0.145 163.225) 0%, oklch(0.6 0.118 184.704) 100%)"
-                  }}>
-                      <span className="text-3xl text-white">👥</span>
-                    </div>
-                    <p className="text-emerald-700 font-medium">Leadership in Action Photo</p>
-                  </div>
-                </div>
               </motion.div>
             </div>
           </div>
