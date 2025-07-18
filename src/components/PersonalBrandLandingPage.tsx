@@ -22,6 +22,7 @@ interface ContentItem {
   title: string;
   thumbnail: string;
   description: string;
+  highlights?: string[];
   stats: {
     duration: string;
     impact: string;
@@ -101,6 +102,13 @@ const PersonalBrandLandingPage: React.FC = () => {
     title: 'Digital Marketing',
     thumbnail: '/Digital Marketing from Connor Holly.png',
     description: 'SEO, SEM, PPC, email, and text campaigns that drive measurable traffic and conversions.',
+    highlights: [
+      'Audience research, keyword strategy, and segmentation',
+      'Develop creative concepts and write briefs that align teams around one vision',
+      'Lifecycle and promotional email/SMS campaigns',
+      'Customer surveys and feedback loops to inform optimization',
+      'Manage review platforms to amplify positive sentiment'
+    ],
     stats: {
       duration: '3 months',
       impact: '+150% traffic',
@@ -112,6 +120,13 @@ const PersonalBrandLandingPage: React.FC = () => {
     title: 'CMS & Web Management',
     thumbnail: '/Email Marketing Slider.png',
     description: 'Keeping websites fresh, clear, and performing with content updates, blog and PR writing, and analytics tracking.',
+    highlights: [
+      'Website maintenance and updates for speed, SEO, and accessibility',
+      'Landing-page optimization and A/B testing for higher conversions',
+      'Lead-capture form design and integration',
+      'Creation of SEO blog posts and press releases',
+      'Performance tracking and reporting with GA4, Microsoft Clarity, and real-time dashboards'
+    ],
     stats: {
       duration: 'Ongoing',
       impact: '+85% conversion',
@@ -123,6 +138,14 @@ const PersonalBrandLandingPage: React.FC = () => {
     title: 'Content & Collateral Creation',
     thumbnail: '/Event Card from Connor Holly.png',
     description: 'Lead creative across print, digital, and social by managing everything from brochures to photo shoots while ensuring brand consistency.',
+    highlights: [
+      'Ensure brand consistency across all print and digital assets',
+      'Lead in-house production with designers, marketing specialists, and external vendors',
+      'Develop brochures, signage, flyers, lookbooks, and digital ads',
+      'Design social-media engagement templates and short-form video content',
+      'Coordinate property and lifestyle photo/video shoots; maintain asset library',
+      'Oversee 2,500+ printed pieces monthly across three states while optimizing costs'
+    ],
     stats: {
       duration: '4 weeks',
       impact: '2,500+ pieces/mo',
@@ -134,6 +157,12 @@ const PersonalBrandLandingPage: React.FC = () => {
     title: 'Event & Brand Marketing',
     thumbnail: '/Photo from Connor Holly.png',
     description: 'Planning and executing events while supporting on-the-ground brand presence and community engagement.',
+    highlights: [
+      'Plan and execute events: broker luncheons, virtual workshops, ribbon cuttings, ground-breakings, realtor caravans, and more',
+      'Activate community engagement through local vendor collabs',
+      'Manage invites, signage, run-of-show, vendors, and post-event nurture, ensuring seamless on-site logistics',
+      'Secure press coverage and social amplification to maximize event reach'
+    ],
     stats: {
       duration: '2 weeks',
       impact: '+200% attendance',
@@ -145,6 +174,12 @@ const PersonalBrandLandingPage: React.FC = () => {
     title: 'Vendor & Budget Oversight',
     thumbnail: '/Vendor Management from Connor Holly.png',
     description: 'Coordinating with third parties, managing scopes, and tracking budgets across multiple projects.',
+    highlights: [
+      'Source vendors and negotiate scopes, quotes, and POs to keep goals and budget aligned',
+      'Code marketing expenditures and process payments while tracking spend',
+      'Oversee marketing budgets across 20+ communities with real-time reporting',
+      'Align financial targets with timelines to ensure on-budget, on-time delivery'
+    ],
     stats: {
       duration: 'Ongoing',
       impact: '20+ communities',
@@ -228,23 +263,20 @@ const PersonalBrandLandingPage: React.FC = () => {
                           <p className="text-sm text-emerald-700 leading-relaxed mb-4">
                             {item.description}
                           </p>
-                        </div>
-                        
-                        <div className="space-y-3 mb-4" style={{
-                      display: "none"
-                    }}>
-                          <div className="flex justify-between items-center">
-                            <span className="text-xs font-medium text-emerald-600">Duration</span>
-                            <span className="text-xs font-semibold text-emerald-800">{item.stats.duration}</span>
-                          </div>
-                          <div className="flex justify-between items-center">
-                            <span className="text-xs font-medium text-emerald-600">Impact</span>
-                            <span className="text-xs font-semibold text-emerald-800">{item.stats.impact}</span>
-                          </div>
-                          <div className="flex justify-between items-center">
-                            <span className="text-xs font-medium text-emerald-600">Satisfaction</span>
-                            <span className="text-xs font-semibold text-emerald-800">{item.stats.satisfaction}</span>
-                          </div>
+                          
+                          {item.highlights && (
+                            <div className="space-y-2 mb-4">
+                              <h4 className="text-xs font-semibold text-emerald-800 uppercase tracking-wide">Highlights:</h4>
+                              <ul className="space-y-1">
+                                {item.highlights.map((highlight, idx) => (
+                                  <li key={idx} className="flex items-start space-x-2">
+                                    <span className="text-emerald-500 mt-1">•</span>
+                                    <span className="text-xs text-emerald-700 leading-relaxed">{highlight}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
                         </div>
                         
                         <div className="text-center">

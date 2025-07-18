@@ -359,105 +359,6 @@ const ProjectsCaseStudiesSection: React.FC = () => {
       author: "Flora Development Team",
       role: "Project Leadership"
     }
-  }, {
-    id: 'market-analysis',
-    title: 'Quarterly Market Analysis Campaign',
-    category: 'Data-Driven Marketing',
-    summary: 'Data-driven market analysis campaign providing valuable insights to clients while establishing thought leadership.',
-    image: '📊',
-    duration: '8 weeks',
-    budget: '$5,200',
-    clientType: 'Independent Real Estate Brokerage',
-    challenges: [{
-      title: 'Thought Leadership',
-      description: 'Needed to establish credibility and expertise in competitive local market'
-    }, {
-      title: 'Data Complexity',
-      description: 'Raw market data was complex and needed to be made accessible to general audience'
-    }, {
-      title: 'Media Attention',
-      description: 'Local media was saturated with generic real estate content and press releases'
-    }],
-    solutions: [{
-      step: 1,
-      title: 'Comprehensive Data Analysis',
-      description: 'Analyzed 500+ transactions, market trends, and economic indicators for unique insights',
-      outcome: 'Discovered 3 key market trends that contradicted conventional wisdom'
-    }, {
-      step: 2,
-      title: 'Visual Storytelling',
-      description: 'Created interactive dashboards and infographics to make data compelling and shareable',
-      outcome: 'Achieved 340% higher social media engagement compared to previous content'
-    }, {
-      step: 3,
-      title: 'Multi-Channel Distribution',
-      description: 'Distributed insights through reports, social media, email, and media outreach',
-      outcome: 'Reached 15,000+ local residents and 12 media outlets picked up the story'
-    }, {
-      step: 4,
-      title: 'Client Value Integration',
-      description: 'Integrated insights into client consultations and listing presentations',
-      outcome: 'Increased listing conversion rate by 35% using market insights as credibility tool'
-    }],
-    beforeAfter: [{
-      metric: 'Brand Recognition',
-      before: '23%',
-      after: '67%',
-      improvement: '+191%'
-    }, {
-      metric: 'Media Mentions',
-      before: '2/quarter',
-      after: '12/quarter',
-      improvement: '+500%'
-    }, {
-      metric: 'Referral Rate',
-      before: '18%',
-      after: '31%',
-      improvement: '+72%'
-    }],
-    results: [{
-      metric: 'Media Features',
-      value: '12',
-      icon: BarChart3,
-      description: 'Local news and publication features'
-    }, {
-      metric: 'Client Engagement',
-      value: '+45%',
-      icon: TrendingUp,
-      description: 'Increase in client interaction'
-    }, {
-      metric: 'New Referrals',
-      value: '23',
-      icon: Users,
-      description: 'Direct referrals from campaign'
-    }, {
-      metric: 'Report Downloads',
-      value: '1,200',
-      icon: DollarSign,
-      description: 'Market analysis downloads'
-    }],
-    timeline: [{
-      phase: 'Data Collection',
-      duration: '2 weeks',
-      activities: ['Transaction analysis', 'Market research', 'Economic indicator review', 'Trend identification']
-    }, {
-      phase: 'Analysis & Insights',
-      duration: '2 weeks',
-      activities: ['Statistical analysis', 'Insight development', 'Trend validation', 'Report writing']
-    }, {
-      phase: 'Content Creation',
-      duration: '2 weeks',
-      activities: ['Dashboard design', 'Infographic creation', 'Video production', 'Social content']
-    }, {
-      phase: 'Distribution & PR',
-      duration: '2 weeks',
-      activities: ['Media outreach', 'Social promotion', 'Client presentations', 'Results tracking']
-    }],
-    testimonial: {
-      quote: "The market analysis campaign positioned us as the go-to experts in our area. We've seen a significant increase in high-quality referrals and media recognition.",
-      author: "Jennifer Rodriguez",
-      role: "Brokerage Owner"
-    }
   }];
   const toggleProject = (projectId: string) => {
     setExpandedProject(expandedProject === projectId ? null : projectId);
@@ -512,16 +413,6 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl mb-3">
                         {project.summary}
                       </p>
-                      <div className="flex items-center space-x-4 text-sm text-emerald-600">
-                        <div className="flex items-center space-x-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{project.duration}</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <Target className="w-4 h-4" />
-                          <span>{project.clientType}</span>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <motion.div animate={{
@@ -579,44 +470,12 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                               </div>
                               <div className="flex-1">
                                 <h5 className="text-lg font-semibold text-emerald-900 mb-2">{solution.title}</h5>
-                                <p className="text-emerald-700 mb-2 leading-relaxed">{solution.description}</p>
-                                <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-100">
-                                  <p className="text-emerald-800 text-sm">
-                                    <strong>Outcome:</strong> {solution.outcome}
-                                  </p>
-                                </div>
+                                <p className="text-emerald-700 leading-relaxed">{solution.description}</p>
                               </div>
                             </div>)}
                         </div>
                       </div>
 
-                      {/* Before/After Comparison */}
-                      <div>
-                        <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center">
-                          <ArrowRight className="w-5 h-5 mr-2 text-emerald-500" />
-                          Before vs After Results
-                        </h4>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          {project.beforeAfter.map((comparison, idx) => <div key={idx} className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200">
-                              <h5 className="font-semibold text-emerald-900 mb-3">{comparison.metric}</h5>
-                              <div className="space-y-2">
-                                <div className="flex justify-between items-center">
-                                  <span className="text-red-600 font-medium text-sm">Before:</span>
-                                  <span className="text-red-800 font-bold">{comparison.before}</span>
-                                </div>
-                                <div className="flex justify-between items-center">
-                                  <span className="text-emerald-600 font-medium text-sm">After:</span>
-                                  <span className="text-emerald-800 font-bold">{comparison.after}</span>
-                                </div>
-                                <div className="pt-2 border-t border-emerald-200">
-                                  <div className="text-center">
-                                    <span className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-2 py-1 rounded-full text-xs font-bold">{comparison.improvement}</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>)}
-                        </div>
-                      </div>
 
                       {/* Results & Impact */}
                       <div>
