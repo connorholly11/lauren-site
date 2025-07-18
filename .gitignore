@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Deleted files
+gallery-fix.tsx
+gallery-fix.tsx.bak
+.gallery-fix.tsx.deleted
