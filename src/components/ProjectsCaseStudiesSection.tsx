@@ -53,202 +53,311 @@ interface Project {
 const ProjectsCaseStudiesSection: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
   const projects: Project[] = [{
-    id: 'luxury-campaign',
-    title: 'Luxury Property Launch Campaign',
+    id: 'cold-interest-list',
+    title: 'Cold Interest List in a New Market',
     category: 'Digital Marketing',
-    summary: 'Comprehensive marketing campaign for a $2.5M luxury property featuring multi-channel approach and targeted audience segmentation.',
-    image: '🏡',
-    duration: '6 weeks',
-    budget: '$15,000',
+    summary: 'Thirty days before the pre-sale release of Everly, our first community in Cincinnati, Ohio, the VIP list held only two names. Brand awareness was limited, construction in progress, and previous marketing efforts had stalled.',
+    image: '🏢',
+    duration: '30 days',
+    budget: '$3,500',
     clientType: 'Luxury Real Estate Developer',
     challenges: [{
-      title: 'Market Saturation',
-      description: 'Luxury market was oversaturated with similar properties, making differentiation crucial'
+      title: 'Brand Invisibility',
+      description: 'Launching in a new Cincinnati luxury market where our name meant nothing and established competitors dominated awareness'
     }, {
-      title: 'Target Audience Reach',
-      description: 'High-net-worth individuals are notoriously difficult to reach through traditional channels'
+      title: 'Ice-Cold Interest List',
+      description: 'Just two prospects on the VIP roster with thirty days until presale kickoff'
     }, {
-      title: 'Premium Positioning',
-      description: 'Needed to justify premium pricing while highlighting unique value propositions'
+      title: 'Limited Assets',
+      description: 'Buildings still under construction, leaving no finished units or on-site visuals to spark buyer excitement'
     }],
     solutions: [{
       step: 1,
-      title: 'Market Analysis & Positioning',
-      description: 'Conducted comprehensive competitive analysis and identified unique selling propositions',
-      outcome: 'Developed compelling differentiation strategy focusing on architectural heritage and location exclusivity'
+      title: 'Walkability-driven local brand placements',
+      description: 'Mapped nearby coffee shops, breweries, and lifestyle venues, then arranged no- to low-cost branded coasters and countertop signs carrying the line "You could walk home from here," boosting visibility and tying Everly to a car-free lifestyle.',
+      outcome: 'Secured eight walk-distance partner venues whose coaster and countertop placements made Everly a familiar name in the neighborhood'
     }, {
       step: 2,
-      title: 'Premium Content Creation',
-      description: 'Produced high-end virtual tours, professional photography, and lifestyle videos',
-      outcome: 'Created immersive brand experience that elevated property perception and engagement'
+      title: 'Targeted luxury direct-mail drop',
+      description: 'Sent two high-end mailers to residents of nearby Class-A apartment buildings, featuring floor-plan previews, presale incentives, and a personal invite to a hard-hat tour of Everly.',
+      outcome: 'Generated immediate interest from qualified prospects already living in the area'
     }, {
       step: 3,
-      title: 'Targeted Digital Campaigns',
-      description: 'Launched precision-targeted campaigns across Instagram, Facebook, and Google Ads',
-      outcome: 'Achieved 3.2x higher engagement rates compared to industry benchmarks'
+      title: 'Geo-fenced paid media',
+      description: 'Launched a two-week Google and Meta campaign inside a one-mile radius of competitors and downtown offices, serving mobile display ads and Instagram Stories that echoed the walk-home message.',
+      outcome: 'Achieved strong click-through rates among high-intent local prospects'
     }, {
       step: 4,
-      title: 'Exclusive Events Strategy',
-      description: 'Organized private preview events and broker networking sessions',
-      outcome: 'Generated 45 qualified leads from exclusive events alone'
+      title: 'Rapid email nurture',
+      description: 'Enrolled every new lead in a three-touch drip sequence with construction updates, lifestyle imagery, and time-sensitive presale offers to keep interest warm until launch.',
+      outcome: 'Maintained engagement with all new leads through to presale launch'
     }],
     beforeAfter: [{
-      metric: 'Monthly Inquiries',
-      before: '12',
-      after: '127',
-      improvement: '+958%'
+      metric: 'VIP List Size',
+      before: '2 leads',
+      after: '27 leads',
+      improvement: '13x growth'
     }, {
-      metric: 'Conversion Rate',
-      before: '8.5%',
-      after: '18.5%',
-      improvement: '+117%'
+      metric: 'Brand Recognition',
+      before: '0%',
+      after: 'Familiar name',
+      improvement: 'From zero to known'
     }, {
-      metric: 'Cost per Lead',
-      before: '$340',
-      after: '$118',
-      improvement: '-65%'
+      metric: 'QR Scans',
+      before: '0',
+      after: '120+',
+      improvement: 'Strong engagement'
     }],
     results: [{
-      metric: 'Qualified Leads',
-      value: '127',
+      metric: 'VIP List Growth',
+      value: '27 leads',
       icon: Users,
-      description: 'High-intent prospects generated within 30 days'
+      description: 'Expanded from 2 to 27 qualified leads in 30 days'
     }, {
-      metric: 'Conversion Rate',
-      value: '18.5%',
-      icon: TrendingUp,
-      description: 'From inquiry to property showing'
-    }, {
-      metric: 'Campaign ROI',
-      value: '340%',
+      metric: 'Presale Contracts',
+      value: '2 signed',
       icon: DollarSign,
-      description: 'Return on marketing investment'
+      description: 'Converted early interest into signed contracts'
     }, {
-      metric: 'Media Coverage',
-      value: '8 Features',
+      metric: 'QR Engagement',
+      value: '120+ scans',
+      icon: TrendingUp,
+      description: 'Generated through walk-home campaign'
+    }, {
+      metric: 'Partner Venues',
+      value: '8 locations',
       icon: BarChart3,
-      description: 'Premium lifestyle publications'
+      description: 'Walk-distance venues displaying our materials'
     }],
     timeline: [{
-      phase: 'Research & Strategy',
-      duration: '1 week',
-      activities: ['Market analysis', 'Competitor research', 'Audience profiling', 'Strategy development']
+      phase: 'Market Research',
+      duration: 'Week 1',
+      activities: ['Mapped walkable venues', 'Identified Class-A buildings', 'Competitive analysis', 'Campaign strategy']
     }, {
-      phase: 'Content Production',
-      duration: '2 weeks',
-      activities: ['Photography shoot', 'Video production', 'Virtual tour creation', 'Collateral design']
+      phase: 'Material Production',
+      duration: 'Week 2',
+      activities: ['Coaster design', 'Direct mail creation', 'Digital ad development', 'Email sequence writing']
     }, {
-      phase: 'Campaign Launch',
-      duration: '2 weeks',
-      activities: ['Digital campaign setup', 'Event planning', 'PR outreach', 'Influencer partnerships']
+      phase: 'Launch & Placement',
+      duration: 'Week 3',
+      activities: ['Venue partnerships', 'Direct mail drop', 'Digital campaign launch', 'Lead capture setup']
     }, {
-      phase: 'Optimization & Results',
-      duration: '1 week',
-      activities: ['Performance monitoring', 'Campaign optimization', 'Lead nurturing', 'Results analysis']
+      phase: 'Nurture & Convert',
+      duration: 'Week 4',
+      activities: ['Email nurture', 'Hard-hat tours', 'Lead qualification', 'Presale preparation']
     }],
     testimonial: {
-      quote: "The campaign exceeded all our expectations. The strategic approach and flawless execution resulted in the fastest luxury property sale in our portfolio's history.",
-      author: "Sarah Mitchell",
-      role: "Development Director"
+      quote: "The walk-home campaign was brilliant. It connected with our target audience perfectly and built genuine local excitement for Everly.",
+      author: "Development Team",
+      role: "Everly Project Manager"
     }
   }, {
-    id: 'first-time-buyers',
-    title: 'First-Time Buyer Education Series',
-    category: 'Content Marketing',
-    summary: 'Educational content campaign targeting first-time homebuyers with comprehensive guides and interactive tools.',
-    image: '📚',
-    duration: '12 weeks',
-    budget: '$8,500',
-    clientType: 'Regional Real Estate Agency',
+    id: 'customer-service-revamp',
+    title: 'Customer Service Revamp',
+    category: 'Experience Optimization',
+    summary: 'When negative reviews pulled the Google rating down to 3.6 stars and survey response sat in the single digits, a full customer-journey overhaul became urgent.',
+    image: '⭐',
+    duration: '12 months',
+    budget: '$2,000',
+    clientType: 'Multi-Community Developer',
     challenges: [{
-      title: 'Complex Information',
-      description: 'Home buying process is overwhelming for first-time buyers with too much confusing information'
+      title: 'Poor Reviews',
+      description: 'Google rating had dropped to 3.6 stars, damaging brand reputation and deterring potential buyers'
     }, {
-      title: 'Trust Building',
-      description: 'New buyers are skeptical of real estate professionals and need education before engagement'
+      title: 'Low Survey Response',
+      description: 'Single-digit survey response rates meant we were flying blind on customer satisfaction'
     }, {
-      title: 'Long Sales Cycle',
-      description: 'First-time buyers take 6-12 months to make decisions, requiring sustained engagement'
+      title: 'Communication Gaps',
+      description: 'Unclear points of contact, vague timeline expectations, and post-closing warranty confusion'
     }],
     solutions: [{
       step: 1,
-      title: 'Educational Content Strategy',
-      description: 'Developed comprehensive buyer education curriculum with interactive elements',
-      outcome: 'Created trusted resource that positioned agency as helpful advisor rather than salesperson'
+      title: 'Resident feedback deep dive',
+      description: 'Surveyed every closing and move-in from the past two years and distilled responses into three core gaps—unclear points of contact, vague timeline expectations, and post-closing warranty confusion.',
+      outcome: 'Identified specific pain points to address in the customer journey'
     }, {
       step: 2,
-      title: 'Multi-Format Content Creation',
-      description: 'Produced guides, videos, webinars, and interactive tools for different learning preferences',
-      outcome: 'Achieved 85% content completion rate across all formats'
+      title: 'Printed What to Expect guide',
+      description: 'Created and distributed an easy-to-follow booklet that outlined key milestones, one primary point of contact, and warranty steps.',
+      outcome: 'Provided clear expectations and reduced confusion throughout the process'
     }, {
       step: 3,
-      title: 'Automated Nurture Sequences',
-      description: 'Built email automation that delivered relevant content based on buyer journey stage',
-      outcome: 'Maintained 45% email open rates throughout 12-week nurture sequence'
+      title: 'Online warranty hub',
+      description: 'Launched a form-fill warranty page that captures issues, photos, and notes in one digital queue for faster triage.',
+      outcome: 'Routed 98 percent of warranty requests through the new online form'
     }, {
       step: 4,
-      title: 'Community Building',
-      description: 'Created private Facebook group and monthly webinars for ongoing support',
-      outcome: 'Built engaged community of 500+ active members sharing experiences and advice'
+      title: 'BirdEye review platform',
+      description: 'Automated post-tour and post-move-in surveys, triggered friendly review requests, and streamlined response management.',
+      outcome: 'Doubled the resident survey response rate'
+    }, {
+      step: 5,
+      title: 'Internal tracking and weekly sync',
+      description: 'Built a shared CX tracking sheet and held a brief weekly meeting to align teams and ensure every customer update flows through the designated point of contact.',
+      outcome: 'Saved roughly 3 hours of manual follow-up work each week'
     }],
     beforeAfter: [{
-      metric: 'Lead Quality Score',
-      before: '6.2/10',
-      after: '8.7/10',
-      improvement: '+40%'
+      metric: 'Google Rating',
+      before: '3.6 stars',
+      after: '4.1 stars',
+      improvement: '+0.5 stars'
     }, {
-      metric: 'Time to Close',
-      before: '89 days',
-      after: '62 days',
-      improvement: '-30%'
+      metric: 'Survey Response',
+      before: 'Single digits',
+      after: 'Doubled',
+      improvement: '+100%'
     }, {
-      metric: 'Client Satisfaction',
-      before: '7.8/10',
-      after: '9.4/10',
-      improvement: '+21%'
+      metric: 'Warranty Routing',
+      before: 'Scattered',
+      after: '98% online',
+      improvement: 'Streamlined'
     }],
     results: [{
-      metric: 'Content Downloads',
-      value: '2,340',
-      icon: Users,
-      description: 'Educational resources downloaded'
-    }, {
-      metric: 'Email Subscribers',
-      value: '890',
+      metric: 'Google Rating',
+      value: '4.1 stars',
       icon: TrendingUp,
-      description: 'New qualified leads generated'
+      description: 'Lifted from 3.6 within 12 months'
     }, {
-      metric: 'Webinar Attendance',
-      value: '65%',
+      metric: 'Online Warranty',
+      value: '98%',
+      icon: Users,
+      description: 'Requests routed through new form'
+    }, {
+      metric: 'Time Saved',
+      value: '3 hrs/week',
+      icon: Clock,
+      description: 'Reduced manual follow-up work'
+    }, {
+      metric: 'Survey Response',
+      value: '2x increase',
       icon: BarChart3,
-      description: 'Average attendance rate'
-    }, {
-      metric: 'Conversion Rate',
-      value: '23%',
-      icon: DollarSign,
-      description: 'From lead to client'
+      description: 'Doubled resident feedback rate'
     }],
     timeline: [{
-      phase: 'Content Planning',
-      duration: '2 weeks',
-      activities: ['Buyer journey mapping', 'Content calendar creation', 'Resource development', 'Tool design']
+      phase: 'Discovery & Research',
+      duration: '2 months',
+      activities: ['Survey past residents', 'Identify pain points', 'Map customer journey', 'Define improvement areas']
     }, {
-      phase: 'Content Production',
-      duration: '4 weeks',
-      activities: ['Guide writing', 'Video production', 'Interactive tool development', 'Email sequence creation']
+      phase: 'Solution Development',
+      duration: '2 months',
+      activities: ['Create expectation guide', 'Build warranty portal', 'Setup BirdEye platform', 'Design tracking systems']
     }, {
-      phase: 'Launch & Promotion',
-      duration: '3 weeks',
-      activities: ['Website integration', 'Social media promotion', 'Partner outreach', 'PR campaign']
+      phase: 'Implementation',
+      duration: '4 months',
+      activities: ['Launch new processes', 'Train teams', 'Monitor adoption', 'Gather feedback']
     }, {
-      phase: 'Optimization & Scale',
-      duration: '3 weeks',
-      activities: ['Performance analysis', 'Content optimization', 'Community management', 'Results reporting']
+      phase: 'Optimization',
+      duration: '4 months',
+      activities: ['Refine processes', 'Track metrics', 'Continuous improvement', 'Results measurement']
     }],
     testimonial: {
-      quote: "This campaign transformed how we work with first-time buyers. Our clients are now more informed, confident, and the entire process is smoother for everyone.",
-      author: "Michael Chen",
-      role: "Senior Real Estate Agent"
+      quote: "The customer service improvements transformed our reputation. We're now getting positive reviews regularly, and our teams are more aligned than ever.",
+      author: "Operations Team",
+      role: "Community Management"
+    }
+  }, {
+    id: 'flora-grand-opening',
+    title: 'Flora Grand Opening Event',
+    category: 'Event Marketing',
+    summary: 'Launching Flora meant introducing both the place and its story to a prestigious suburb on the city\'s northern edge that had yet to notice us. The September 2024 grand opening needed to do more than cut a ribbon.',
+    image: '🌸',
+    duration: '4 weeks',
+    budget: '$2,000',
+    clientType: 'Luxury Community Developer',
+    challenges: [{
+      title: 'New luxury community',
+      description: 'Limited previous contacts but ambitious turnout goals'
+    }, {
+      title: 'Quiet site',
+      description: 'Low drive-by traffic and minimal brand visibility'
+    }, {
+      title: 'Vendor budget',
+      description: 'Capped at two thousand dollars'
+    }],
+    solutions: [{
+      step: 1,
+      title: 'QR landing campaign',
+      description: 'Created a mobile landing page and used QR scans as the primary entry path.',
+      outcome: 'Logged 160 QR scans that fed the event landing page and captured contact data'
+    }, {
+      step: 2,
+      title: 'Local placement sweep',
+      description: 'Distributed printed invites with QR codes at nearby cafés, breweries, and shops and added onsite and trail signage around Flora.',
+      outcome: 'Maximized local visibility within walking distance of the community'
+    }, {
+      step: 3,
+      title: 'Social amplification',
+      description: 'Partnered with local influencers and real estate agents, along with the DJ, food-truck owner, and florist, to share the landing page across their social channels.',
+      outcome: 'Extended reach beyond our own channels to tap into local networks'
+    }, {
+      step: 4,
+      title: 'Community-themed activations',
+      description: 'Booked the DJ for rooftop music, secured a popular food truck at a bulk flat fee, and set up a make-your-own bouquet station stocked by a neighborhood florist to echo Flora\'s nature brand.',
+      outcome: 'Delivered full music, food, and interactive experiences while keeping total vendor spend under two thousand dollars'
+    }, {
+      step: 5,
+      title: 'Flexible RSVP approach',
+      description: 'Positioned RSVP as an optional heads-up and welcomed walk-ups to lower friction and encourage spontaneous attendance.',
+      outcome: 'Drew 123 attendees with 68 RSVPs, exceeding turnout goals and confirming strong walk-up interest'
+    }],
+    beforeAfter: [{
+      metric: 'Brand Awareness',
+      before: 'Unknown',
+      after: 'TV coverage',
+      improvement: 'Major visibility'
+    }, {
+      metric: 'Event Budget',
+      before: '$2,000 cap',
+      after: 'Under budget',
+      improvement: 'Full experience'
+    }, {
+      metric: 'Lead Generation',
+      before: '0 leads',
+      after: '6 high-intent',
+      improvement: '2 contracts'
+    }],
+    results: [{
+      metric: 'Attendees',
+      value: '123',
+      icon: Users,
+      description: 'Drew 123 attendees with 68 RSVPs'
+    }, {
+      metric: 'QR Scans',
+      value: '160',
+      icon: TrendingUp,
+      description: 'Landing page visits and data capture'
+    }, {
+      metric: 'Media Coverage',
+      value: '2 TV stations',
+      icon: BarChart3,
+      description: 'Plus Indy Star feature request'
+    }, {
+      metric: 'Contracts',
+      value: '2 signed',
+      icon: DollarSign,
+      description: 'From 6 high-intent leads generated'
+    }],
+    timeline: [{
+      phase: 'Event Planning',
+      duration: '1 week',
+      activities: ['Landing page creation', 'QR code design', 'Vendor sourcing', 'Budget allocation']
+    }, {
+      phase: 'Local Outreach',
+      duration: '2 weeks',
+      activities: ['Venue partnerships', 'Invite distribution', 'Signage placement', 'Influencer outreach']
+    }, {
+      phase: 'Event Execution',
+      duration: '1 day',
+      activities: ['Setup and logistics', 'Vendor coordination', 'Guest welcome', 'Activity management']
+    }, {
+      phase: 'Follow-up',
+      duration: '1 week',
+      activities: ['Lead nurturing', 'Media relations', 'Contract negotiation', 'Results tracking']
+    }],
+    testimonial: {
+      quote: "The Flora grand opening exceeded all expectations. The creative approach to community engagement on a tight budget was brilliant and generated real results.",
+      author: "Flora Development Team",
+      role: "Project Leadership"
     }
   }, {
     id: 'market-analysis',
@@ -395,7 +504,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                     <div className="text-4xl">{project.image}</div>
                     <div>
                       <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="text-2xl font-bold text-emerald-900">Customer Experience Revamp</h3>
+                        <h3 className="text-2xl font-bold text-emerald-900">{project.title}</h3>
                         <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full border border-emerald-200">
                           {project.category}
                         </span>

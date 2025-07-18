@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
           duration: 0.8,
           delay: 0.4
         }} className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-emerald-900 mb-6 leading-tight">
-            Strategic Marketing
+            A Strategic Marketer
             <br />
             <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">That Opens Doors</span>
           </motion.h1>
@@ -119,7 +119,7 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.6
-        }} className="text-lg sm:text-xl lg:text-2xl text-emerald-700 mb-8 max-w-3xl mx-auto leading-relaxed">I’m Lauren Hall, a real estate marketing manager who blends data and creativity to help people find their next place to call home. I’m passionate about marketing that builds connection and brings communities to life.</motion.p>
+        }} className="text-lg sm:text-xl lg:text-2xl text-emerald-700 mb-8 max-w-3xl mx-auto leading-relaxed">I'm Lauren Hall, a real estate marketing manager who builds strategy with both people and place in mind. Whether I'm digging into the data or finding fresh ways to tell a community's story, I'm always adapting and looking for smarter ways to connect people with their new home.</motion.p>
 
           {/* Stats */}
           <motion.div initial={{

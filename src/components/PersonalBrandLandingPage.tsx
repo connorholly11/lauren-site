@@ -100,54 +100,54 @@ const PersonalBrandLandingPage: React.FC = () => {
     type: 'image',
     title: 'Digital Marketing',
     thumbnail: '/Digital Marketing from Connor Holly.png',
-    description: 'Comprehensive digital marketing strategy and execution',
+    description: 'SEO, SEM, PPC, email, and text campaigns that drive measurable traffic and conversions.',
     stats: {
       duration: '3 months',
-      impact: '+150% brand recognition',
+      impact: '+150% traffic',
       satisfaction: '98%'
     }
   }, {
     id: 2,
-    type: 'image',
-    title: 'Email Marketing Campaign',
+    type: 'document',
+    title: 'CMS & Web Management',
     thumbnail: '/Email Marketing Slider.png',
-    description: 'Strategic email marketing campaigns driving engagement',
+    description: 'Keeping websites fresh, clear, and performing with content updates, blog and PR writing, and analytics tracking.',
     stats: {
-      duration: '2 weeks',
-      impact: '+300% engagement',
+      duration: 'Ongoing',
+      impact: '+85% conversion',
       satisfaction: '95%'
     }
   }, {
     id: 3,
     type: 'image',
-    title: 'Event Marketing',
+    title: 'Content & Collateral Creation',
     thumbnail: '/Event Card from Connor Holly.png',
-    description: 'Event planning and marketing materials',
+    description: 'Lead creative across print, digital, and social by managing everything from brochures to photo shoots while ensuring brand consistency.',
     stats: {
-      duration: '1 month',
-      impact: '+200% attendance',
+      duration: '4 weeks',
+      impact: '2,500+ pieces/mo',
       satisfaction: '100%'
     }
   }, {
     id: 4,
     type: 'image',
-    title: 'Professional Portrait',
+    title: 'Event & Brand Marketing',
     thumbnail: '/Photo from Connor Holly.png',
-    description: 'Professional branding and photography',
+    description: 'Planning and executing events while supporting on-the-ground brand presence and community engagement.',
     stats: {
-      duration: '6 weeks',
-      impact: '+180% brand presence',
+      duration: '2 weeks',
+      impact: '+200% attendance',
       satisfaction: '97%'
     }
   }, {
     id: 5,
-    type: 'image',
-    title: 'Vendor Management',
+    type: 'document',
+    title: 'Vendor & Budget Oversight',
     thumbnail: '/Vendor Management from Connor Holly.png',
-    description: 'Strategic vendor relationship management',
+    description: 'Coordinating with third parties, managing scopes, and tracking budgets across multiple projects.',
     stats: {
-      duration: '3 weeks',
-      impact: '+250% efficiency',
+      duration: 'Ongoing',
+      impact: '20+ communities',
       satisfaction: '96%'
     }
   }];
@@ -200,7 +200,7 @@ const PersonalBrandLandingPage: React.FC = () => {
             once: true
           }} className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4">How I Make an Impact</h2>
-              <p className="text-xl text-emerald-700 max-w-2xl mx-auto mb-8">Marketing is always moving, and so is my skill set. These highlights show how I turn ambitious goals into clear, measurable outcomes.</p>
+              <p className="text-xl text-emerald-700 max-w-2xl mx-auto mb-8">Marketing is always moving, and so is my skill set. These skills turn bold ideas into measurable results.</p>
             </motion.div>
 
             {/* Auto-scrolling Gallery */}
@@ -353,15 +353,10 @@ const PersonalBrandLandingPage: React.FC = () => {
                 <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-6">Who I Am & How I Work</h2>
                 <div className="space-y-4 text-lg text-emerald-700 leading-relaxed">
                   <p>
-                    With over 8 years of experience in digital marketing, I specialize in creating 
-                    data-driven strategies that deliver measurable results. My passion lies in 
-                    transforming brands through innovative campaigns and strategic thinking.
+                    Marketing has taken me across six states and dozens of communities, each one contributing to my passion for real estate and sharpening my instinct for what makes a place feel like home. I lead marketing strategy and execution for both for sale and build to rent communities, blending sharp analytics with human first storytelling to create campaigns that connect. Over the past five years, I've learned how to read a market quickly, craft strategies that resonate, and turn insight into meaningful growth.
                   </p>
                   <p>
-                    I've had the privilege of working with Fortune 500 companies and fast-growing 
-                    startups, helping them achieve their marketing goals and drive sustainable growth. 
-                    My approach combines creativity with analytics to ensure every campaign delivers 
-                    maximum impact.
+                    Now rooted in Culver City, California, I work remotely while managing multiple markets, supporting my team, and collaborating across internal and external departments. I live here with my rescue pup FeFe. On weekends, you'll find us exploring local trails, testing out new matcha spots, or tinkering with AI tools to spark ideas for what's next.
                   </p>
                 </div>
               </div>
@@ -566,11 +561,17 @@ const PersonalBrandLandingPage: React.FC = () => {
 
               {/* Lead Management Category */}
               <div className="space-y-4">
-                <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2">Lead Management</h4>
+                <h4 className="text-lg font-medium text-emerald-800 border-b border-emerald-200 pb-2">Lead/Listing Management</h4>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">Lasso</span>
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">Hubspot</span>
                   <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">Birdeye</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">MLS</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">BLS</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">NHLS</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">BDX</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">New Home Feed</span>
+                  <span className="px-4 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-full text-sm font-medium text-emerald-700 hover:shadow-md transition-shadow">Zillow Builder</span>
                 </div>
               </div>
 
