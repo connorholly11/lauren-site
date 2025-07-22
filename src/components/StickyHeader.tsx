@@ -8,7 +8,7 @@ const StickyHeader: React.FC = () => {
     label: 'Home',
     href: '#home'
   }, {
-    label: 'Showcase',
+    label: 'Expertise',
     href: '#featured-work'
   }, {
     label: 'About',

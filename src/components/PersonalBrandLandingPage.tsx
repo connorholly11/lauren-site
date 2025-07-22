@@ -264,19 +264,6 @@ const PersonalBrandLandingPage: React.FC = () => {
                             {item.description}
                           </p>
                           
-                          {item.highlights && (
-                            <div className="space-y-2 mb-4">
-                              <h4 className="text-xs font-semibold text-emerald-800 uppercase tracking-wide">Highlights:</h4>
-                              <ul className="space-y-1">
-                                {item.highlights.map((highlight, idx) => (
-                                  <li key={idx} className="flex items-start space-x-2">
-                                    <span className="text-emerald-500 mt-1">•</span>
-                                    <span className="text-xs text-emerald-700 leading-relaxed">{highlight}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
                         </div>
                         
                         <div className="text-center">
@@ -340,23 +327,19 @@ const PersonalBrandLandingPage: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <h4 className="text-lg font-semibold text-emerald-900">Project Highlights</h4>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-emerald-700">Delivered comprehensive solution exceeding client expectations</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-emerald-700">Implemented data-driven strategies for measurable results</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-emerald-700">Maintained consistent communication throughout project lifecycle</p>
+                {selectedProject.highlights && (
+                  <div className="space-y-4">
+                    <h4 className="text-lg font-semibold text-emerald-900">Key Deliverables</h4>
+                    <div className="space-y-3">
+                      {selectedProject.highlights.map((highlight, idx) => (
+                        <div key={idx} className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-emerald-700">{highlight}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </div>
+                )}
                 
                 <div className="mt-8 pt-6 border-t border-emerald-100">
                   <button onClick={() => setSelectedProject(null)} className="w-full bg-emerald-900 hover:bg-emerald-800 text-white font-medium py-3 px-6 rounded-lg transition-colors">
@@ -428,53 +411,77 @@ const PersonalBrandLandingPage: React.FC = () => {
               <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto"></div>
             </motion.div>
             
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <motion.div initial={{
+            <motion.div initial={{
               opacity: 0,
-              x: -30
+              y: 30
             }} whileInView={{
               opacity: 1,
-              x: 0
+              y: 0
             }} transition={{
               duration: 0.6
             }} viewport={{
               once: true
-            }} className="space-y-8">
-                <div className="space-y-8">
-                  <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center">
-                      <Award className="w-7 h-7 text-white" />
+            }} className="max-w-3xl mx-auto">
+              <div className="space-y-12">
+                {/* Achievement Cards */}
+                <div className="grid md:grid-cols-3 gap-6 mb-12">
+                  <motion.div 
+                    whileHover={{ y: -4 }}
+                    className="bg-white rounded-2xl shadow-lg p-6 text-center border border-emerald-100"
+                  >
+                    <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Award className="w-8 h-8 text-white" />
                     </div>
-                    <div className="flex-1 pt-1">
-                      <h3 className="text-xl font-bold text-emerald-900 mb-2">Voted "Cream of the Crop" in Culture</h3>
-                      <p className="text-emerald-700 leading-relaxed">Recognized across the company for consistently going above and beyond, with standout contributions to team culture and cross-department collaboration.</p>
-                    </div>
-                  </div>
+                    <h3 className="text-lg font-bold text-emerald-900 mb-2">Cream of the Crop</h3>
+                    <p className="text-sm text-emerald-700">Company-wide culture award for exceptional collaboration</p>
+                  </motion.div>
                   
-                  <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center">
-                      <TrendingUp className="w-7 h-7 text-white" />
+                  <motion.div 
+                    whileHover={{ y: -4 }}
+                    className="bg-white rounded-2xl shadow-lg p-6 text-center border border-emerald-100"
+                  >
+                    <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <TrendingUp className="w-8 h-8 text-white" />
                     </div>
-                    <div className="flex-1 pt-1">
-                      <h3 className="text-xl font-bold text-emerald-900 mb-2">AI Integration Leader</h3>
-                      <p className="text-emerald-700 leading-relaxed">Launched tools that saved ~$20,000 annually, supporting them with regular workshops and meetings to keep teams aligned and effective.</p>
-                    </div>
-                  </div>
+                    <h3 className="text-lg font-bold text-emerald-900 mb-2">AI Pioneer</h3>
+                    <p className="text-sm text-emerald-700">Saved $20K annually through innovative tool implementation</p>
+                  </motion.div>
                   
-                  <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center">
-                      <Users className="w-7 h-7 text-white" />
+                  <motion.div 
+                    whileHover={{ y: -4 }}
+                    className="bg-white rounded-2xl shadow-lg p-6 text-center border border-emerald-100"
+                  >
+                    <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Users className="w-8 h-8 text-white" />
                     </div>
-                    <div className="flex-1 pt-1">
-                      <h3 className="text-xl font-bold text-emerald-900 mb-2">Driven by Curiosity</h3>
-                      <p className="text-emerald-700 leading-relaxed">Focused on growth through hands-on learning. Built this entire site using AI, customizing every piece without writing a single line of code.</p>
-                    </div>
+                    <h3 className="text-lg font-bold text-emerald-900 mb-2">Self-Taught Builder</h3>
+                    <p className="text-sm text-emerald-700">Built this entire site with AI, no coding required</p>
+                  </motion.div>
+                </div>
+                
+                {/* Detailed Descriptions */}
+                <div className="space-y-8 mb-12">
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-emerald-900 mb-4">What Sets Me Apart</h3>
+                    <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl mx-auto">
+                      I don't just complete tasks—I find ways to make them better. Whether it's pioneering new technologies, 
+                      fostering team collaboration, or learning new skills independently, I bring curiosity and dedication to everything I do.
+                    </p>
                   </div>
                 </div>
                 
-                <blockquote className="border-l-4 border-emerald-600 pl-6 italic text-lg text-emerald-700">"I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She ask's the right questions and always gets things done quickly with a purpose!" - J.P VP Leadership</blockquote>
-              </motion.div>
-            </div>
+                {/* Testimonial */}
+                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 text-center">
+                  <svg className="w-10 h-10 text-emerald-400 mx-auto mb-4" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                  </svg>
+                  <blockquote className="text-lg italic text-emerald-800 mb-4">
+                    I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She asks the right questions and always gets things done quickly with a purpose!
+                  </blockquote>
+                  <cite className="text-sm font-semibold text-emerald-900 not-italic">— J.P., VP of Leadership</cite>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
