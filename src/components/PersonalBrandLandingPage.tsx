@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useAnimationControls } from 'framer-motion';
+import { motion, useAnimationControls, AnimatePresence } from 'framer-motion';
 import StickyHeader from './StickyHeader';
 import HeroSection from './HeroSection';
 import ShowcaseSection from './ShowcaseSection';
@@ -41,6 +41,34 @@ const PersonalBrandLandingPage: React.FC = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = React.useState(false);
+  
+  // Quote rotation state
+  const [currentQuoteIndex, setCurrentQuoteIndex] = React.useState(0);
+  const quotes = [
+    {
+      text: "I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She asks the right questions and always gets things done quickly with a purpose!",
+      author: "J.P.",
+      role: "Vice President of Construction"
+    },
+    {
+      text: "Our new eblast templates take our digital marketing up a notch and bring a sense of sophistication that we were previously lacking. Appreciate all your hard work in helping define our brand!",
+      author: "Mikayla S.",
+      role: "Director of Marketing"
+    },
+    {
+      text: "One of the best grand opening events I've been too. Great job, you made it look and feel effortless although I know there was so much work that happened behind the scenes to make it a success. Many thanks!",
+      author: "Kelli L.",
+      role: "CEO"
+    }
+  ];
+  
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
+    }, 4000); // Change quote every 4 seconds
+    
+    return () => clearInterval(interval);
+  }, [quotes.length]);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const {
       name,
@@ -144,7 +172,7 @@ const PersonalBrandLandingPage: React.FC = () => {
       'Develop brochures, signage, flyers, lookbooks, and digital ads',
       'Design social-media engagement templates and short-form video content',
       'Coordinate property and lifestyle photo/video shoots; maintain asset library',
-      'Oversee 2,500+ printed pieces monthly across three states while optimizing costs'
+      'Oversee 2,500+ printed pieces monthly across while optimizing costs'
     ],
     stats: {
       duration: '4 weeks',
@@ -368,7 +396,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                 <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-6">Who I Am & How I Work</h2>
                 <div className="space-y-4 text-lg text-emerald-700 leading-relaxed">
                   <p>
-                    Marketing has taken me across six states and dozens of communities, each one contributing to my passion for real estate and sharpening my instinct for what makes a place feel like home. I lead marketing strategy and execution for both for sale and build to rent communities, blending sharp analytics with human first storytelling to create campaigns that connect. Over the past five years, I've learned how to read a market quickly, craft strategies that resonate, and turn insight into meaningful growth.
+                    I've worked across six states and dozens of communities, building a passion for real estate and an instinct for what makes a place feel like home. I lead marketing strategy and execution for for-sale and build-to-rent communities, blending data with human-first storytelling to create campaigns that connect. Over the past five years, I've learned to read markets fast, craft strategies that resonate, and turn insight into meaningful growth.
                   </p>
                   <p>
                     Now rooted in Culver City, California, I work remotely while managing multiple markets, supporting my team, and collaborating across internal and external departments. I live here with my rescue pup FeFe. On weekends, you'll find us exploring local trails, testing out new matcha spots, or tinkering with AI tools to spark ideas for what's next.
@@ -376,7 +404,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                 </div>
               </div>
               <div className="relative">
-                <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden">
+                <div className="w-96 h-96 mx-auto rounded-2xl overflow-hidden">
                   <img 
                     src="/Bio Section Doll Image.png" 
                     alt="Lauren Hall - Professional Photo" 
@@ -433,7 +461,8 @@ const PersonalBrandLandingPage: React.FC = () => {
                       <Award className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-emerald-900 mb-2">Cream of the Crop</h3>
-                    <p className="text-sm text-emerald-700">Company-wide culture award for exceptional collaboration</p>
+                    <p className="text-sm text-emerald-700">Recognized across the company for consistently going above and beyond, with standout contributions to team culture and cross-department collaboration.
+</p>
                   </motion.div>
                   
                   <motion.div 
@@ -444,7 +473,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                       <TrendingUp className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-emerald-900 mb-2">AI Pioneer</h3>
-                    <p className="text-sm text-emerald-700">Saved $20K annually through innovative tool implementation</p>
+                    <p className="text-sm text-emerald-700">Launched tools that saved ~$20,000 annually, supporting them with regular workshops and meetings to keep teams aligned and effective.</p>
                   </motion.div>
                   
                   <motion.div 
@@ -455,7 +484,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                       <Users className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-emerald-900 mb-2">Self-Taught Builder</h3>
-                    <p className="text-sm text-emerald-700">Built this entire site with AI, no coding required</p>
+                    <p className="text-sm text-emerald-700">Built this entire site using AI, customizing every piece without writing a single line of code and learning each new tool as I went.</p>
                   </motion.div>
                 </div>
                 
@@ -470,15 +499,28 @@ const PersonalBrandLandingPage: React.FC = () => {
                   </div>
                 </div>
                 
-                {/* Testimonial */}
-                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 text-center">
-                  <svg className="w-10 h-10 text-emerald-400 mx-auto mb-4" fill="currentColor" viewBox="0 0 32 32">
+                {/* Animated Testimonials */}
+                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden min-h-[280px] sm:min-h-[240px]">
+                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-400 mx-auto mb-3 sm:mb-4" fill="currentColor" viewBox="0 0 32 32">
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
-                  <blockquote className="text-lg italic text-emerald-800 mb-4">
-                    I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She asks the right questions and always gets things done quickly with a purpose!
-                  </blockquote>
-                  <cite className="text-sm font-semibold text-emerald-900 not-italic">— J.P., VP of Leadership</cite>
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={currentQuoteIndex}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      transition={{ duration: 0.5 }}
+                      className="px-4 sm:px-8"
+                    >
+                      <blockquote className="text-base sm:text-lg italic text-emerald-800 mb-3 sm:mb-4 leading-relaxed">
+                        {quotes[currentQuoteIndex].text}
+                      </blockquote>
+                      <cite className="text-sm font-semibold text-emerald-900 not-italic block">
+                        — {quotes[currentQuoteIndex].author}, {quotes[currentQuoteIndex].role}
+                      </cite>
+                    </motion.div>
+                  </AnimatePresence>
                 </div>
               </div>
             </motion.div>

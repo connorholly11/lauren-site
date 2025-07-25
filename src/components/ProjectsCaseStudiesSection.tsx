@@ -56,8 +56,8 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     id: 'cold-interest-list',
     title: 'Cold Interest List in a New Market',
     category: 'Digital Marketing',
-    summary: 'Thirty days before the pre-sale release of Everly, our first community in Cincinnati, Ohio, the VIP list held only two names. Brand awareness was limited, construction in progress, and previous marketing efforts had stalled.',
-    image: '🏢',
+    summary: 'Six weeks before the pre-sale release of Everly, our first community in Cincinnati, Ohio, the VIP list held only two names. Brand awareness was limited, construction in progress, and previous marketing efforts had stalled.',
+    image: '🎯',
     duration: '30 days',
     budget: '$3,500',
     clientType: 'Luxury Real Estate Developer',
@@ -66,7 +66,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
       description: 'Launching in a new Cincinnati luxury market where our name meant nothing and established competitors dominated awareness'
     }, {
       title: 'Ice-Cold Interest List',
-      description: 'Just two prospects on the VIP roster with thirty days until presale kickoff'
+      description: 'Just two prospects on the VIP roster with six weeks until presale kickoff'
     }, {
       title: 'Limited Assets',
       description: 'Buildings still under construction, leaving no finished units or on-site visuals to spark buyer excitement'
@@ -74,17 +74,17 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     solutions: [{
       step: 1,
       title: 'Walkability-driven local brand placements',
-      description: 'Mapped nearby coffee shops, breweries, and lifestyle venues, then arranged no- to low-cost branded coasters and countertop signs carrying the line "You could walk home from here," boosting visibility and tying Everly to a car-free lifestyle.',
+      description: 'Mapped nearby coffee shops, breweries, and lifestyle venues, then arranged no- to low-cost branded coasters and countertop signs carrying the line "You could walk home from here," boosting visibility and tying Everly to a walkable lifestyle.',
       outcome: 'Secured eight walk-distance partner venues whose coaster and countertop placements made Everly a familiar name in the neighborhood'
     }, {
       step: 2,
       title: 'Targeted luxury direct-mail drop',
-      description: 'Sent two high-end mailers to residents of nearby Class-A apartment buildings, featuring floor-plan previews, presale incentives, and a personal invite to a hard-hat tour of Everly.',
+      description: 'Sent three high end mailers to nearby Class A apartment residents with floor plan previews, presale incentives, and a QR code that linked to a landing page outlining a personal invite to our design studio for a closer look at what is coming to Everly.',
       outcome: 'Generated immediate interest from qualified prospects already living in the area'
     }, {
       step: 3,
       title: 'Geo-fenced paid media',
-      description: 'Launched a two-week Google and Meta campaign inside a one-mile radius of competitors and downtown offices, serving mobile display ads and Instagram Stories that echoed the walk-home message.',
+      description: 'Launched a two-week Google and Meta campaign inside a one-mile radius of competitors and downtown offices, serving mobile display ads that echoed the walk-home message.',
       outcome: 'Achieved strong click-through rates among high-intent local prospects'
     }, {
       step: 4,
@@ -110,19 +110,19 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     }],
     results: [{
       metric: 'VIP List Growth',
-      value: '27 leads',
+      value: '32 leads',
       icon: Users,
-      description: 'Expanded from 2 to 27 qualified leads in 30 days'
+      description: 'Expanded from 2 to 32 qualified leads in 6 weeks'
     }, {
       metric: 'Presale Contracts',
       value: '2 signed',
       icon: DollarSign,
       description: 'Converted early interest into signed contracts'
     }, {
-      metric: 'QR Engagement',
-      value: '120+ scans',
+      metric: 'Walk Home Campaign',
+      value: '150+ QR Scans',
       icon: TrendingUp,
-      description: 'Generated through walk-home campaign'
+      description: 'Generated through walk-home campaign and direct mail drop'
     }, {
       metric: 'Partner Venues',
       value: '8 locations',
@@ -173,7 +173,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     solutions: [{
       step: 1,
       title: 'Resident feedback deep dive',
-      description: 'Surveyed every closing and move-in from the past two years and distilled responses into three core gaps—unclear points of contact, vague timeline expectations, and post-closing warranty confusion.',
+      description: 'Surveyed every closing and move in from the past two years and identified three core gaps: unclear points of contact, vague timeline expectations, and post closing warranty confusion.',
       outcome: 'Identified specific pain points to address in the customer journey'
     }, {
       step: 2,
@@ -216,7 +216,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
       metric: 'Google Rating',
       value: '4.1 stars',
       icon: TrendingUp,
-      description: 'Lifted from 3.6 within 12 months'
+      description: 'Lifted from 3.6 within 12 weeks of new customer service journey'
     }, {
       metric: 'Online Warranty',
       value: '98%',
@@ -260,7 +260,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     title: 'Flora Grand Opening Event',
     category: 'Event Marketing',
     summary: 'Launching Flora meant introducing both the place and its story to a prestigious suburb on the city\'s northern edge that had yet to notice us. The September 2024 grand opening needed to do more than cut a ribbon.',
-    image: '🌸',
+    image: '🎉',
     duration: '4 weeks',
     budget: '$2,000',
     clientType: 'Luxury Community Developer',
@@ -502,21 +502,6 @@ const ProjectsCaseStudiesSection: React.FC = () => {
                       <div>
                       </div>
 
-                      {/* Client Testimonial */}
-                      {project.testimonial && <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-6 text-white">
-                          <blockquote className="text-lg italic leading-relaxed mb-4">
-                            "{project.testimonial.quote}"
-                          </blockquote>
-                          <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                              <span className="text-lg">👤</span>
-                            </div>
-                            <div>
-                              <div className="font-semibold">{project.testimonial.author}</div>
-                              <div className="text-emerald-100 text-sm">{project.testimonial.role}</div>
-                            </div>
-                          </div>
-                        </div>}
 
                     </div>
                   </motion.div>}

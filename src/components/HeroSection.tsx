@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         paddingTop: "40px"
       }}>
           {/* Headshot */}
-          <div className="relative inline-block mb-8">
+          <div className="relative inline-block mb-12">
             <motion.div initial={{
             scale: 0.8,
             opacity: 0
@@ -34,8 +34,8 @@ const HeroSection: React.FC = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.2
-          }} className="w-48 h-48 mx-auto rounded-2xl p-2">
-              <div className="w-full h-full rounded-2xl flex items-center justify-center overflow-hidden">
+          }} className="w-72 h-72 mx-auto rounded-full p-3 bg-gradient-to-br from-emerald-100 via-teal-50 to-cyan-100">
+              <div className="w-full h-full rounded-full flex items-center justify-center overflow-hidden ring-4 ring-white/50 shadow-2xl">
                 <img 
                   src="/Headshot from Connor Holly.png" 
                   alt="Lauren Hall - Professional Headshot" 
@@ -44,52 +44,91 @@ const HeroSection: React.FC = () => {
               </div>
             </motion.div>
             
-            {/* Floating sparkles */}
+            {/* Floating sparkles - organic placement around circular image */}
             <motion.div animate={{
-            y: [0, -10, 0],
-            rotate: [0, 5, 0]
+            y: [0, -15, 0],
+            rotate: [0, 360, 0]
           }} transition={{
-            duration: 3,
+            duration: 4,
             repeat: Infinity,
             ease: "easeInOut"
-          }} className="absolute -top-4 -right-4">
-              <Sparkles className="w-6 h-6 text-emerald-500" />
-            </motion.div>
-            
-            <motion.div animate={{
-            y: [0, -8, 0],
-            rotate: [0, -3, 0]
-          }} transition={{
-            duration: 2.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.5
-          }} className="absolute -top-2 -left-6">
-              <Sparkles className="w-4 h-4 text-teal-500" />
-            </motion.div>
-            
-            <motion.div animate={{
-            y: [0, -12, 0],
-            rotate: [0, 8, 0]
-          }} transition={{
-            duration: 3.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }} className="absolute -bottom-6 -right-8">
+          }} className="absolute top-0 right-12">
               <Sparkles className="w-8 h-8 text-emerald-500" />
             </motion.div>
             
             <motion.div animate={{
-            y: [0, -6, 0],
-            rotate: [0, -5, 0]
+            y: [0, -10, 0],
+            x: [0, 5, 0],
+            rotate: [0, -180, 0]
           }} transition={{
-            duration: 2.8,
+            duration: 3.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.5
+          }} className="absolute top-8 -right-2">
+              <Sparkles className="w-5 h-5 text-teal-500" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -8, 0],
+            x: [0, -3, 0],
+            scale: [1, 1.2, 1]
+          }} transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }} className="absolute top-20 -left-8">
+              <Sparkles className="w-6 h-6 text-cyan-500" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -12, 0],
+            rotate: [0, 270, 0]
+          }} transition={{
+            duration: 3.8,
             repeat: Infinity,
             ease: "easeInOut",
             delay: 1.5
-          }} className="absolute -bottom-2 -left-4">
-              <Sparkles className="w-5 h-5 text-cyan-500" />
+          }} className="absolute bottom-20 -right-10">
+              <Sparkles className="w-9 h-9 text-emerald-400" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -6, 0],
+            x: [0, 4, 0],
+            rotate: [0, -360, 0]
+          }} transition={{
+            duration: 3.2,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }} className="absolute bottom-8 -left-4">
+              <Sparkles className="w-7 h-7 text-teal-400" />
+            </motion.div>
+            
+            <motion.div animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.8, 1, 0.8]
+          }} transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2.5
+          }} className="absolute top-4 left-8">
+              <Sparkles className="w-4 h-4 text-emerald-600" />
+            </motion.div>
+            
+            <motion.div animate={{
+            y: [0, -10, 0],
+            x: [0, -6, 0]
+          }} transition={{
+            duration: 3.3,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }} className="absolute bottom-4 right-6">
+              <Sparkles className="w-5 h-5 text-cyan-600" />
             </motion.div>
           </div>
 

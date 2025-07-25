@@ -11,16 +11,16 @@ const StickyHeader: React.FC = () => {
     label: 'Expertise',
     href: '#featured-work'
   }, {
-    label: 'About',
+    label: 'Who I Am',
     href: '#about'
   }, {
-    label: 'Projects',
+    label: 'Success Stories',
     href: '#projects'
   }, {
     label: 'Leadership',
     href: '#leadership'
   }, {
-    label: 'Skills',
+    label: 'Programs',
     href: '#skills'
   }, {
     label: 'Contact',

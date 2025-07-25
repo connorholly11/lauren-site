@@ -42,7 +42,7 @@ const LeadershipSection: React.FC = () => {
                 </div>
                 <div className="flex-1 pt-1">
                   <h3 className="text-xl font-bold text-emerald-900 mb-2">Voted "Cream of the Crop" in Culture</h3>
-                  <p className="text-emerald-700 leading-relaxed">Recognized across the company for consistently going above and beyond, with standout contributions to team culture and cross-department collaboration.</p>
+                  <p className="text-emerald-700 leading-relaxed">Recognized across the company for consistently going above and beyond, with standout contributions to team culture and cross-department collaboration. </p>
                 </div>
               </div>
               
