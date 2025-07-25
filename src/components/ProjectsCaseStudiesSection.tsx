@@ -282,7 +282,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     }, {
       step: 2,
       title: 'Multi-channel outreach',
-      description: 'Distributed printed QR-coded invites through local businesses, launched a three-email drip that drew 46.8 % opens and an 18 % click-through rate, synchronized social posts across our brand and vendor accounts to reach more than 18 000 prospects, and equipped the sales team with personalized outreach kits for their VIP list.',
+      description: 'Distributed printed QR-coded invites through local businesses, launched a three-email drip that drew 38% opens and an 18% click-through rate, synchronized social posts across our brand and vendor accounts, and equipped the sales team with personalized outreach kits for their VIP list.',
       outcome: 'Maximized local visibility within walking distance of the community'
     }, {
       step: 3,

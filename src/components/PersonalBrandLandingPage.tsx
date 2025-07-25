@@ -452,7 +452,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                     <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Award className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-emerald-900 mb-2">Cream of the Crop</h3>
+                    <h3 className="text-lg font-bold text-emerald-900 mb-2">Cream of the Crop Award</h3>
                     <p className="text-sm text-emerald-700">Recognized across the company for consistently going above and beyond, with standout contributions to team culture and cross-department collaboration.
 </p>
                   </motion.div>
