@@ -51,7 +51,7 @@ const PersonalBrandLandingPage: React.FC = () => {
       role: "Vice President of Construction"
     },
     {
-      text: "Our new eblast templates take our digital marketing up a notch and bring a sense of sophistication that we were previously lacking. Appreciate all your hard work in helping define our brand!",
+      text: "Thanks to Lauren, our new eblast templates have taken our digital marketing to a whole new level, adding the polish and clarity our brand needed. Her thoughtful approach and creative touch really stand out.",
       author: "Mikayla S.",
       role: "Director of Marketing"
     },
@@ -131,9 +131,9 @@ const PersonalBrandLandingPage: React.FC = () => {
     thumbnail: '/Digital Marketing from Connor Holly.png',
     description: 'SEO, SEM, PPC, email, and text campaigns that drive measurable traffic and conversions.',
     highlights: [
-      'Audience research, keyword strategy, and segmentation',
+      'Audience research, keyword strategy, and segmentatio',
       'Develop creative concepts and write briefs that align teams around one vision',
-      'Lifecycle and promotional email/SMS campaigns',
+      'Write, schedule, and analyze lifecycle and promotional email and SMS that turn interest into contracts',
       'Customer surveys and feedback loops to inform optimization',
       'Manage review platforms to amplify positive sentiment'
     ],
@@ -152,7 +152,7 @@ const PersonalBrandLandingPage: React.FC = () => {
       'Website maintenance and updates for speed, SEO, and accessibility',
       'Landing-page optimization and A/B testing for higher conversions',
       'Lead-capture form design and integration',
-      'Creation of SEO blog posts and press releases',
+      'Own the blog and press pipeline, coordinating outside contacts, approvals, and distribution',
       'Performance tracking and reporting with GA4, Microsoft Clarity, and real-time dashboards'
     ],
     stats: {
@@ -267,20 +267,20 @@ const PersonalBrandLandingPage: React.FC = () => {
             </motion.div>
 
             {/* Auto-scrolling Gallery */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden py-4">
               <motion.div
                 className="flex space-x-6"
                 animate={controls}
               >
                 {/* Duplicate items for seamless loop */}
                 {[...contentItems, ...contentItems].map((item, index) => {
-                return <motion.div key={`${item.id}-${index}`} className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer" whileHover={{
+                return <motion.div key={`${item.id}-${index}`} className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden" whileHover={{
                   y: -8,
                   scale: 1.02
                 }} onClick={() => setSelectedProject(item)}>
-                      <div className="relative overflow-hidden rounded-t-2xl">
-                        <img src={item.thumbnail} alt={item.title} className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="relative overflow-hidden">
+                        <img src={item.thumbnail} alt={item.title} className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-2xl" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl" />
                       </div>
                       
                       <div className="p-8">
@@ -340,31 +340,23 @@ const PersonalBrandLandingPage: React.FC = () => {
                   </button>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-6 text-center">
-                    <div className="text-2xl font-bold text-emerald-900 mb-2">{selectedProject.stats.duration}</div>
-                    <div className="text-sm font-medium text-emerald-600">Project Duration</div>
-                  </div>
-                  <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 text-center">
-                    <div className="text-2xl font-bold text-teal-900 mb-2">{selectedProject.stats.impact}</div>
-                    <div className="text-sm font-medium text-teal-600">Measured Impact</div>
-                  </div>
-                  <div className="bg-gradient-to-br from-cyan-50 to-emerald-50 rounded-xl p-6 text-center">
-                    <div className="text-2xl font-bold text-cyan-900 mb-2">{selectedProject.stats.satisfaction}</div>
-                    <div className="text-sm font-medium text-cyan-600">Client Satisfaction</div>
-                  </div>
-                </div>
-                
                 {selectedProject.highlights && (
-                  <div className="space-y-4">
-                    <h4 className="text-lg font-semibold text-emerald-900">Key Deliverables</h4>
-                    <div className="space-y-3">
-                      {selectedProject.highlights.map((highlight, idx) => (
-                        <div key={idx} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-emerald-700">{highlight}</p>
-                        </div>
-                      ))}
+                  <div className="space-y-6">
+                    <div className="bg-gradient-to-br from-emerald-50/50 to-teal-50/50 rounded-xl p-6 border border-emerald-100">
+                      <h4 className="text-xl font-bold text-emerald-900 mb-4 flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Key Deliverables
+                      </h4>
+                      <div className="space-y-3">
+                        {selectedProject.highlights.map((highlight, idx) => (
+                          <div key={idx} className="flex items-start space-x-3 group">
+                            <div className="w-2 h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></div>
+                            <p className="text-emerald-700 leading-relaxed group-hover:text-emerald-800 transition-colors">{highlight}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -473,7 +465,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                       <TrendingUp className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-emerald-900 mb-2">AI Pioneer</h3>
-                    <p className="text-sm text-emerald-700">Launched tools that saved ~$20,000 annually, supporting them with regular workshops and meetings to keep teams aligned and effective.</p>
+                    <p className="text-sm text-emerald-700">Launched tools that saved ~$20,000 annually and lead the internal AI team, hosting regular workshops and meetings to keep teams aligned and effective.</p>
                   </motion.div>
                   
                   <motion.div 
@@ -493,7 +485,7 @@ const PersonalBrandLandingPage: React.FC = () => {
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-emerald-900 mb-4">What Sets Me Apart</h3>
                     <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl mx-auto">
-                      I don't just complete tasks—I find ways to make them better. Whether it's pioneering new technologies, 
+                      I don't just complete tasks; I find ways to make them better. Whether it's pioneering new technologies, 
                       fostering team collaboration, or learning new skills independently, I bring curiosity and dedication to everything I do.
                     </p>
                   </div>

@@ -257,47 +257,42 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     }
   }, {
     id: 'flora-grand-opening',
-    title: 'Flora Grand Opening Event',
+    title: 'High Impact Grand Opening',
     category: 'Event Marketing',
-    summary: 'Launching Flora meant introducing both the place and its story to a prestigious suburb on the city\'s northern edge that had yet to notice us. The September 2024 grand opening needed to do more than cut a ribbon.',
+    summary: 'Flora, a new luxury community in a prestigious north side Indianapolis suburb with little brand recognition, needed a launch event that would attract serious buyers, secure its place among competing new builds, showcase its walkable amenities, and jumpstart sales on a tight budget.',
     image: '🎉',
     duration: '4 weeks',
     budget: '$2,000',
     clientType: 'Luxury Community Developer',
     challenges: [{
-      title: 'New luxury community',
-      description: 'Limited previous contacts but ambitious turnout goals'
+      title: 'Large Attendance Goal',
+      description: ' New upscale community with limited local contacts but a sizeable attendance goal'
     }, {
       title: 'Quiet site',
       description: 'Low drive-by traffic and minimal brand visibility'
     }, {
       title: 'Vendor budget',
-      description: 'Capped at two thousand dollars'
+      description: 'Deliver a polished launch experience for a luxury neighborhood on a low budget and a six‑week planning window.'
     }],
     solutions: [{
       step: 1,
-      title: 'QR landing campaign',
-      description: 'Created a mobile landing page and used QR scans as the primary entry path.',
+      title: 'Audience build and RSVP platform',
+      description: 'Purchased a new list of top brokers and high‑income renters, created a landing page with an optional RSVP form, and added channel‑specific UTM parameters (email, social, print, and personal handoffs) to track attendance and RSVP sources from start to finish.',
       outcome: 'Logged 160 QR scans that fed the event landing page and captured contact data'
     }, {
       step: 2,
-      title: 'Local placement sweep',
-      description: 'Distributed printed invites with QR codes at nearby cafés, breweries, and shops and added onsite and trail signage around Flora.',
+      title: 'Multi‑channel outreach',
+      description: 'Distributed printed QR‑coded invites through local businesses, launched a three‑email drip that drew 46.8 % opens and an 18 % click‑through rate, synchronized social posts across our brand and vendor accounts to reach more than 18 000 prospects, and equipped the sales team with personalized outreach kits for their VIP list.',
       outcome: 'Maximized local visibility within walking distance of the community'
     }, {
       step: 3,
-      title: 'Social amplification',
-      description: 'Partnered with local influencers and real estate agents, along with the DJ, food-truck owner, and florist, to share the landing page across their social channels.',
-      outcome: 'Extended reach beyond our own channels to tap into local networks'
-    }, {
-      step: 4,
       title: 'Community-themed activations',
-      description: 'Booked the DJ for rooftop music, secured a popular food truck at a bulk flat fee, and set up a make-your-own bouquet station stocked by a neighborhood florist to echo Flora\'s nature brand.',
+      description: 'Booked a rooftop DJ, brought in a popular food truck, set up a make‑your‑own bouquet bar with a neighborhood florist, and handed out branded swag bags, all at favorable pricing with local partners that boosted community recognition, amplified event visibility, and opened doors for future collaborations.',
       outcome: 'Delivered full music, food, and interactive experiences while keeping total vendor spend under two thousand dollars'
     }, {
-      step: 5,
-      title: 'Flexible RSVP approach',
-      description: 'Positioned RSVP as an optional heads-up and welcomed walk-ups to lower friction and encourage spontaneous attendance.',
+      step: 4,
+      title: 'Media amplification',
+      description: 'Developed press release frameworks and coordinated with our PR firm to secure impactful media coverage, including two local TV segments, a feature request from Indy Star, and additional press pickup. Executed a tag‑to‑win QR contest that drove over twenty attendee stories, videos, and posts across social channels.',
       outcome: 'Drew 123 attendees with 68 RSVPs, exceeding turnout goals and confirming strong walk-up interest'
     }],
     beforeAfter: [{
@@ -317,25 +312,25 @@ const ProjectsCaseStudiesSection: React.FC = () => {
       improvement: '2 contracts'
     }],
     results: [{
-      metric: 'Attendees',
-      value: '123',
+      metric: 'Flora Grand Opening',
+      value: '132 attendees',
       icon: Users,
-      description: 'Drew 123 attendees with 68 RSVPs'
+      description: 'Drew 132 attendees with goal of 120'
     }, {
-      metric: 'QR Scans',
-      value: '160',
+      metric: 'Scheduled Design Studio Follow-Up',
+      value: '14 Hot Leads',
       icon: TrendingUp,
-      description: 'Landing page visits and data capture'
+      description: 'Attendees who continued the sales process'
     }, {
-      metric: 'Media Coverage',
+      metric: 'Video Media Coverage',
       value: '2 TV stations',
       icon: BarChart3,
-      description: 'Plus Indy Star feature request'
+      description: 'Plus multiple written features'
     }, {
       metric: 'Contracts',
       value: '2 signed',
       icon: DollarSign,
-      description: 'From 6 high-intent leads generated'
+      description: 'Signed within 30 days of the event'
     }],
     timeline: [{
       phase: 'Event Planning',

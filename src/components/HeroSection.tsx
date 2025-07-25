@@ -158,7 +158,7 @@ const HeroSection: React.FC = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.6
-        }} className="text-lg sm:text-xl lg:text-2xl text-emerald-700 mb-8 max-w-3xl mx-auto leading-relaxed">I'm Lauren Hall, a real estate marketing manager who builds strategy with both people and place in mind. Whether I'm digging into the data or finding fresh ways to tell a community's story, I'm always adapting and looking for smarter ways to connect people with their new home.</motion.p>
+        }} className="text-lg sm:text-xl lg:text-2xl text-emerald-700 mb-8 max-w-3xl mx-auto leading-relaxed">I'm Lauren Hall, a real estate marketing manager passionate about strategies that balance people and place. Whether through data or storytelling, my approach is all about connecting people with the communities they’ll love.</motion.p>
 
           {/* Stats */}
           <motion.div initial={{
