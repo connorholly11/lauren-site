@@ -79,7 +79,7 @@ const ProjectsCaseStudiesSection: React.FC = () => {
     }, {
       step: 2,
       title: 'Targeted luxury direct-mail drop',
-      description: 'Sent three high end mailers to nearby Class A apartment residents with floor plan previews, presale incentives, and a QR code that linked to a landing page outlining a personal invite to our design studio for a closer look at what is coming to Everly.',
+      description: 'Sent three high-end mailers to nearby Class A apartment residents with floor plan previews, presale incentives, and a QR code that linked to a landing page outlining a personal invite to our design studio for a closer look at what is coming to Everly.',
       outcome: 'Generated immediate interest from qualified prospects already living in the area'
     }, {
       step: 3,
@@ -268,31 +268,31 @@ const ProjectsCaseStudiesSection: React.FC = () => {
       title: 'Large Attendance Goal',
       description: ' New upscale community with limited local contacts but a sizeable attendance goal'
     }, {
-      title: 'Quiet site',
+      title: 'Quiet Site',
       description: 'Low drive-by traffic and minimal brand visibility'
     }, {
-      title: 'Vendor budget',
-      description: 'Deliver a polished launch experience for a luxury neighborhood on a low budget and a six‑week planning window.'
+      title: 'Vendor Budget',
+      description: 'Deliver a polished launch experience for a luxury neighborhood on a low budget and a six-week planning window.'
     }],
     solutions: [{
       step: 1,
       title: 'Audience build and RSVP platform',
-      description: 'Purchased a new list of top brokers and high‑income renters, created a landing page with an optional RSVP form, and added channel‑specific UTM parameters (email, social, print, and personal handoffs) to track attendance and RSVP sources from start to finish.',
+      description: 'Purchased a new list of top brokers and high-income renters, created a landing page with an optional RSVP form, and added channel-specific UTM parameters (email, social, print, and personal handoffs) to track attendance and RSVP sources from start to finish.',
       outcome: 'Logged 160 QR scans that fed the event landing page and captured contact data'
     }, {
       step: 2,
-      title: 'Multi‑channel outreach',
-      description: 'Distributed printed QR‑coded invites through local businesses, launched a three‑email drip that drew 46.8 % opens and an 18 % click‑through rate, synchronized social posts across our brand and vendor accounts to reach more than 18 000 prospects, and equipped the sales team with personalized outreach kits for their VIP list.',
+      title: 'Multi-channel outreach',
+      description: 'Distributed printed QR-coded invites through local businesses, launched a three-email drip that drew 46.8 % opens and an 18 % click-through rate, synchronized social posts across our brand and vendor accounts to reach more than 18 000 prospects, and equipped the sales team with personalized outreach kits for their VIP list.',
       outcome: 'Maximized local visibility within walking distance of the community'
     }, {
       step: 3,
       title: 'Community-themed activations',
-      description: 'Booked a rooftop DJ, brought in a popular food truck, set up a make‑your‑own bouquet bar with a neighborhood florist, and handed out branded swag bags, all at favorable pricing with local partners that boosted community recognition, amplified event visibility, and opened doors for future collaborations.',
+      description: 'Booked a rooftop DJ, brought in a popular food truck, set up a make-your-own bouquet bar with a neighborhood florist, and handed out branded swag bags, all at favorable pricing with local partners that boosted community recognition, amplified event visibility, and opened doors for future collaborations.',
       outcome: 'Delivered full music, food, and interactive experiences while keeping total vendor spend under two thousand dollars'
     }, {
       step: 4,
       title: 'Media amplification',
-      description: 'Developed press release frameworks and coordinated with our PR firm to secure impactful media coverage, including two local TV segments, a feature request from Indy Star, and additional press pickup. Executed a tag‑to‑win QR contest that drove over twenty attendee stories, videos, and posts across social channels.',
+      description: 'Developed press release frameworks and coordinated with our PR firm to secure impactful media coverage, including two local TV segments, a feature request from Indy Star, and additional press pickup. Executed a tag-to-win QR contest that drove over twenty attendee stories, videos, and posts across social channels.',
       outcome: 'Drew 123 attendees with 68 RSVPs, exceeding turnout goals and confirming strong walk-up interest'
     }],
     beforeAfter: [{

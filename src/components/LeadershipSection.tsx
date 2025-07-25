@@ -67,7 +67,7 @@ const LeadershipSection: React.FC = () => {
               </div>
             </div>
             
-            <blockquote className="border-l-4 border-emerald-600 pl-6 italic text-lg text-emerald-700">"I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She ask's the right questions and always gets things done quickly with a purpose!" - J.P VP Leadership</blockquote>
+            <blockquote className="border-l-4 border-emerald-600 pl-6 italic text-lg text-emerald-700">"I appreciate Lauren's willingness to jump in and help whenever and wherever asked. She asks the right questions and always gets things done quickly with a purpose!" - J.P., VP Leadership</blockquote>
           </motion.div>
           
           <motion.div initial={{

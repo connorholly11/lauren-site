@@ -56,7 +56,7 @@ const PersonalBrandLandingPage: React.FC = () => {
       role: "Director of Marketing"
     },
     {
-      text: "One of the best grand opening events I've been too. Great job, you made it look and feel effortless although I know there was so much work that happened behind the scenes to make it a success. Many thanks!",
+      text: "One of the best grand opening events I've been to. Great job, you made it look and feel effortless although I know there was so much work that happened behind the scenes to make it a success. Many thanks!",
       author: "Kelli L.",
       role: "CEO"
     }
@@ -131,7 +131,7 @@ const PersonalBrandLandingPage: React.FC = () => {
     thumbnail: '/Digital Marketing from Connor Holly.png',
     description: 'SEO, SEM, PPC, email, and text campaigns that drive measurable traffic and conversions.',
     highlights: [
-      'Audience research, keyword strategy, and segmentatio',
+      'Audience research, keyword strategy, and segmentation',
       'Develop creative concepts and write briefs that align teams around one vision',
       'Write, schedule, and analyze lifecycle and promotional email and SMS that turn interest into contracts',
       'Customer surveys and feedback loops to inform optimization',
@@ -186,7 +186,7 @@ const PersonalBrandLandingPage: React.FC = () => {
     thumbnail: '/Photo from Connor Holly.png',
     description: 'Planning and executing events while supporting on-the-ground brand presence and community engagement.',
     highlights: [
-      'Plan and execute events: broker luncheons, virtual workshops, ribbon cuttings, ground-breakings, realtor caravans, and more',
+      'Plan and execute events: broker luncheons, virtual workshops, ribbon cuttings, groundbreakings, realtor caravans, and more',
       'Activate community engagement through local vendor collabs',
       'Manage invites, signage, run-of-show, vendors, and post-event nurture, ensuring seamless on-site logistics',
       'Secure press coverage and social amplification to maximize event reach'

@@ -180,7 +180,7 @@ const Footer: React.FC = () => {
       }} viewport={{
         once: true
       }} className="border-t border-emerald-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-emerald-300 text-sm">© 2025 Lauren Hall. All rights reserved.© 2025 Lauren Hall. All rights reserved.© 2025 Lauren Hall. All rights reserved.</p>
+          <p className="text-emerald-300 text-sm">© 2025 Lauren Hall. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0" style={{
           display: "none"
         }}>
